@@ -3,16 +3,21 @@
 #include <unistd.h>
 
 #define dprintf(fmt, args...) do{fprintf(stderr, "[%s:%d] "fmt, __FUNCTION__, __LINE__, ##args);}while(0)
-/*
- *typedef void (*task)(void *data);
- *typedef void (*task_callback)(void *data, int status);
- */
+#define HC_MAX_THREADPOOL_SIZE 128
 
 typedef struct
 {
-    uv_work_t work_req;
     void *data;
+    uv_work_t work_req; /*Don't touch this field*/
 } hc_work_queue_struct;
+
+int hc_work_queue(hc_work_queue_struct *hc_work_req,
+                  uv_work_cb tsk, 
+                  uv_after_work_cb tsk_cb);
+int hc_set_threadpool_size(int size);
+int hc_get_threadpool_size(void);
+int hc_task_cancel(hc_work_queue_struct *hc_work_req);
+int hc_task_run();
 
 void task(uv_work_t *work_request)
 {
@@ -34,13 +39,31 @@ void task_callback(uv_work_t *work_request, int status)
     dprintf("This is callback. data: %d, status:%d\n", *(int *)work_request->data, status);
 }
 
-int hc_work_queue(void *data, uv_work_cb tsk, uv_after_work_cb tsk_cb);
-
-int hc_work_queue(void *data, uv_work_cb tsk, uv_after_work_cb tsk_cb)
+int hc_set_threadpool_size(int size)
 {
-    int ret = 0, i;
-    uv_work_t work_request[20];
-    uv_work_t work_req;
+    char value[16] = {0};
+    snprintf(value, sizeof(value), "%u", size);
+    if (size > HC_MAX_THREADPOOL_SIZE && size <= 0)
+        return -1;
+
+    setenv("UV_THREADPOOL_SIZE", value, 1);
+    return 0;
+}
+
+int hc_get_threadpool_size(void)
+{
+    return atoi(getenv("UV_THREADPOOL_SIZE"));
+}
+
+int hc_work_queue(hc_work_queue_struct *hc_work_req,
+                  uv_work_cb tsk, 
+                  uv_after_work_cb tsk_cb)
+{
+    if (!hc_work_req)
+    {
+        dprintf("hc_work_req paramter is null\n");
+        return -1;
+    }
 
     if (!tsk)
     {
@@ -48,81 +71,43 @@ int hc_work_queue(void *data, uv_work_cb tsk, uv_after_work_cb tsk_cb)
         return -1;
     }
 
-#if 1
-    work_req.data = data;
-    if ((ret = uv_queue_work(uv_default_loop(), &work_req, tsk, tsk_cb)))
-    {
-        dprintf("ret: %d\n", ret);
-        return ret;
-    }
-#else
-    for (i = 0; i < sizeof(work_request)/sizeof(work_request[0]); i++)
-    {
-        work_request[i].data = data;
-        if ((ret = uv_queue_work(uv_default_loop(), &work_request[i], tsk, tsk_cb)))
-            return ret;
-        /*
-         *ret = uv_run(uv_default_loop(), UV_RUN_DEFAULT);
-         */
-    }
-#endif
-    /*
-     *ret = uv_run(uv_default_loop(), UV_RUN_DEFAULT);
-     */
+    hc_work_req->work_req.data = hc_work_req->data;
+    if (uv_queue_work(uv_default_loop(), &hc_work_req->work_req, tsk, tsk_cb))
+        return -UV_EINVAL;
 
-    return ret;
+    return 0;
+}
+
+int hc_task_cancel(hc_work_queue_struct *hc_work_req)
+{
+    if (!hc_work_req)
+        return -UV_EINVAL;
+
+    return uv_cancel((uv_req_t *)&hc_work_req->work_req);
+}
+
+int hc_task_run()
+{
+    return uv_run(uv_default_loop(), UV_RUN_DEFAULT);
 }
 
 int main(int argc, char *argv[])
 {
-    int data0  = 0;
-    int data1  = 1;
-    int data2  = 2;
-    int data3  = 3;
-    int data4  = 4;
-    int data5  = 5;
-    int data6  = 6;
-    int data7  = 7;
-    int data8  = 8;
-    int data9  = 9;
-    int data10 = 10;
-    int data11 = 11;
-    int data12 = 12;
-    int data13 = 13;
-    int data14 = 14;
-    int data15 = 15;
-    int data16 = 16;
-    int data17 = 17;
-    int data18 = 18;
-    int data19 = 19;
+    int i;
+    int data[20] = {0, 1, 2, 3, 4, 5,
+                    6, 7, 8, 9, 10, 11,
+                    12, 13, 14, 15, 16,
+                    17, 18, 19};
+    hc_work_queue_struct hc_work_task[20];
 
-    /*
-     *dprintf("threadpool size: %s\n", getenv("UV_THREADPOOL_SIZE"));
-     *setenv("UV_THREADPOOL_SIZE", "4", 1);
-     *dprintf("threadpool size: %s\n", getenv("UV_THREADPOOL_SIZE"));
-     */
-    hc_work_queue(&data0, task, task_callback);
-    hc_work_queue(&data1, task, task_callback);
-    hc_work_queue(&data2, task, task_callback);
-    hc_work_queue(&data3, task, task_callback);
-    hc_work_queue(&data4, task, task_callback);
-    hc_work_queue(&data5, task, task_callback);
-    hc_work_queue(&data6, task, task_callback);
-    hc_work_queue(&data7, task, task_callback);
-    hc_work_queue(&data8, task, task_callback);
-    hc_work_queue(&data9, task, task_callback);
-    hc_work_queue(&data10, task, task_callback);
-    hc_work_queue(&data11, task, task_callback);
-    hc_work_queue(&data12, task, task_callback);
-    hc_work_queue(&data13, task, task_callback);
-    hc_work_queue(&data14, task, task_callback);
-    hc_work_queue(&data15, task, task_callback);
-    hc_work_queue(&data16, task, task_callback);
-    hc_work_queue(&data17, task, task_callback);
-    hc_work_queue(&data18, task, task_callback);
-    hc_work_queue(&data19, task, task_callback);
+    hc_set_threadpool_size(10);
+    for (i = 0; i < 20; i++)
+    {
+        hc_work_task[i].data = &data[i];
+        hc_work_queue(&hc_work_task[i], task, task_callback);
+    }
 
-    uv_run(uv_default_loop(), UV_RUN_DEFAULT);
-    sleep(30);
+    hc_task_run();
+
     return 0;
 }

@@ -17,6 +17,8 @@
 #define PPP0_INTERFACE_NAME   "ppp0"
 #define GATEWAY_FILE          "/etc/network/gateway-domain"
 #define dprintf(fmt,args...)  do {printf("[%s:%d] "fmt, __FUNCTION__, __LINE__, ##args);} while(0)
+#define ETH0_DEFAULT_ROUTE_ENTRY_REGEX  "0.0.0.0[[:blank:]]+([0-9]{1,3}\\.){3}[0-9]{1,3}[[:blank:]]+0.0.0.0[[:blank:]]+UG[[:blank:]]+(0[[:blank:]]+)+eth0"
+#define PPP0_DEFAULT_ROUTE_ENTRY_REGEX  "(0.0.0.0[[:blank:]]+)+U[[:blank:]]+(0[[:blank:]]+)+ppp0"
 
 static int s_init_eth0_default_route = 0;
 
@@ -308,36 +310,63 @@ static int is_internet_work_on_interface(char *interface_name, char *ip_addr)
  *
  */
 
-static int is_exist_eth0_default_route_entry(void)
+static int is_exist_default_route_entry_for_interface(const char *interface_name)
 {
-    char route_table[BUFSIZ] = {0};
-    FILE *fp = NULL;
+    char       route_table[BUFSIZ] = {0};
+    FILE       *fp                 = NULL;
     regmatch_t pmatch[2];
-    regex_t preg;
+    regex_t    preg;
+    char       reg_err_str[LEN]    = {0};
+    char       reg_str[LEN]        = {0};
+    int        match;
+    int        err;
+
+    if (!interface_name)
+    {
+        dprintf("interface_name is null.");
+        return 0;
+    }
+    
+    if (strncmp(ETH0_INTERFACE_NAME, interface_name, strlen(ETH0_INTERFACE_NAME)) == 0)
+    {
+        snprintf(reg_str, sizeof(reg_str), "%s", ETH0_DEFAULT_ROUTE_ENTRY_REGEX);
+    }
+    else if (strncmp(PPP0_INTERFACE_NAME, interface_name, strlen(PPP0_INTERFACE_NAME)) == 0)
+    {
+        snprintf(reg_str, sizeof(reg_str), "%s", PPP0_DEFAULT_ROUTE_ENTRY_REGEX);
+    }
+    else 
+    {
+        dprintf("Unexpected interface name.\n");
+        return 0;
+    }
 
     if ((fp = popen("netstat -rn", "r")))
     {
         fread(route_table, sizeof(route_table), 1, fp);
+        fclose(fp);
         dprintf("%s", route_table);
-        if (regcomp(&preg, "0.0.0.0\\s192.168.254.1\\s0.0.0.0\\sUG\\s0\\s0\\s0\\seth0", REG_ICASE) == 0)
+        if ((err=regcomp(&preg, reg_str, REG_EXTENDED|REG_NOSUB|REG_NEWLINE)) == 0)
         {
-            regexec(&preg, route_table, 1, pmatch, 0);
-            regfree(&preg);
+            match = regexec(&preg, route_table, 0, NULL, 0);
+            if (match == 0)
+            {
+                regfree(&preg);
+                return 1;
+            }
+            else if (match == REG_NOMATCH)
+            {
+                regfree(&preg);
+            }
         }
         else 
         {
+            regerror(err, &preg, reg_err_str, sizeof(reg_err_str));
+            dprintf("reg error: %s\n", reg_err_str);
             regfree(&preg);
         }
 
-        fclose(fp);
     }
-
-        
-    return 0;
-}
-
-static int is_exist_ppp0_default_route_entry(void)
-{
 
     return 0;
 }
@@ -431,11 +460,13 @@ int main(int argc, char *argv[])
                     && is_valid_ip(gateway) 
                     && is_in_same_subnet(gateway, eth0_ip))
             {
-                is_exist_eth0_default_route_entry();
 
                 if (s_init_eth0_default_route  == 0)
                 {
-                    add_eth0_default_route_entry(gateway);
+                    if (is_exist_default_route_entry_for_interface(ETH0_INTERFACE_NAME) == 0)
+                    {
+                        add_eth0_default_route_entry(gateway);
+                    }
                 }
             
                 if (is_internet_work_on_interface(ETH0_INTERFACE_NAME, argv[1]))
@@ -443,7 +474,10 @@ int main(int argc, char *argv[])
                     if (is_interface_up(PPP0_INTERFACE_NAME)
                             && is_interface_ip_addr_valid(PPP0_INTERFACE_NAME, NULL))
                     {
-                        del_ppp0_default_route_entry();
+                        if (is_exist_default_route_entry_for_interface(PPP0_INTERFACE_NAME))
+                        {
+                            del_ppp0_default_route_entry();
+                        }
                     }
                 }
                 else 
@@ -451,7 +485,10 @@ int main(int argc, char *argv[])
                     if (is_interface_up(PPP0_INTERFACE_NAME)
                             && is_interface_ip_addr_valid(PPP0_INTERFACE_NAME, NULL))
                     {
-                        add_ppp0_default_route_entry();
+                        if (is_exist_default_route_entry_for_interface(PPP0_INTERFACE_NAME) == 0)
+                        {
+                            add_ppp0_default_route_entry();
+                        }
                     }
                 
                 }

@@ -50,7 +50,7 @@ struct worker_thread_ops
  * @returns pointer to context data.  This data is private to the library and may not be used externally.   Free the context with workqueue_destroy
 */
 
-struct workqueue_ctx * workqueue_init(unsigned int queue_size, unsigned int num_worker_threads, struct worker_thread_ops *ops);
+struct workqueue_ctx * workqueue_init(unsigned int num_worker_threads, struct worker_thread_ops *ops);
 
 /**
  * @fn workqueue_add_work

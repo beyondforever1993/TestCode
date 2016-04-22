@@ -41,18 +41,6 @@
 #include "work_queue.h"
 
 
-struct wq_dequeue_item
-{
-    struct workqueue_job *wq_job;
-    struct wq_dequeue_item *next;
-};
-
-struct double_ended_queue
-{
-    struct wq_dequeue_item *head;
-    struct wq_dequeue_item *tail;
-};
-
 
 /**
 * @struct workqueue_job
@@ -64,6 +52,18 @@ struct workqueue_job
 	unsigned int job_id; /** Job ID 1st job is 1 then goes up */
 	workqueue_func_t func; /** Callback function pointer*/
 	void * data; /** Data to pass to callback pointer */
+};
+
+struct wq_dequeue_item
+{
+    struct workqueue_job wq_job;
+    struct wq_dequeue_item *next;
+};
+
+struct double_ended_queue
+{
+    struct wq_dequeue_item *head;
+    struct wq_dequeue_item *tail;
 };
 
 /**
@@ -97,19 +97,17 @@ struct workqueue_ctx
 	struct worker_thread_ops *ops; /** worker init cleanup functions */
 	int num_worker_threads; /** Number of worker threads this context has */
 	int job_count; /** starts at 0 and goes to 2^31 then back to 0 */
-	//int queue_size; /** max number of jobs that can be queued */
 	int waiting_jobs; /** current number of jobs in queue */
 	struct workqueue_thread **thread; /** array of num_worker_threads */
-	//struct workqueue_job **queue; /** array of queue_size */
     struct double_ended_queue *queue;
 };
 
 
 static void init_dequeue(struct double_ended_queue *dequeue);
-static int  add_item_at_end(struct double_ended_queue *dequeue, struct workqueue_job *job);
+static int  add_item_at_end(struct double_ended_queue *dequeue, struct wq_dequeue_item *job);
 static int  del_item_at_begin(struct double_ended_queue *dequeue, struct wq_dequeue_item**job);
 static int  get_dequeue_len(struct double_ended_queue *dequeue);
-static int destroy_dequeue(struct double_ended_queue *dequeue);
+static int  destroy_dequeue(struct double_ended_queue *dequeue);
 
 /* initializes elements of structure */
 static void init_dequeue ( struct double_ended_queue *dequeue)
@@ -118,32 +116,23 @@ static void init_dequeue ( struct double_ended_queue *dequeue)
 }
 
 /* adds item at the end of dequeue */
-static int add_item_at_end(struct double_ended_queue *dequeue, struct workqueue_job *job)
+static int add_item_at_end(struct double_ended_queue *dequeue, struct wq_dequeue_item *job)
 {
-    struct wq_dequeue_item *item = NULL;
     if (!dequeue || !job) {
         return -EINVAL;
     }
 
-    item = (struct wq_dequeue_item *)calloc(1, sizeof(struct wq_dequeue_item));
-    if (!item) {
-        return -ENOMEM;
-    }
-
-    item->wq_job = job;
-    item->next = NULL;
-
     if(dequeue->head == NULL)
-        dequeue->head = item;
+        dequeue->head = job;
     else
-        dequeue->tail->next =item;
-    dequeue->tail = item;
+        dequeue->tail->next = job;
+    dequeue->tail = job;
 
     return 0;
 }
 
 /* deletes item from begining of dequeue */
-static int del_item_at_begin(struct double_ended_queue *dequeue, struct wq_dequeue_item**job)
+static int del_item_at_begin(struct double_ended_queue *dequeue, struct wq_dequeue_item **job)
 {
     struct wq_dequeue_item *item = dequeue->head;
     if (!job) {
@@ -152,6 +141,7 @@ static int del_item_at_begin(struct double_ended_queue *dequeue, struct wq_deque
 
     if (!item) {
         DEBUG_MSG( "Queue is empty.\n");
+        *job = NULL;
         return -EINVAL;
     }
     else {
@@ -187,14 +177,11 @@ static int destroy_dequeue( struct double_ended_queue *dequeue )
         return cnt;
     }
 
-    while (dequeue->head != NULL)
-    {
+    while (dequeue->head != NULL) {
         item = dequeue->head;
         dequeue->head = dequeue->head->next;
-        if (item->wq_job) {
-            free(item->wq_job);
-        }
         free (item);
+        item = NULL;
         cnt++;
     }
 
@@ -202,7 +189,7 @@ static int destroy_dequeue( struct double_ended_queue *dequeue )
 }
 
 // dequeue the next job that needes to run in this thread
-static struct wq_dequeue_item*  _workqueue_get_job(struct workqueue_thread *thread)
+static struct wq_dequeue_item* _workqueue_get_job(struct workqueue_thread *thread)
 {
 	struct wq_dequeue_item *job_item = NULL;
 	struct workqueue_ctx *ctx = thread->ctx;
@@ -216,28 +203,13 @@ static struct wq_dequeue_item*  _workqueue_get_job(struct workqueue_thread *thre
 	DEBUG_MSG("thread %d got lock\n",thread->thread_num);
 	assert(ctx->queue);
 
-/*
- *    for(i = 0; thread->keep_running && i < ctx->queue_size; i++) {
- *
- *        [> if queue pointer not null there is a job_item in this slot <]
- *        if (ctx->queue[i]) {
- *
- *                job = ctx->queue[i];
- *                ctx->queue[i] = NULL;
- *                DEBUG_MSG("found job %d\n", job->job_id);
- *                ctx->waiting_jobs--;
- *                break; [> found job ready to run <]
- *        }
- *    }
- *
- */
-
     if (thread->keep_running) {
         if (del_item_at_begin(ctx->queue, &job_item)) {
             DEBUG_MSG("Get job fail.\n");
+        } else {
+            DEBUG_MSG("found job %d\n", job_item->wq_job->job_id);
+            ctx->waiting_jobs--;
         }
-        DEBUG_MSG("found job %d\n", job_item->wq_job->job_id);
-        ctx->waiting_jobs--;
     }
 	DEBUG_MSG("thread %d unlocking ctx job_item=%p\n",
 			thread->thread_num, job_item)
@@ -275,11 +247,12 @@ static void * _workqueue_job_scheduler(void *data)
 	LOCK_MUTEX(&thread->mutex);
 
 	while (thread->keep_running) {
-
 		DEBUG_MSG("thread %d looking for work \n",thread->thread_num);
 		item = _workqueue_get_job(thread);
         if (item) {
-            thread->job = item->wq_job;
+            thread->job = &item->wq_job;
+        } else {
+            thread->job = NULL;
         }
 
 		/* is there a job that needs to be run now */
@@ -298,8 +271,6 @@ static void * _workqueue_job_scheduler(void *data)
 
 			DEBUG_MSG("job %d finished\n", thread->job->job_id);
 			/* done with job free it */
-			free(thread->job);
-			thread->job = NULL;
             if (item) {
                 free(item);
                 item = NULL;
@@ -317,9 +288,7 @@ static void * _workqueue_job_scheduler(void *data)
 			UNLOCK_MUTEX(&thread->mutex);
 
 			DEBUG_MSG("thread %d going idle.\n", thread->thread_num);
-			// note this wait may be a long time, if the system time changes
 			LOCK_MUTEX(&ctx->cond_mutex);
-			//ret = pthread_cond_timedwait(&ctx->work_ready_cond, &ctx->cond_mutex, &wait_time);
             //wait util condition is true
 			ret = pthread_cond_wait(&ctx->work_ready_cond, &ctx->cond_mutex);
 			UNLOCK_MUTEX(&ctx->cond_mutex);
@@ -334,10 +303,7 @@ static void * _workqueue_job_scheduler(void *data)
 			if (ret == EINTR) {
 			  	DEBUG_MSG("thread %d idle and be interruptted \n",thread->thread_num);
 			  	continue; /* wait again */
-			} else if (ret == EINVAL) {
-				ERROR_MSG("thread %d pthread_cond_wait EINVAL\n", thread->thread_num);
-				usleep(1000); // wait 1000th of time wait
-			} else if (ret) {
+			}  else if (ret) {
 				ERROR_MSG("thread %d pthread_cond_wait ret =%d\n", thread->thread_num, ret);
 			}
 
@@ -512,34 +478,31 @@ int workqueue_add_work(struct workqueue_ctx* ctx,
 		workqueue_func_t callback_fn, void *data)
 {
 	int ret;
-	struct workqueue_job *job = NULL;
+    struct wq_dequeue_item *job_item = NULL;
 
 	LOCK_MUTEX(&ctx->mutex);
 
-    job = (struct workqueue_job *) calloc(1, sizeof(struct workqueue_job));
-    if (!job) {
+    job_item = (struct wq_dequeue_item *) calloc(1, sizeof(struct wq_dequeue_item));
+    if (!job_item) {
         UNLOCK_MUTEX(&ctx->mutex);
         return -ENOMEM;
     }
 
-    job->data = data;
-    job->func = callback_fn;
-    ret = job->job_id = ctx->job_count++;
+    job_item->wq_job.data = data;
+    job_item->wq_job.func = callback_fn;
+    ret = job_item->wq_job.job_id = ctx->job_count++;
     if (ctx->job_count < 0) /* overflow case */
         ctx->job_count = 0;
-    //ctx->queue[i] = job;
-    if (add_item_at_end(ctx->queue, job) < 0) {
+
+    if (add_item_at_end(ctx->queue, job_item) < 0) {
         DEBUG_MSG("Adding job fail\n");
     }
     ctx->waiting_jobs++;
 
     DEBUG_MSG("Adding job %p id=%d waiting=%d cb=%p data=%p\n",
-            job, job->job_id, 
-            ctx->waiting_jobs, job->func, job->data );
+            job_item, job_item->wq_job.job_id, 
+            ctx->waiting_jobs, job_item->wq_job.func, job_item->wq_job.data);
 
-    //qsort(ctx->queue, ctx->queue_size,
-     //       sizeof(struct workqueue_job *), /* size of pointer to sort */
-      //      job_compare);
     if (pthread_cond_signal(&ctx->work_ready_cond)) {
         ERROR_MSG("invalid condition\n");
     }
@@ -547,18 +510,12 @@ int workqueue_add_work(struct workqueue_ctx* ctx,
     DEBUG_MSG("unlock mutex\n", NULL);
     UNLOCK_MUTEX(&ctx->mutex);
     return ret;
-
-    /* queues are full */
-    //DEBUG_MSG("Queues are full\n", NULL);
-
-    UNLOCK_MUTEX(&ctx->mutex);
-    /* no room in queue */
-    return -EBUSY;
 }
 
 int workqueue_show_status(struct workqueue_ctx* ctx, FILE *fp)
 {
-	int i;
+	int i = 0;
+    struct wq_dequeue_item *item = NULL;
 
 	LOCK_MUTEX(&ctx->mutex);
 	fprintf(fp, "Number of worker threads=%d \n", ctx->num_worker_threads);
@@ -566,15 +523,14 @@ int workqueue_show_status(struct workqueue_ctx* ctx, FILE *fp)
 	fprintf(fp, "\n");
 	fprintf(fp, "%3s | %8s \n", "Qi", "JobID");
 	fprintf(fp, "---------------------------------\n");
-/*
- *    for (i = 0; i < ctx->queue_size; i++) {
- *        if (!ctx->queue[i])
- *            continue; [> unused location <]
- *
- *
- *        fprintf(fp,"%3d | %8d \n", i, ctx->queue[i]->job_id);
- *    }
- */
+
+    item = ctx->queue->head;
+    while (item) {
+        if (&item->wq_job) {
+            fprintf(fp,"%3d | %8d \n", i++, item->wq_job.job_id);
+        }
+        item = item->next;
+    }
 
 	UNLOCK_MUTEX(&ctx->mutex);
 
@@ -584,23 +540,12 @@ int workqueue_show_status(struct workqueue_ctx* ctx, FILE *fp)
 
 static int _is_job_queued(struct workqueue_ctx* ctx, int job_id)
 {
-/*
- *    int i;
- *
- *    if(ctx->queue) {
- *        for (i = 0; i < ctx->queue_size; i++) {
- *            if (ctx->queue[i] && ctx->queue[i]->job_id == job_id)
- *                return 1;
- *        }
- *    }
- */
-
     struct wq_dequeue_item *item = NULL;
     if (ctx->queue) {
     
         item = ctx->queue->head;
         while (item) {
-            if (item->wq_job->job_id == job_id) {
+            if (item->wq_job.job_id == job_id) {
                 return 1;
             }
             item = item->next;
@@ -649,14 +594,12 @@ int workqueue_job_running(struct workqueue_ctx* ctx, int job_id)
 	if (!ctx)
 		return -1;
 
-
 	do {
 		LOCK_MUTEX(&ctx->mutex);
 		ret = _is_job_running(ctx, job_id);
 
 		UNLOCK_MUTEX(&ctx->mutex);
 	} while (ret == -EBUSY);
-
 
 	return ret;
 }
@@ -681,38 +624,37 @@ int workqueue_job_queued_or_running(struct workqueue_ctx* ctx, int job_id)
 		} while (ret == -EBUSY);
 	}
 
-
-
 	return ret;
 }
 
 /* private function. NOTE ctx must be locked by caller to avoid race with other dequeue*/
 static int _dequeue(struct workqueue_ctx* ctx, int job_id)
 {
-/*
- *    int i;
- *
- *    if(ctx->queue) {
- *        for (i = 0; i < ctx->queue_size; i++) {
- *            if (ctx->queue[i] && ctx->queue[i]->job_id == job_id) {
- *                free(ctx->queue[i]);
- *                ctx->queue[i] = NULL;
- *                ctx->waiting_jobs--;
- *                return 0;
- *            }
- *        }
- *    }
- */
-    struct wq_dequeue_item *item = NULL;
+    struct wq_dequeue_item *item     = NULL;
+    struct wq_dequeue_item *item_prev = NULL;
     if (ctx->queue) {
         item = ctx->queue->head;
         while (item) {
-            if (item->wq_job->job_id == job_id) {
-            
+            if (item->wq_job.job_id == job_id 
+                    && item == ctx->queue->head) {
+                ctx->queue->head = ctx->queue->head->next;
+                free(item);
+                item = NULL;
+                ctx->waiting_jobs--;
+                return 0;
+            } else if (item->wq_job.job_id == job_id) {
+                item_prev->next = item->next;
+                free(item);
+                item = NULL;
+                ctx->waiting_jobs--;
+                return 0;
             }
+
+            item_prev = item;
+            item      = item->next;
         }
-    
     }
+
 
 	return -ENOENT;
 }

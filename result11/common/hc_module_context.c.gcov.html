@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - work11.info - common/hc_module_context.c</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">common</a> - hc_module_context.c<span style="font-size: 80%;"> (source / <a href="hc_module_context.c.func.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">work11.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">26</td>
+            <td class="headerCovTableEntry">38</td>
+            <td class="headerCovTableEntryLo">68.4 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2016-05-03</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">5</td>
+            <td class="headerCovTableEntry">6</td>
+            <td class="headerCovTableEntryMed">83.3 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : #include &quot;hc_config.h&quot;</a>
+<span class="lineNum">       2 </span>            : #include &quot;hc_project.h&quot;
+<span class="lineNum">       3 </span>            : #include &quot;hc_module_context.h&quot;
+<span class="lineNum">       4 </span>            : #include &quot;hc_module_config.h&quot;
+<span class="lineNum">       5 </span>            : 
+<span class="lineNum">       6 </span>            : static ModuleContext s_stDefaultModuleContext =
+<span class="lineNum">       7 </span>            : {
+<span class="lineNum">       8 </span>            :     .m_module_id = HC_MOD_ID_MNG,
+<span class="lineNum">       9 </span>            : 
+<span class="lineNum">      10 </span>            :     /* outtime list parameters */
+<span class="lineNum">      11 </span>            :     .m_last_time_num = HC_DEFAULT_LASTTIME_NUM,
+<span class="lineNum">      12 </span>            :     .m_outtime_num = HC_DEFAULT_OUTTIME_NUM,
+<span class="lineNum">      13 </span>            : 
+<span class="lineNum">      14 </span>            :     /* acton parameters */
+<span class="lineNum">      15 </span>            :     .m_action_num  = HC_DEFAULT_ACTION_NUM,
+<span class="lineNum">      16 </span>            : 
+<span class="lineNum">      17 </span>            :     /* command parameters */
+<span class="lineNum">      18 </span>            :     .m_cmd_buf_len = HC_DEFAULT_CMD_LENGTH,
+<span class="lineNum">      19 </span>            : };
+<span class="lineNum">      20 </span>            : 
+<span class="lineNum">      21 </span>            : static ModuleContext s_stCurrentModuleContext = { 0 };
+<span class="lineNum">      22 </span>            : static HC_BOOL       s_currentModuleContexInitialized = HC_FALSE;
+<span class="lineNum">      23 </span>            : 
+<span class="lineNum">      24 </span>            : /*===================================================================*/
+<a name="25"><span class="lineNum">      25 </span>            : </a>
+<span class="lineNum">      26 </span>            : 
+<span class="lineNum">      27 </span><span class="lineCov">       7085 : HC_INT32 is_valid_module( HC_IN HC_UINT32 uModId )</span>
+<span class="lineNum">      28 </span>            : {
+<span class="lineNum">      29 </span><span class="lineCov">       7085 :     if ( uModId == HC_MOD_ID_MNG )</span>
+<span class="lineNum">      30 </span>            :     {
+<span class="lineNum">      31 </span><span class="lineCov">       6805 :         return HC_OK;</span>
+<span class="lineNum">      32 </span>            :     }
+<span class="lineNum">      33 </span><span class="lineCov">        280 :     else if ( ( uModId &gt; HC_MOD_ID_START ) &amp;&amp; ( uModId &lt; HC_MOD_ID_END ) )</span>
+<span class="lineNum">      34 </span>            :     {
+<span class="lineNum">      35 </span><span class="lineCov">        280 :         return HC_OK;</span>
+<span class="lineNum">      36 </span>            :     }
+<span class="lineNum">      37 </span>            : 
+<span class="lineNum">      38 </span><span class="lineNoCov">          0 :     return HC_ERR;</span>
+<a name="39"><span class="lineNum">      39 </span>            : }</a>
+<span class="lineNum">      40 </span>            : 
+<span class="lineNum">      41 </span><span class="lineCov">          1 : HC_INT32 init_module_contex( HC_IN HC_UINT32 uModId )</span>
+<span class="lineNum">      42 </span>            : {
+<span class="lineNum">      43 </span><span class="lineCov">          1 :     if ( ( is_valid_module( uModId ) != HC_OK )  )</span>
+<span class="lineNum">      44 </span>            :     {
+<span class="lineNum">      45 </span><span class="lineNoCov">          0 :         loge( &quot;parameter:uModId(%d) error\n&quot;, uModId);</span>
+<span class="lineNum">      46 </span><span class="lineNoCov">          0 :         return HC_ERR;</span>
+<span class="lineNum">      47 </span>            :     }
+<span class="lineNum">      48 </span>            : 
+<span class="lineNum">      49 </span><span class="lineCov">          1 :     s_stCurrentModuleContext              =  s_stDefaultModuleContext;</span>
+<span class="lineNum">      50 </span><span class="lineCov">          1 :     s_stCurrentModuleContext.m_module_id  =  uModId;</span>
+<span class="lineNum">      51 </span><span class="lineCov">          1 :     s_currentModuleContexInitialized      =  HC_TRUE;</span>
+<span class="lineNum">      52 </span>            :     
+<span class="lineNum">      53 </span><span class="lineCov">          1 :     return HC_OK;</span>
+<span class="lineNum">      54 </span>            : }
+<a name="55"><span class="lineNum">      55 </span>            : </a>
+<span class="lineNum">      56 </span>            : 
+<span class="lineNum">      57 </span><span class="lineCov">          1 : HC_INT32 get_module_contex( HC_OUT ModuleContextPtr pModCtx )</span>
+<span class="lineNum">      58 </span>            : {
+<span class="lineNum">      59 </span><span class="lineCov">          1 :     if ( !pModCtx )</span>
+<span class="lineNum">      60 </span>            :     {
+<span class="lineNum">      61 </span><span class="lineNoCov">          0 :         loge( &quot;parameter: pModCtx(%p) error\n&quot;, pModCtx );</span>
+<span class="lineNum">      62 </span><span class="lineNoCov">          0 :         return HC_ERR;</span>
+<span class="lineNum">      63 </span>            :     }
+<span class="lineNum">      64 </span>            : 
+<span class="lineNum">      65 </span>            : #if 1
+<span class="lineNum">      66 </span><span class="lineCov">          1 :         if ( s_currentModuleContexInitialized ==  HC_TRUE )</span>
+<span class="lineNum">      67 </span>            :         {
+<span class="lineNum">      68 </span>            :         
+<span class="lineNum">      69 </span><span class="lineCov">          1 :                 *pModCtx = s_stCurrentModuleContext;</span>
+<span class="lineNum">      70 </span>            :     }
+<span class="lineNum">      71 </span>            :   
+<span class="lineNum">      72 </span>            : #else
+<span class="lineNum">      73 </span>            :     get_app_cfg( uModId, pModCtx);
+<span class="lineNum">      74 </span>            : #endif
+<span class="lineNum">      75 </span>            : 
+<span class="lineNum">      76 </span><span class="lineCov">          1 :     return HC_OK;</span>
+<a name="77"><span class="lineNum">      77 </span>            : }</a>
+<span class="lineNum">      78 </span>            : 
+<span class="lineNum">      79 </span><span class="lineNoCov">          0 : HC_INT32 set_module_contex( HC_IN HC_UINT32 uModId, HC_IN ModuleContextPtr pModCtx )</span>
+<span class="lineNum">      80 </span>            : {
+<span class="lineNum">      81 </span><span class="lineNoCov">          0 :     if ( ( is_valid_module( uModId ) != HC_OK ) || !pModCtx )</span>
+<span class="lineNum">      82 </span>            :     {
+<span class="lineNum">      83 </span><span class="lineNoCov">          0 :         loge( &quot;parameter:uModId(%d) pModCtx(%p) error\n&quot;, uModId, pModCtx );</span>
+<span class="lineNum">      84 </span><span class="lineNoCov">          0 :         return HC_ERR;</span>
+<span class="lineNum">      85 </span>            :     }
+<span class="lineNum">      86 </span>            : 
+<span class="lineNum">      87 </span><span class="lineNoCov">          0 :     logd( &quot;used new module contex &quot; );</span>
+<span class="lineNum">      88 </span>            :     
+<span class="lineNum">      89 </span><span class="lineNoCov">          0 :     return HC_OK;</span>
+<span class="lineNum">      90 </span>            : }
+<a name="91"><span class="lineNum">      91 </span>            : </a>
+<span class="lineNum">      92 </span>            : /* get current module name */
+<span class="lineNum">      93 </span><span class="lineCov">       6165 : char *get_cur_module_name( HC_VOID )</span>
+<span class="lineNum">      94 </span>            : {
+<span class="lineNum">      95 </span><span class="lineCov">       6165 :         if ( s_currentModuleContexInitialized ==  HC_TRUE )</span>
+<span class="lineNum">      96 </span>            :         {
+<span class="lineNum">      97 </span><span class="lineCov">       6164 :                 return get_app_name( s_stCurrentModuleContext.m_module_id );    </span>
+<span class="lineNum">      98 </span>            :     }
+<span class="lineNum">      99 </span>            : 
+<span class="lineNum">     100 </span><span class="lineCov">          1 :     return HC_NULL;</span>
+<span class="lineNum">     101 </span>            : }
+<a name="102"><span class="lineNum">     102 </span>            : </a>
+<span class="lineNum">     103 </span>            : /* get current module id */
+<span class="lineNum">     104 </span><span class="lineCov">          2 : HC_UINT32 get_cur_module_id( HC_OUT HC_UINT32 *puModId )</span>
+<span class="lineNum">     105 </span>            : {
+<span class="lineNum">     106 </span><span class="lineCov">          2 :         if ( !puModId ) </span>
+<span class="lineNum">     107 </span>            :         {
+<span class="lineNum">     108 </span><span class="lineNoCov">          0 :                 return HC_ERR;</span>
+<span class="lineNum">     109 </span>            :         }
+<span class="lineNum">     110 </span>            :         
+<span class="lineNum">     111 </span><span class="lineCov">          2 :         if ( s_currentModuleContexInitialized ==  HC_TRUE )</span>
+<span class="lineNum">     112 </span>            :         {
+<span class="lineNum">     113 </span><span class="lineCov">          1 :                 *puModId =  s_stCurrentModuleContext.m_module_id;       </span>
+<span class="lineNum">     114 </span><span class="lineCov">          1 :                 return HC_OK;</span>
+<span class="lineNum">     115 </span>            :     }
+<span class="lineNum">     116 </span>            : 
+<span class="lineNum">     117 </span><span class="lineCov">          1 :     return HC_ERR;</span>
+<span class="lineNum">     118 </span>            : }
+<span class="lineNum">     119 </span>            : 
+<span class="lineNum">     120 </span>            : 
+<span class="lineNum">     121 </span>            : 
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.10</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

@@ -1,0 +1,6901 @@
+Reading symbols from test11...done.
+Dprintf 1 at 0x804843a: file test11.c, line 12.
+Dprintf 2 at 0x804842e: file test11.c, line 10.
+Breakpoint 3 at 0x804843a: file test11.c, line 11.
+Starting program: /home/genglei/git/TestCode/test11 
+aaaaaaaaaaa
+a=1
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1
+aaaaaaaaaaa
+a=2
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 2
+aaaaaaaaaaa
+a=3
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 3
+aaaaaaaaaaa
+a=4
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 4
+aaaaaaaaaaa
+a=5
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 5
+aaaaaaaaaaa
+a=6
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 6
+aaaaaaaaaaa
+a=7
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 7
+aaaaaaaaaaa
+a=8
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 8
+aaaaaaaaaaa
+a=9
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 9
+aaaaaaaaaaa
+a=10
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 10
+aaaaaaaaaaa
+a=11
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 11
+aaaaaaaaaaa
+a=12
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 12
+aaaaaaaaaaa
+Undefined command: "".  Try "help".
+a=13
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 13
+aaaaaaaaaaa
+a=14
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 14
+aaaaaaaaaaa
+a=15
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 15
+aaaaaaaaaaa
+a=16
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 16
+aaaaaaaaaaa
+a=17
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 17
+aaaaaaaaaaa
+a=18
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 18
+aaaaaaaaaaa
+a=19
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 19
+aaaaaaaaaaa
+a=20
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 20
+aaaaaaaaaaa
+a=21
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 21
+aaaaaaaaaaa
+Undefined command: "".  Try "help".
+a=22
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 22
+aaaaaaaaaaa
+Undefined command: "".  Try "help".
+Undefined command: "".  Try "help".
+a=23
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 23
+aaaaaaaaaaa
+a=24
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 24
+aaaaaaaaaaa
+a=25
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 25
+aaaaaaaaaaa
+a=26
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 26
+aaaaaaaaaaa
+a=27
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 27
+aaaaaaaaaaa
+Function "edit" not defined.
+a=28
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 28
+aaaaaaaaaaa
+a=29
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 29
+aaaaaaaaaaa
+a=30
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 30
+aaaaaaaaaaa
+a=31
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 31
+aaaaaaaaaaa
+a=32
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 32
+aaaaaaaaaaa
+a=33
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 33
+aaaaaaaaaaa
+a=34
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 34
+aaaaaaaaaaa
+a=35
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 35
+aaaaaaaaaaa
+a=36
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 36
+aaaaaaaaaaa
+a=37
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 37
+aaaaaaaaaaa
+a=38
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 38
+aaaaaaaaaaa
+a=39
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 39
+aaaaaaaaaaa
+a=40
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 40
+aaaaaaaaaaa
+a=41
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 41
+aaaaaaaaaaa
+a=42
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 42
+aaaaaaaaaaa
+a=43
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 43
+aaaaaaaaaaa
+a=44
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 44
+aaaaaaaaaaa
+a=45
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 45
+aaaaaaaaaaa
+Undefined command: "ifinfoqqqqqqinfo".  Try "help".
+a=46
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 46
+aaaaaaaaaaa
+Undefined command: "ifinfoqqqqqqinfo".  Try "help".
+Undefined command: "ifinfoqqqqqqinfo".  Try "help".
+a=47
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 47
+aaaaaaaaaaa
+a=48
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 48
+aaaaaaaaaaa
+a=49
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 49
+aaaaaaaaaaa
+a=50
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 50
+aaaaaaaaaaa
+a=51
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 51
+aaaaaaaaaaa
+a=52
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 52
+aaaaaaaaaaa
+a=53
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 53
+aaaaaaaaaaa
+a=54
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 54
+aaaaaaaaaaa
+Undefined command: "ifinfoqqqqqqinfo".  Try "help".
+Undefined command: "ifinfoqqqqqqinfo".  Try "help".
+a=55
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 55
+aaaaaaaaaaa
+a=56
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 56
+aaaaaaaaaaa
+a=57
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 57
+aaaaaaaaaaa
+Quit
+a=58
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 58
+aaaaaaaaaaa
+a=59
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 59
+aaaaaaaaaaa
+Undefined command: "ifinfoqqqqqqinfo".  Try "help".
+a=60
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 60
+aaaaaaaaaaa
+a=61
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 61
+aaaaaaaaaaa
+"info" must be followed by the name of an info command.
+List of info subcommands:
+
+info address -- Describe where symbol SYM is stored
+info all-registers -- List of all registers and their contents
+info args -- Argument variables of current stack frame
+info auto-load -- Print current status of auto-loaded files
+info auto-load-scripts -- Print the list of automatically loaded Python scripts
+info auxv -- Display the inferior's auxiliary vector
+info bookmarks -- Status of user-settable bookmarks
+info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+info checkpoints -- IDs of currently known checkpoints
+info classes -- All Objective-C classes
+info common -- Print out the values contained in a Fortran COMMON block
+info copying -- Conditions for redistributing copies of GDB
+info dcache -- Print information on the dcache performance
+info display -- Expressions to display when program stops
+info exceptions -- List all Ada exception names
+info extensions -- All filename extensions associated with a source language
+info files -- Names of targets and files being debugged
+info float -- Print the status of the floating point unit
+info frame -- All about selected stack frame
+info frame-filter -- List all registered Python frame-filters
+info functions -- All function names
+info handle -- What debugger does when program gets various signals
+info inferiors -- IDs of specified inferiors (all inferiors if no argument)
+info line -- Core addresses of the code for a source line
+info locals -- Local variables of current stack frame
+info macro -- Show the definition of MACRO
+info macros -- Show the definitions of all macros at LINESPEC
+info mem -- Memory region attributes
+info os -- Show OS data ARG
+info pretty-printer -- GDB command to list all registered pretty-printers
+info probes -- Show available static probes
+info proc -- Show /proc process information about any running process
+info program -- Execution status of the program
+info record -- Info record options
+info registers -- List of integer registers and their contents
+info scope -- List the variables local to a scope
+info selectors -- All Objective-C selectors
+info set -- Show all GDB settings
+info sharedlibrary -- Status of loaded shared object libraries
+info signals -- What debugger does when program gets various signals
+info skip -- Display the status of skips
+info source -- Information about the current source file
+info sources -- Source files in the program
+info stack -- Backtrace of the stack
+info static-tracepoint-markers -- List target static tracepoints markers
+info symbol -- Describe what symbol is at location ADDR
+info target -- Names of targets and files being debugged
+info tasks -- Provide information about all known Ada tasks
+info terminal -- Print inferior's saved terminal status
+info threads -- Display currently known threads
+info tracepoints -- Status of specified tracepoints (all tracepoints if no argument)
+info tvariables -- Status of trace state variables and their values
+info type-printers -- GDB command to list all registered type-printers
+info types -- All type names
+info variables -- All global and static variable names
+info vector -- Print the status of the vector unit
+info vtbl -- Show the virtual function table for a C++ object
+info warranty -- Various kinds of warranty you do not have
+info watchpoints -- Status of specified watchpoints (all watchpoints if no argument)
+info win -- List of all displayed windows
+
+Type "help info" followed by info subcommand name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+"info" must be followed by the name of an info command.
+List of info subcommands:
+
+info address -- Describe where symbol SYM is stored
+info all-registers -- List of all registers and their contents
+info args -- Argument variables of current stack frame
+info auto-load -- Print current status of auto-loaded files
+info auto-load-scripts -- Print the list of automatically loaded Python scripts
+info auxv -- Display the inferior's auxiliary vector
+info bookmarks -- Status of user-settable bookmarks
+info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+info checkpoints -- IDs of currently known checkpoints
+info classes -- All Objective-C classes
+info common -- Print out the values contained in a Fortran COMMON block
+info copying -- Conditions for redistributing copies of GDB
+info dcache -- Print information on the dcache performance
+info display -- Expressions to display when program stops
+info exceptions -- List all Ada exception names
+info extensions -- All filename extensions associated with a source language
+info files -- Names of targets and files being debugged
+info float -- Print the status of the floating point unit
+info frame -- All about selected stack frame
+info frame-filter -- List all registered Python frame-filters
+info functions -- All function names
+info handle -- What debugger does when program gets various signals
+info inferiors -- IDs of specified inferiors (all inferiors if no argument)
+info line -- Core addresses of the code for a source line
+info locals -- Local variables of current stack frame
+info macro -- Show the definition of MACRO
+info macros -- Show the definitions of all macros at LINESPEC
+info mem -- Memory region attributes
+info os -- Show OS data ARG
+info pretty-printer -- GDB command to list all registered pretty-printers
+info probes -- Show available static probes
+info proc -- Show /proc process information about any running process
+info program -- Execution status of the program
+info record -- Info record options
+info registers -- List of integer registers and their contents
+info scope -- List the variables local to a scope
+info selectors -- All Objective-C selectors
+info set -- Show all GDB settings
+info sharedlibrary -- Status of loaded shared object libraries
+info signals -- What debugger does when program gets various signals
+info skip -- Display the status of skips
+info source -- Information about the current source file
+info sources -- Source files in the program
+info stack -- Backtrace of the stack
+info static-tracepoint-markers -- List target static tracepoints markers
+info symbol -- Describe what symbol is at location ADDR
+info target -- Names of targets and files being debugged
+info tasks -- Provide information about all known Ada tasks
+info terminal -- Print inferior's saved terminal status
+info threads -- Display currently known threads
+info tracepoints -- Status of specified tracepoints (all tracepoints if no argument)
+info tvariables -- Status of trace state variables and their values
+info type-printers -- GDB command to list all registered type-printers
+info types -- All type names
+info variables -- All global and static variable names
+info vector -- Print the status of the vector unit
+info vtbl -- Show the virtual function table for a C++ object
+info warranty -- Various kinds of warranty you do not have
+info watchpoints -- Status of specified watchpoints (all watchpoints if no argument)
+info win -- List of all displayed windows
+
+Type "help info" followed by info subcommand name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+a=62
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 62
+aaaaaaaaaaa
+a=63
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 63
+aaaaaaaaaaa
+a=64
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 64
+aaaaaaaaaaa
+a=65
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 65
+aaaaaaaaaaa
+a=66
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 66
+aaaaaaaaaaa
+a=67
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 67
+aaaaaaaaaaa
+a=68
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 68
+aaaaaaaaaaa
+a=69
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 69
+aaaaaaaaaaa
+a=70
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 70
+aaaaaaaaaaa
+a=71
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 71
+aaaaaaaaaaa
+a=72
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 72
+aaaaaaaaaaa
+a=73
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 73
+aaaaaaaaaaa
+a=74
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 74
+aaaaaaaaaaa
+a=75
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 75
+aaaaaaaaaaa
+a=76
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 76
+aaaaaaaaaaa
+a=77
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 77
+aaaaaaaaaaa
+a=78
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 78
+aaaaaaaaaaa
+a=79
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 79
+aaaaaaaaaaa
+a=80
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 80
+aaaaaaaaaaa
+a=81
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 81
+aaaaaaaaaaa
+a=82
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 82
+aaaaaaaaaaa
+"info" must be followed by the name of an info command.
+List of info subcommands:
+
+info address -- Describe where symbol SYM is stored
+info all-registers -- List of all registers and their contents
+info args -- Argument variables of current stack frame
+info auto-load -- Print current status of auto-loaded files
+info auto-load-scripts -- Print the list of automatically loaded Python scripts
+info auxv -- Display the inferior's auxiliary vector
+info bookmarks -- Status of user-settable bookmarks
+info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+info checkpoints -- IDs of currently known checkpoints
+info classes -- All Objective-C classes
+info common -- Print out the values contained in a Fortran COMMON block
+info copying -- Conditions for redistributing copies of GDB
+info dcache -- Print information on the dcache performance
+info display -- Expressions to display when program stops
+info exceptions -- List all Ada exception names
+info extensions -- All filename extensions associated with a source language
+info files -- Names of targets and files being debugged
+info float -- Print the status of the floating point unit
+info frame -- All about selected stack frame
+info frame-filter -- List all registered Python frame-filters
+info functions -- All function names
+info handle -- What debugger does when program gets various signals
+info inferiors -- IDs of specified inferiors (all inferiors if no argument)
+info line -- Core addresses of the code for a source line
+info locals -- Local variables of current stack frame
+info macro -- Show the definition of MACRO
+info macros -- Show the definitions of all macros at LINESPEC
+info mem -- Memory region attributes
+info os -- Show OS data ARG
+info pretty-printer -- GDB command to list all registered pretty-printers
+info probes -- Show available static probes
+info proc -- Show /proc process information about any running process
+info program -- Execution status of the program
+info record -- Info record options
+info registers -- List of integer registers and their contents
+info scope -- List the variables local to a scope
+info selectors -- All Objective-C selectors
+info set -- Show all GDB settings
+info sharedlibrary -- Status of loaded shared object libraries
+info signals -- What debugger does when program gets various signals
+info skip -- Display the status of skips
+info source -- Information about the current source file
+info sources -- Source files in the program
+info stack -- Backtrace of the stack
+info static-tracepoint-markers -- List target static tracepoints markers
+info symbol -- Describe what symbol is at location ADDR
+info target -- Names of targets and files being debugged
+info tasks -- Provide information about all known Ada tasks
+info terminal -- Print inferior's saved terminal status
+info threads -- Display currently known threads
+info tracepoints -- Status of specified tracepoints (all tracepoints if no argument)
+info tvariables -- Status of trace state variables and their values
+info type-printers -- GDB command to list all registered type-printers
+info types -- All type names
+info variables -- All global and static variable names
+info vector -- Print the status of the vector unit
+info vtbl -- Show the virtual function table for a C++ object
+info warranty -- Various kinds of warranty you do not have
+info watchpoints -- Status of specified watchpoints (all watchpoints if no argument)
+info win -- List of all displayed windows
+
+Type "help info" followed by info subcommand name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+"info" must be followed by the name of an info command.
+List of info subcommands:
+
+info address -- Describe where symbol SYM is stored
+info all-registers -- List of all registers and their contents
+info args -- Argument variables of current stack frame
+info auto-load -- Print current status of auto-loaded files
+info auto-load-scripts -- Print the list of automatically loaded Python scripts
+info auxv -- Display the inferior's auxiliary vector
+info bookmarks -- Status of user-settable bookmarks
+info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+info checkpoints -- IDs of currently known checkpoints
+info classes -- All Objective-C classes
+info common -- Print out the values contained in a Fortran COMMON block
+info copying -- Conditions for redistributing copies of GDB
+info dcache -- Print information on the dcache performance
+info display -- Expressions to display when program stops
+info exceptions -- List all Ada exception names
+info extensions -- All filename extensions associated with a source language
+info files -- Names of targets and files being debugged
+info float -- Print the status of the floating point unit
+info frame -- All about selected stack frame
+info frame-filter -- List all registered Python frame-filters
+info functions -- All function names
+info handle -- What debugger does when program gets various signals
+info inferiors -- IDs of specified inferiors (all inferiors if no argument)
+info line -- Core addresses of the code for a source line
+info locals -- Local variables of current stack frame
+info macro -- Show the definition of MACRO
+info macros -- Show the definitions of all macros at LINESPEC
+info mem -- Memory region attributes
+info os -- Show OS data ARG
+info pretty-printer -- GDB command to list all registered pretty-printers
+info probes -- Show available static probes
+info proc -- Show /proc process information about any running process
+info program -- Execution status of the program
+info record -- Info record options
+info registers -- List of integer registers and their contents
+info scope -- List the variables local to a scope
+info selectors -- All Objective-C selectors
+info set -- Show all GDB settings
+info sharedlibrary -- Status of loaded shared object libraries
+info signals -- What debugger does when program gets various signals
+info skip -- Display the status of skips
+info source -- Information about the current source file
+info sources -- Source files in the program
+info stack -- Backtrace of the stack
+info static-tracepoint-markers -- List target static tracepoints markers
+info symbol -- Describe what symbol is at location ADDR
+info target -- Names of targets and files being debugged
+info tasks -- Provide information about all known Ada tasks
+info terminal -- Print inferior's saved terminal status
+info threads -- Display currently known threads
+info tracepoints -- Status of specified tracepoints (all tracepoints if no argument)
+info tvariables -- Status of trace state variables and their values
+info type-printers -- GDB command to list all registered type-printers
+info types -- All type names
+info variables -- All global and static variable names
+info vector -- Print the status of the vector unit
+info vtbl -- Show the virtual function table for a C++ object
+info warranty -- Various kinds of warranty you do not have
+info watchpoints -- Status of specified watchpoints (all watchpoints if no argument)
+info win -- List of all displayed windows
+
+Type "help info" followed by info subcommand name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+"info" must be followed by the name of an info command.
+List of info subcommands:
+
+info address -- Describe where symbol SYM is stored
+info all-registers -- List of all registers and their contents
+info args -- Argument variables of current stack frame
+info auto-load -- Print current status of auto-loaded files
+info auto-load-scripts -- Print the list of automatically loaded Python scripts
+info auxv -- Display the inferior's auxiliary vector
+info bookmarks -- Status of user-settable bookmarks
+info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+info checkpoints -- IDs of currently known checkpoints
+info classes -- All Objective-C classes
+info common -- Print out the values contained in a Fortran COMMON block
+info copying -- Conditions for redistributing copies of GDB
+info dcache -- Print information on the dcache performance
+info display -- Expressions to display when program stops
+info exceptions -- List all Ada exception names
+info extensions -- All filename extensions associated with a source language
+info files -- Names of targets and files being debugged
+info float -- Print the status of the floating point unit
+info frame -- All about selected stack frame
+info frame-filter -- List all registered Python frame-filters
+info functions -- All function names
+info handle -- What debugger does when program gets various signals
+info inferiors -- IDs of specified inferiors (all inferiors if no argument)
+info line -- Core addresses of the code for a source line
+info locals -- Local variables of current stack frame
+info macro -- Show the definition of MACRO
+info macros -- Show the definitions of all macros at LINESPEC
+info mem -- Memory region attributes
+info os -- Show OS data ARG
+info pretty-printer -- GDB command to list all registered pretty-printers
+info probes -- Show available static probes
+info proc -- Show /proc process information about any running process
+info program -- Execution status of the program
+info record -- Info record options
+info registers -- List of integer registers and their contents
+info scope -- List the variables local to a scope
+info selectors -- All Objective-C selectors
+info set -- Show all GDB settings
+info sharedlibrary -- Status of loaded shared object libraries
+info signals -- What debugger does when program gets various signals
+info skip -- Display the status of skips
+info source -- Information about the current source file
+info sources -- Source files in the program
+info stack -- Backtrace of the stack
+info static-tracepoint-markers -- List target static tracepoints markers
+info symbol -- Describe what symbol is at location ADDR
+info target -- Names of targets and files being debugged
+info tasks -- Provide information about all known Ada tasks
+info terminal -- Print inferior's saved terminal status
+info threads -- Display currently known threads
+info tracepoints -- Status of specified tracepoints (all tracepoints if no argument)
+info tvariables -- Status of trace state variables and their values
+info type-printers -- GDB command to list all registered type-printers
+info types -- All type names
+info variables -- All global and static variable names
+info vector -- Print the status of the vector unit
+info vtbl -- Show the virtual function table for a C++ object
+info warranty -- Various kinds of warranty you do not have
+info watchpoints -- Status of specified watchpoints (all watchpoints if no argument)
+info win -- List of all displayed windows
+
+Type "help info" followed by info subcommand name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+"info" must be followed by the name of an info command.
+List of info subcommands:
+
+info address -- Describe where symbol SYM is stored
+info all-registers -- List of all registers and their contents
+info args -- Argument variables of current stack frame
+info auto-load -- Print current status of auto-loaded files
+info auto-load-scripts -- Print the list of automatically loaded Python scripts
+info auxv -- Display the inferior's auxiliary vector
+info bookmarks -- Status of user-settable bookmarks
+info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+info checkpoints -- IDs of currently known checkpoints
+info classes -- All Objective-C classes
+info common -- Print out the values contained in a Fortran COMMON block
+info copying -- Conditions for redistributing copies of GDB
+info dcache -- Print information on the dcache performance
+info display -- Expressions to display when program stops
+info exceptions -- List all Ada exception names
+info extensions -- All filename extensions associated with a source language
+info files -- Names of targets and files being debugged
+info float -- Print the status of the floating point unit
+info frame -- All about selected stack frame
+info frame-filter -- List all registered Python frame-filters
+info functions -- All function names
+info handle -- What debugger does when program gets various signals
+info inferiors -- IDs of specified inferiors (all inferiors if no argument)
+info line -- Core addresses of the code for a source line
+info locals -- Local variables of current stack frame
+info macro -- Show the definition of MACRO
+info macros -- Show the definitions of all macros at LINESPEC
+info mem -- Memory region attributes
+info os -- Show OS data ARG
+info pretty-printer -- GDB command to list all registered pretty-printers
+info probes -- Show available static probes
+info proc -- Show /proc process information about any running process
+info program -- Execution status of the program
+info record -- Info record options
+info registers -- List of integer registers and their contents
+info scope -- List the variables local to a scope
+info selectors -- All Objective-C selectors
+info set -- Show all GDB settings
+info sharedlibrary -- Status of loaded shared object libraries
+info signals -- What debugger does when program gets various signals
+info skip -- Display the status of skips
+info source -- Information about the current source file
+info sources -- Source files in the program
+info stack -- Backtrace of the stack
+info static-tracepoint-markers -- List target static tracepoints markers
+info symbol -- Describe what symbol is at location ADDR
+info target -- Names of targets and files being debugged
+info tasks -- Provide information about all known Ada tasks
+info terminal -- Print inferior's saved terminal status
+info threads -- Display currently known threads
+info tracepoints -- Status of specified tracepoints (all tracepoints if no argument)
+info tvariables -- Status of trace state variables and their values
+info type-printers -- GDB command to list all registered type-printers
+info types -- All type names
+info variables -- All global and static variable names
+info vector -- Print the status of the vector unit
+info vtbl -- Show the virtual function table for a C++ object
+info warranty -- Various kinds of warranty you do not have
+info watchpoints -- Status of specified watchpoints (all watchpoints if no argument)
+info win -- List of all displayed windows
+
+Type "help info" followed by info subcommand name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+"info" must be followed by the name of an info command.
+List of info subcommands:
+
+info address -- Describe where symbol SYM is stored
+info all-registers -- List of all registers and their contents
+info args -- Argument variables of current stack frame
+info auto-load -- Print current status of auto-loaded files
+info auto-load-scripts -- Print the list of automatically loaded Python scripts
+info auxv -- Display the inferior's auxiliary vector
+info bookmarks -- Status of user-settable bookmarks
+info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+info checkpoints -- IDs of currently known checkpoints
+info classes -- All Objective-C classes
+info common -- Print out the values contained in a Fortran COMMON block
+info copying -- Conditions for redistributing copies of GDB
+info dcache -- Print information on the dcache performance
+info display -- Expressions to display when program stops
+info exceptions -- List all Ada exception names
+info extensions -- All filename extensions associated with a source language
+info files -- Names of targets and files being debugged
+info float -- Print the status of the floating point unit
+info frame -- All about selected stack frame
+info frame-filter -- List all registered Python frame-filters
+info functions -- All function names
+info handle -- What debugger does when program gets various signals
+info inferiors -- IDs of specified inferiors (all inferiors if no argument)
+info line -- Core addresses of the code for a source line
+info locals -- Local variables of current stack frame
+info macro -- Show the definition of MACRO
+info macros -- Show the definitions of all macros at LINESPEC
+info mem -- Memory region attributes
+info os -- Show OS data ARG
+info pretty-printer -- GDB command to list all registered pretty-printers
+info probes -- Show available static probes
+info proc -- Show /proc process information about any running process
+info program -- Execution status of the program
+info record -- Info record options
+info registers -- List of integer registers and their contents
+info scope -- List the variables local to a scope
+info selectors -- All Objective-C selectors
+info set -- Show all GDB settings
+info sharedlibrary -- Status of loaded shared object libraries
+info signals -- What debugger does when program gets various signals
+info skip -- Display the status of skips
+info source -- Information about the current source file
+info sources -- Source files in the program
+info stack -- Backtrace of the stack
+info static-tracepoint-markers -- List target static tracepoints markers
+info symbol -- Describe what symbol is at location ADDR
+info target -- Names of targets and files being debugged
+info tasks -- Provide information about all known Ada tasks
+info terminal -- Print inferior's saved terminal status
+info threads -- Display currently known threads
+info tracepoints -- Status of specified tracepoints (all tracepoints if no argument)
+info tvariables -- Status of trace state variables and their values
+info type-printers -- GDB command to list all registered type-printers
+info types -- All type names
+info variables -- All global and static variable names
+info vector -- Print the status of the vector unit
+info vtbl -- Show the virtual function table for a C++ object
+info warranty -- Various kinds of warranty you do not have
+info watchpoints -- Status of specified watchpoints (all watchpoints if no argument)
+info win -- List of all displayed windows
+
+Type "help info" followed by info subcommand name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+"info" must be followed by the name of an info command.
+List of info subcommands:
+
+info address -- Describe where symbol SYM is stored
+info all-registers -- List of all registers and their contents
+info args -- Argument variables of current stack frame
+info auto-load -- Print current status of auto-loaded files
+info auto-load-scripts -- Print the list of automatically loaded Python scripts
+info auxv -- Display the inferior's auxiliary vector
+info bookmarks -- Status of user-settable bookmarks
+info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+info checkpoints -- IDs of currently known checkpoints
+info classes -- All Objective-C classes
+info common -- Print out the values contained in a Fortran COMMON block
+info copying -- Conditions for redistributing copies of GDB
+info dcache -- Print information on the dcache performance
+info display -- Expressions to display when program stops
+info exceptions -- List all Ada exception names
+info extensions -- All filename extensions associated with a source language
+info files -- Names of targets and files being debugged
+info float -- Print the status of the floating point unit
+info frame -- All about selected stack frame
+info frame-filter -- List all registered Python frame-filters
+info functions -- All function names
+info handle -- What debugger does when program gets various signals
+info inferiors -- IDs of specified inferiors (all inferiors if no argument)
+info line -- Core addresses of the code for a source line
+info locals -- Local variables of current stack frame
+info macro -- Show the definition of MACRO
+info macros -- Show the definitions of all macros at LINESPEC
+info mem -- Memory region attributes
+info os -- Show OS data ARG
+info pretty-printer -- GDB command to list all registered pretty-printers
+info probes -- Show available static probes
+info proc -- Show /proc process information about any running process
+info program -- Execution status of the program
+info record -- Info record options
+info registers -- List of integer registers and their contents
+info scope -- List the variables local to a scope
+info selectors -- All Objective-C selectors
+info set -- Show all GDB settings
+info sharedlibrary -- Status of loaded shared object libraries
+info signals -- What debugger does when program gets various signals
+info skip -- Display the status of skips
+info source -- Information about the current source file
+info sources -- Source files in the program
+info stack -- Backtrace of the stack
+info static-tracepoint-markers -- List target static tracepoints markers
+info symbol -- Describe what symbol is at location ADDR
+info target -- Names of targets and files being debugged
+info tasks -- Provide information about all known Ada tasks
+info terminal -- Print inferior's saved terminal status
+info threads -- Display currently known threads
+info tracepoints -- Status of specified tracepoints (all tracepoints if no argument)
+info tvariables -- Status of trace state variables and their values
+info type-printers -- GDB command to list all registered type-printers
+info types -- All type names
+info variables -- All global and static variable names
+info vector -- Print the status of the vector unit
+info vtbl -- Show the virtual function table for a C++ object
+info warranty -- Various kinds of warranty you do not have
+info watchpoints -- Status of specified watchpoints (all watchpoints if no argument)
+info win -- List of all displayed windows
+
+Type "help info" followed by info subcommand name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+"info" must be followed by the name of an info command.
+List of info subcommands:
+
+info address -- Describe where symbol SYM is stored
+info all-registers -- List of all registers and their contents
+info args -- Argument variables of current stack frame
+info auto-load -- Print current status of auto-loaded files
+info auto-load-scripts -- Print the list of automatically loaded Python scripts
+info auxv -- Display the inferior's auxiliary vector
+info bookmarks -- Status of user-settable bookmarks
+info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+info checkpoints -- IDs of currently known checkpoints
+info classes -- All Objective-C classes
+info common -- Print out the values contained in a Fortran COMMON block
+info copying -- Conditions for redistributing copies of GDB
+info dcache -- Print information on the dcache performance
+info display -- Expressions to display when program stops
+info exceptions -- List all Ada exception names
+info extensions -- All filename extensions associated with a source language
+info files -- Names of targets and files being debugged
+info float -- Print the status of the floating point unit
+info frame -- All about selected stack frame
+info frame-filter -- List all registered Python frame-filters
+info functions -- All function names
+info handle -- What debugger does when program gets various signals
+info inferiors -- IDs of specified inferiors (all inferiors if no argument)
+info line -- Core addresses of the code for a source line
+info locals -- Local variables of current stack frame
+info macro -- Show the definition of MACRO
+info macros -- Show the definitions of all macros at LINESPEC
+info mem -- Memory region attributes
+info os -- Show OS data ARG
+info pretty-printer -- GDB command to list all registered pretty-printers
+info probes -- Show available static probes
+info proc -- Show /proc process information about any running process
+info program -- Execution status of the program
+info record -- Info record options
+info registers -- List of integer registers and their contents
+info scope -- List the variables local to a scope
+info selectors -- All Objective-C selectors
+info set -- Show all GDB settings
+info sharedlibrary -- Status of loaded shared object libraries
+info signals -- What debugger does when program gets various signals
+info skip -- Display the status of skips
+info source -- Information about the current source file
+info sources -- Source files in the program
+info stack -- Backtrace of the stack
+info static-tracepoint-markers -- List target static tracepoints markers
+info symbol -- Describe what symbol is at location ADDR
+info target -- Names of targets and files being debugged
+info tasks -- Provide information about all known Ada tasks
+info terminal -- Print inferior's saved terminal status
+info threads -- Display currently known threads
+info tracepoints -- Status of specified tracepoints (all tracepoints if no argument)
+info tvariables -- Status of trace state variables and their values
+info type-printers -- GDB command to list all registered type-printers
+info types -- All type names
+info variables -- All global and static variable names
+info vector -- Print the status of the vector unit
+info vtbl -- Show the virtual function table for a C++ object
+info warranty -- Various kinds of warranty you do not have
+info watchpoints -- Status of specified watchpoints (all watchpoints if no argument)
+info win -- List of all displayed windows
+
+Type "help info" followed by info subcommand name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+a=83
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 83
+aaaaaaaaaaa
+a=84
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 84
+aaaaaaaaaaa
+a=85
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 85
+aaaaaaaaaaa
+a=86
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 86
+aaaaaaaaaaa
+a=87
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 87
+aaaaaaaaaaa
+Quit
+a=88
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 88
+aaaaaaaaaaa
+a=89
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 89
+aaaaaaaaaaa
+a=90
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 90
+aaaaaaaaaaa
+
+Program received signal SIGINT, Interrupt.
+0xb7fdbd4c in __kernel_vsyscall ()
+Continuing.
+a=91
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 91
+aaaaaaaaaaa
+a=92
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 92
+aaaaaaaaaaa
+a=93
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 93
+aaaaaaaaaaa
+a=94
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 94
+aaaaaaaaaaa
+a=95
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 95
+aaaaaaaaaaa
+a=96
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 96
+aaaaaaaaaaa
+a=97
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 97
+aaaaaaaaaaa
+a=98
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 98
+aaaaaaaaaaa
+a=99
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 99
+aaaaaaaaaaa
+a=100
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 100
+aaaaaaaaaaa
+a=101
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 101
+aaaaaaaaaaa
+a=102
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 102
+aaaaaaaaaaa
+a=103
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 103
+aaaaaaaaaaa
+a=104
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 104
+aaaaaaaaaaa
+a=105
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 105
+aaaaaaaaaaa
+a=106
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 106
+aaaaaaaaaaa
+a=107
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 107
+aaaaaaaaaaa
+a=108
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 108
+aaaaaaaaaaa
+a=109
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 109
+aaaaaaaaaaa
+a=110
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 110
+aaaaaaaaaaa
+a=111
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 111
+aaaaaaaaaaa
+a=112
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 112
+aaaaaaaaaaa
+a=113
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 113
+aaaaaaaaaaa
+a=114
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 114
+aaaaaaaaaaa
+a=115
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 115
+aaaaaaaaaaa
+a=116
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 116
+aaaaaaaaaaa
+a=117
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 117
+aaaaaaaaaaa
+a=118
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 118
+aaaaaaaaaaa
+a=119
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 119
+aaaaaaaaaaa
+a=120
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 120
+aaaaaaaaaaa
+a=121
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 121
+aaaaaaaaaaa
+a=122
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 122
+aaaaaaaaaaa
+a=123
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 123
+aaaaaaaaaaa
+a=124
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 124
+aaaaaaaaaaa
+a=125
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 125
+aaaaaaaaaaa
+a=126
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 126
+aaaaaaaaaaa
+a=127
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 127
+aaaaaaaaaaa
+a=128
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 128
+aaaaaaaaaaa
+a=129
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 129
+aaaaaaaaaaa
+a=130
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 130
+aaaaaaaaaaa
+a=131
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 131
+aaaaaaaaaaa
+a=132
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 132
+aaaaaaaaaaa
+a=133
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 133
+aaaaaaaaaaa
+a=134
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 134
+aaaaaaaaaaa
+a=135
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 135
+aaaaaaaaaaa
+a=136
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 136
+aaaaaaaaaaa
+a=137
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 137
+aaaaaaaaaaa
+a=138
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 138
+aaaaaaaaaaa
+a=139
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 139
+aaaaaaaaaaa
+a=140
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 140
+aaaaaaaaaaa
+a=141
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 141
+aaaaaaaaaaa
+a=142
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 142
+aaaaaaaaaaa
+a=143
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 143
+aaaaaaaaaaa
+a=144
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 144
+aaaaaaaaaaa
+a=145
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 145
+aaaaaaaaaaa
+a=146
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 146
+aaaaaaaaaaa
+a=147
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 147
+aaaaaaaaaaa
+a=148
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 148
+aaaaaaaaaaa
+a=149
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 149
+aaaaaaaaaaa
+a=150
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 150
+aaaaaaaaaaa
+a=151
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 151
+aaaaaaaaaaa
+a=152
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 152
+aaaaaaaaaaa
+a=153
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 153
+aaaaaaaaaaa
+a=154
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 154
+aaaaaaaaaaa
+a=155
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 155
+aaaaaaaaaaa
+a=156
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 156
+aaaaaaaaaaa
+a=157
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 157
+aaaaaaaaaaa
+a=158
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 158
+aaaaaaaaaaa
+a=159
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 159
+aaaaaaaaaaa
+a=160
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 160
+aaaaaaaaaaa
+a=161
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 161
+aaaaaaaaaaa
+a=162
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 162
+aaaaaaaaaaa
+a=163
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 163
+aaaaaaaaaaa
+a=164
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 164
+aaaaaaaaaaa
+a=165
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 165
+aaaaaaaaaaa
+a=166
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 166
+aaaaaaaaaaa
+a=167
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 167
+aaaaaaaaaaa
+a=168
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 168
+aaaaaaaaaaa
+a=169
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 169
+aaaaaaaaaaa
+a=170
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 170
+aaaaaaaaaaa
+a=171
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 171
+aaaaaaaaaaa
+a=172
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 172
+aaaaaaaaaaa
+a=173
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 173
+aaaaaaaaaaa
+a=174
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 174
+aaaaaaaaaaa
+a=175
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 175
+aaaaaaaaaaa
+a=176
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 176
+aaaaaaaaaaa
+a=177
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 177
+aaaaaaaaaaa
+a=178
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 178
+aaaaaaaaaaa
+a=179
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 179
+aaaaaaaaaaa
+a=180
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 180
+aaaaaaaaaaa
+a=181
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 181
+aaaaaaaaaaa
+a=182
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 182
+aaaaaaaaaaa
+a=183
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 183
+aaaaaaaaaaa
+a=184
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 184
+aaaaaaaaaaa
+a=185
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 185
+aaaaaaaaaaa
+a=186
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 186
+aaaaaaaaaaa
+a=187
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 187
+aaaaaaaaaaa
+a=188
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 188
+aaaaaaaaaaa
+a=189
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 189
+aaaaaaaaaaa
+a=190
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 190
+aaaaaaaaaaa
+a=191
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 191
+aaaaaaaaaaa
+a=192
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 192
+aaaaaaaaaaa
+a=193
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 193
+aaaaaaaaaaa
+a=194
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 194
+aaaaaaaaaaa
+a=195
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 195
+aaaaaaaaaaa
+a=196
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 196
+aaaaaaaaaaa
+a=197
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 197
+aaaaaaaaaaa
+a=198
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 198
+aaaaaaaaaaa
+a=199
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 199
+aaaaaaaaaaa
+a=200
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 200
+aaaaaaaaaaa
+a=201
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 201
+aaaaaaaaaaa
+a=202
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 202
+aaaaaaaaaaa
+a=203
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 203
+aaaaaaaaaaa
+a=204
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 204
+aaaaaaaaaaa
+a=205
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 205
+aaaaaaaaaaa
+a=206
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 206
+aaaaaaaaaaa
+a=207
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 207
+aaaaaaaaaaa
+a=208
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 208
+aaaaaaaaaaa
+a=209
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 209
+aaaaaaaaaaa
+a=210
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 210
+aaaaaaaaaaa
+a=211
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 211
+aaaaaaaaaaa
+a=212
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 212
+aaaaaaaaaaa
+a=213
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 213
+aaaaaaaaaaa
+a=214
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 214
+aaaaaaaaaaa
+a=215
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 215
+aaaaaaaaaaa
+a=216
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 216
+aaaaaaaaaaa
+a=217
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 217
+aaaaaaaaaaa
+a=218
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 218
+aaaaaaaaaaa
+a=219
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 219
+aaaaaaaaaaa
+a=220
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 220
+aaaaaaaaaaa
+a=221
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 221
+aaaaaaaaaaa
+a=222
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 222
+aaaaaaaaaaa
+a=223
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 223
+aaaaaaaaaaa
+a=224
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 224
+aaaaaaaaaaa
+a=225
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 225
+aaaaaaaaaaa
+a=226
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 226
+aaaaaaaaaaa
+a=227
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 227
+aaaaaaaaaaa
+a=228
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 228
+aaaaaaaaaaa
+a=229
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 229
+aaaaaaaaaaa
+a=230
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 230
+aaaaaaaaaaa
+a=231
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 231
+aaaaaaaaaaa
+a=232
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 232
+aaaaaaaaaaa
+a=233
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 233
+aaaaaaaaaaa
+a=234
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 234
+aaaaaaaaaaa
+a=235
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 235
+aaaaaaaaaaa
+a=236
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 236
+aaaaaaaaaaa
+a=237
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 237
+aaaaaaaaaaa
+a=238
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 238
+aaaaaaaaaaa
+a=239
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 239
+aaaaaaaaaaa
+a=240
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 240
+aaaaaaaaaaa
+a=241
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 241
+aaaaaaaaaaa
+a=242
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 242
+aaaaaaaaaaa
+a=243
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 243
+aaaaaaaaaaa
+a=244
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 244
+aaaaaaaaaaa
+a=245
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 245
+aaaaaaaaaaa
+a=246
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 246
+aaaaaaaaaaa
+a=247
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 247
+aaaaaaaaaaa
+a=248
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 248
+aaaaaaaaaaa
+a=249
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 249
+aaaaaaaaaaa
+a=250
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 250
+aaaaaaaaaaa
+a=251
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 251
+aaaaaaaaaaa
+a=252
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 252
+aaaaaaaaaaa
+a=253
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 253
+aaaaaaaaaaa
+a=254
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 254
+aaaaaaaaaaa
+a=255
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 255
+aaaaaaaaaaa
+a=256
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 256
+aaaaaaaaaaa
+a=257
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 257
+aaaaaaaaaaa
+a=258
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 258
+aaaaaaaaaaa
+a=259
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 259
+aaaaaaaaaaa
+a=260
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 260
+aaaaaaaaaaa
+a=261
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 261
+aaaaaaaaaaa
+a=262
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 262
+aaaaaaaaaaa
+a=263
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 263
+aaaaaaaaaaa
+a=264
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 264
+aaaaaaaaaaa
+a=265
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 265
+aaaaaaaaaaa
+a=266
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 266
+aaaaaaaaaaa
+a=267
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 267
+aaaaaaaaaaa
+a=268
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 268
+aaaaaaaaaaa
+a=269
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 269
+aaaaaaaaaaa
+a=270
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 270
+aaaaaaaaaaa
+a=271
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 271
+aaaaaaaaaaa
+a=272
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 272
+aaaaaaaaaaa
+a=273
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 273
+aaaaaaaaaaa
+a=274
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 274
+aaaaaaaaaaa
+a=275
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 275
+aaaaaaaaaaa
+a=276
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 276
+aaaaaaaaaaa
+a=277
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 277
+aaaaaaaaaaa
+a=278
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 278
+aaaaaaaaaaa
+a=279
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 279
+aaaaaaaaaaa
+a=280
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 280
+aaaaaaaaaaa
+a=281
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 281
+aaaaaaaaaaa
+a=282
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 282
+aaaaaaaaaaa
+a=283
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 283
+aaaaaaaaaaa
+a=284
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 284
+aaaaaaaaaaa
+a=285
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 285
+aaaaaaaaaaa
+a=286
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 286
+aaaaaaaaaaa
+a=287
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 287
+aaaaaaaaaaa
+a=288
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 288
+aaaaaaaaaaa
+a=289
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 289
+aaaaaaaaaaa
+a=290
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 290
+aaaaaaaaaaa
+a=291
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 291
+aaaaaaaaaaa
+a=292
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 292
+aaaaaaaaaaa
+a=293
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 293
+aaaaaaaaaaa
+a=294
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 294
+aaaaaaaaaaa
+a=295
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 295
+aaaaaaaaaaa
+a=296
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 296
+aaaaaaaaaaa
+a=297
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 297
+aaaaaaaaaaa
+a=298
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 298
+aaaaaaaaaaa
+a=299
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 299
+aaaaaaaaaaa
+a=300
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 300
+aaaaaaaaaaa
+a=301
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 301
+aaaaaaaaaaa
+a=302
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 302
+aaaaaaaaaaa
+a=303
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 303
+aaaaaaaaaaa
+a=304
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 304
+aaaaaaaaaaa
+a=305
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 305
+aaaaaaaaaaa
+a=306
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 306
+aaaaaaaaaaa
+a=307
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 307
+aaaaaaaaaaa
+a=308
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 308
+aaaaaaaaaaa
+a=309
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 309
+aaaaaaaaaaa
+a=310
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 310
+aaaaaaaaaaa
+a=311
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 311
+aaaaaaaaaaa
+a=312
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 312
+aaaaaaaaaaa
+a=313
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 313
+aaaaaaaaaaa
+a=314
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 314
+aaaaaaaaaaa
+a=315
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 315
+aaaaaaaaaaa
+a=316
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 316
+aaaaaaaaaaa
+a=317
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 317
+aaaaaaaaaaa
+a=318
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 318
+aaaaaaaaaaa
+a=319
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 319
+aaaaaaaaaaa
+a=320
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 320
+aaaaaaaaaaa
+a=321
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 321
+aaaaaaaaaaa
+a=322
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 322
+aaaaaaaaaaa
+a=323
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 323
+aaaaaaaaaaa
+a=324
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 324
+aaaaaaaaaaa
+a=325
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 325
+aaaaaaaaaaa
+a=326
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 326
+aaaaaaaaaaa
+a=327
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 327
+aaaaaaaaaaa
+a=328
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 328
+aaaaaaaaaaa
+a=329
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 329
+aaaaaaaaaaa
+a=330
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 330
+aaaaaaaaaaa
+a=331
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 331
+aaaaaaaaaaa
+a=332
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 332
+aaaaaaaaaaa
+a=333
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 333
+aaaaaaaaaaa
+a=334
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 334
+aaaaaaaaaaa
+a=335
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 335
+aaaaaaaaaaa
+a=336
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 336
+aaaaaaaaaaa
+a=337
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 337
+aaaaaaaaaaa
+a=338
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 338
+aaaaaaaaaaa
+a=339
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 339
+aaaaaaaaaaa
+a=340
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 340
+aaaaaaaaaaa
+a=341
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 341
+aaaaaaaaaaa
+a=342
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 342
+aaaaaaaaaaa
+a=343
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 343
+aaaaaaaaaaa
+a=344
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 344
+aaaaaaaaaaa
+a=345
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 345
+aaaaaaaaaaa
+a=346
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 346
+aaaaaaaaaaa
+a=347
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 347
+aaaaaaaaaaa
+a=348
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 348
+aaaaaaaaaaa
+a=349
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 349
+aaaaaaaaaaa
+a=350
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 350
+aaaaaaaaaaa
+a=351
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 351
+aaaaaaaaaaa
+a=352
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 352
+aaaaaaaaaaa
+a=353
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 353
+aaaaaaaaaaa
+a=354
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 354
+aaaaaaaaaaa
+a=355
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 355
+aaaaaaaaaaa
+a=356
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 356
+aaaaaaaaaaa
+a=357
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 357
+aaaaaaaaaaa
+a=358
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 358
+aaaaaaaaaaa
+a=359
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 359
+aaaaaaaaaaa
+a=360
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 360
+aaaaaaaaaaa
+a=361
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 361
+aaaaaaaaaaa
+a=362
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 362
+aaaaaaaaaaa
+a=363
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 363
+aaaaaaaaaaa
+a=364
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 364
+aaaaaaaaaaa
+a=365
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 365
+aaaaaaaaaaa
+a=366
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 366
+aaaaaaaaaaa
+a=367
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 367
+aaaaaaaaaaa
+a=368
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 368
+aaaaaaaaaaa
+a=369
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 369
+aaaaaaaaaaa
+a=370
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 370
+aaaaaaaaaaa
+a=371
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 371
+aaaaaaaaaaa
+a=372
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 372
+aaaaaaaaaaa
+a=373
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 373
+aaaaaaaaaaa
+a=374
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 374
+aaaaaaaaaaa
+a=375
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 375
+aaaaaaaaaaa
+a=376
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 376
+aaaaaaaaaaa
+a=377
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 377
+aaaaaaaaaaa
+a=378
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 378
+aaaaaaaaaaa
+a=379
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 379
+aaaaaaaaaaa
+a=380
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 380
+aaaaaaaaaaa
+a=381
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 381
+aaaaaaaaaaa
+a=382
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 382
+aaaaaaaaaaa
+a=383
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 383
+aaaaaaaaaaa
+a=384
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 384
+aaaaaaaaaaa
+a=385
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 385
+aaaaaaaaaaa
+a=386
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 386
+aaaaaaaaaaa
+a=387
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 387
+aaaaaaaaaaa
+a=388
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 388
+aaaaaaaaaaa
+a=389
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 389
+aaaaaaaaaaa
+a=390
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 390
+aaaaaaaaaaa
+a=391
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 391
+aaaaaaaaaaa
+a=392
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 392
+aaaaaaaaaaa
+a=393
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 393
+aaaaaaaaaaa
+a=394
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 394
+aaaaaaaaaaa
+a=395
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 395
+aaaaaaaaaaa
+a=396
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 396
+aaaaaaaaaaa
+a=397
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 397
+aaaaaaaaaaa
+a=398
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 398
+aaaaaaaaaaa
+a=399
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 399
+aaaaaaaaaaa
+a=400
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 400
+aaaaaaaaaaa
+a=401
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 401
+aaaaaaaaaaa
+a=402
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 402
+aaaaaaaaaaa
+a=403
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 403
+aaaaaaaaaaa
+a=404
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 404
+aaaaaaaaaaa
+a=405
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 405
+aaaaaaaaaaa
+a=406
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 406
+aaaaaaaaaaa
+a=407
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 407
+aaaaaaaaaaa
+a=408
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 408
+aaaaaaaaaaa
+a=409
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 409
+aaaaaaaaaaa
+a=410
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 410
+aaaaaaaaaaa
+a=411
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 411
+aaaaaaaaaaa
+a=412
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 412
+aaaaaaaaaaa
+a=413
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 413
+aaaaaaaaaaa
+a=414
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 414
+aaaaaaaaaaa
+a=415
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 415
+aaaaaaaaaaa
+a=416
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 416
+aaaaaaaaaaa
+a=417
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 417
+aaaaaaaaaaa
+a=418
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 418
+aaaaaaaaaaa
+a=419
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 419
+aaaaaaaaaaa
+a=420
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 420
+aaaaaaaaaaa
+a=421
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 421
+aaaaaaaaaaa
+a=422
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 422
+aaaaaaaaaaa
+a=423
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 423
+aaaaaaaaaaa
+a=424
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 424
+aaaaaaaaaaa
+a=425
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 425
+aaaaaaaaaaa
+a=426
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 426
+aaaaaaaaaaa
+a=427
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 427
+aaaaaaaaaaa
+a=428
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 428
+aaaaaaaaaaa
+a=429
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 429
+aaaaaaaaaaa
+a=430
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 430
+aaaaaaaaaaa
+a=431
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 431
+aaaaaaaaaaa
+a=432
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 432
+aaaaaaaaaaa
+a=433
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 433
+aaaaaaaaaaa
+a=434
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 434
+aaaaaaaaaaa
+a=435
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 435
+aaaaaaaaaaa
+a=436
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 436
+aaaaaaaaaaa
+a=437
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 437
+aaaaaaaaaaa
+a=438
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 438
+aaaaaaaaaaa
+a=439
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 439
+aaaaaaaaaaa
+a=440
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 440
+aaaaaaaaaaa
+a=441
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 441
+aaaaaaaaaaa
+a=442
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 442
+aaaaaaaaaaa
+a=443
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 443
+aaaaaaaaaaa
+a=444
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 444
+aaaaaaaaaaa
+a=445
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 445
+aaaaaaaaaaa
+a=446
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 446
+aaaaaaaaaaa
+a=447
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 447
+aaaaaaaaaaa
+a=448
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 448
+aaaaaaaaaaa
+a=449
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 449
+aaaaaaaaaaa
+a=450
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 450
+aaaaaaaaaaa
+a=451
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 451
+aaaaaaaaaaa
+a=452
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 452
+aaaaaaaaaaa
+a=453
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 453
+aaaaaaaaaaa
+a=454
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 454
+aaaaaaaaaaa
+a=455
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 455
+aaaaaaaaaaa
+a=456
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 456
+aaaaaaaaaaa
+a=457
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 457
+aaaaaaaaaaa
+a=458
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 458
+aaaaaaaaaaa
+a=459
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 459
+aaaaaaaaaaa
+a=460
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 460
+aaaaaaaaaaa
+a=461
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 461
+aaaaaaaaaaa
+a=462
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 462
+aaaaaaaaaaa
+a=463
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 463
+aaaaaaaaaaa
+a=464
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 464
+aaaaaaaaaaa
+a=465
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 465
+aaaaaaaaaaa
+a=466
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 466
+aaaaaaaaaaa
+a=467
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 467
+aaaaaaaaaaa
+a=468
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 468
+aaaaaaaaaaa
+a=469
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 469
+aaaaaaaaaaa
+a=470
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 470
+aaaaaaaaaaa
+a=471
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 471
+aaaaaaaaaaa
+a=472
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 472
+aaaaaaaaaaa
+a=473
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 473
+aaaaaaaaaaa
+a=474
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 474
+aaaaaaaaaaa
+a=475
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 475
+aaaaaaaaaaa
+a=476
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 476
+aaaaaaaaaaa
+a=477
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 477
+aaaaaaaaaaa
+a=478
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 478
+aaaaaaaaaaa
+a=479
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 479
+aaaaaaaaaaa
+a=480
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 480
+aaaaaaaaaaa
+a=481
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 481
+aaaaaaaaaaa
+a=482
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 482
+aaaaaaaaaaa
+a=483
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 483
+aaaaaaaaaaa
+a=484
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 484
+aaaaaaaaaaa
+a=485
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 485
+aaaaaaaaaaa
+a=486
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 486
+aaaaaaaaaaa
+a=487
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 487
+aaaaaaaaaaa
+a=488
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 488
+aaaaaaaaaaa
+a=489
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 489
+aaaaaaaaaaa
+a=490
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 490
+aaaaaaaaaaa
+a=491
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 491
+aaaaaaaaaaa
+a=492
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 492
+aaaaaaaaaaa
+a=493
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 493
+aaaaaaaaaaa
+a=494
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 494
+aaaaaaaaaaa
+a=495
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 495
+aaaaaaaaaaa
+a=496
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 496
+aaaaaaaaaaa
+a=497
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 497
+aaaaaaaaaaa
+a=498
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 498
+aaaaaaaaaaa
+a=499
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 499
+aaaaaaaaaaa
+a=500
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 500
+aaaaaaaaaaa
+a=501
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 501
+aaaaaaaaaaa
+a=502
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 502
+aaaaaaaaaaa
+a=503
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 503
+aaaaaaaaaaa
+a=504
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 504
+aaaaaaaaaaa
+a=505
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 505
+aaaaaaaaaaa
+a=506
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 506
+aaaaaaaaaaa
+a=507
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 507
+aaaaaaaaaaa
+a=508
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 508
+aaaaaaaaaaa
+a=509
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 509
+aaaaaaaaaaa
+a=510
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 510
+aaaaaaaaaaa
+a=511
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 511
+aaaaaaaaaaa
+a=512
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 512
+aaaaaaaaaaa
+a=513
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 513
+aaaaaaaaaaa
+a=514
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 514
+aaaaaaaaaaa
+a=515
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 515
+aaaaaaaaaaa
+a=516
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 516
+aaaaaaaaaaa
+a=517
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 517
+aaaaaaaaaaa
+a=518
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 518
+aaaaaaaaaaa
+a=519
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 519
+aaaaaaaaaaa
+a=520
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 520
+aaaaaaaaaaa
+a=521
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 521
+aaaaaaaaaaa
+a=522
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 522
+aaaaaaaaaaa
+a=523
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 523
+aaaaaaaaaaa
+a=524
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 524
+aaaaaaaaaaa
+a=525
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 525
+aaaaaaaaaaa
+a=526
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 526
+aaaaaaaaaaa
+a=527
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 527
+aaaaaaaaaaa
+a=528
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 528
+aaaaaaaaaaa
+a=529
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 529
+aaaaaaaaaaa
+a=530
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 530
+aaaaaaaaaaa
+a=531
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 531
+aaaaaaaaaaa
+a=532
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 532
+aaaaaaaaaaa
+a=533
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 533
+aaaaaaaaaaa
+a=534
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 534
+aaaaaaaaaaa
+a=535
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 535
+aaaaaaaaaaa
+a=536
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 536
+aaaaaaaaaaa
+a=537
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 537
+aaaaaaaaaaa
+a=538
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 538
+aaaaaaaaaaa
+a=539
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 539
+aaaaaaaaaaa
+a=540
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 540
+aaaaaaaaaaa
+a=541
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 541
+aaaaaaaaaaa
+a=542
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 542
+aaaaaaaaaaa
+a=543
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 543
+aaaaaaaaaaa
+a=544
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 544
+aaaaaaaaaaa
+a=545
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 545
+aaaaaaaaaaa
+a=546
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 546
+aaaaaaaaaaa
+a=547
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 547
+aaaaaaaaaaa
+a=548
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 548
+aaaaaaaaaaa
+a=549
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 549
+aaaaaaaaaaa
+a=550
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 550
+aaaaaaaaaaa
+a=551
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 551
+aaaaaaaaaaa
+a=552
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 552
+aaaaaaaaaaa
+a=553
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 553
+aaaaaaaaaaa
+a=554
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 554
+aaaaaaaaaaa
+a=555
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 555
+aaaaaaaaaaa
+a=556
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 556
+aaaaaaaaaaa
+a=557
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 557
+aaaaaaaaaaa
+a=558
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 558
+aaaaaaaaaaa
+a=559
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 559
+aaaaaaaaaaa
+a=560
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 560
+aaaaaaaaaaa
+a=561
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 561
+aaaaaaaaaaa
+a=562
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 562
+aaaaaaaaaaa
+a=563
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 563
+aaaaaaaaaaa
+a=564
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 564
+aaaaaaaaaaa
+a=565
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 565
+aaaaaaaaaaa
+a=566
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 566
+aaaaaaaaaaa
+a=567
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 567
+aaaaaaaaaaa
+a=568
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 568
+aaaaaaaaaaa
+a=569
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 569
+aaaaaaaaaaa
+a=570
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 570
+aaaaaaaaaaa
+a=571
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 571
+aaaaaaaaaaa
+a=572
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 572
+aaaaaaaaaaa
+a=573
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 573
+aaaaaaaaaaa
+a=574
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 574
+aaaaaaaaaaa
+a=575
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 575
+aaaaaaaaaaa
+a=576
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 576
+aaaaaaaaaaa
+a=577
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 577
+aaaaaaaaaaa
+a=578
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 578
+aaaaaaaaaaa
+a=579
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 579
+aaaaaaaaaaa
+a=580
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 580
+aaaaaaaaaaa
+a=581
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 581
+aaaaaaaaaaa
+a=582
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 582
+aaaaaaaaaaa
+a=583
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 583
+aaaaaaaaaaa
+a=584
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 584
+aaaaaaaaaaa
+a=585
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 585
+aaaaaaaaaaa
+a=586
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 586
+aaaaaaaaaaa
+a=587
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 587
+aaaaaaaaaaa
+a=588
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 588
+aaaaaaaaaaa
+a=589
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 589
+aaaaaaaaaaa
+a=590
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 590
+aaaaaaaaaaa
+a=591
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 591
+aaaaaaaaaaa
+a=592
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 592
+aaaaaaaaaaa
+a=593
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 593
+aaaaaaaaaaa
+a=594
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 594
+aaaaaaaaaaa
+a=595
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 595
+aaaaaaaaaaa
+a=596
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 596
+aaaaaaaaaaa
+a=597
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 597
+aaaaaaaaaaa
+a=598
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 598
+aaaaaaaaaaa
+a=599
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 599
+aaaaaaaaaaa
+a=600
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 600
+aaaaaaaaaaa
+a=601
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 601
+aaaaaaaaaaa
+a=602
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 602
+aaaaaaaaaaa
+a=603
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 603
+aaaaaaaaaaa
+a=604
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 604
+aaaaaaaaaaa
+a=605
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 605
+aaaaaaaaaaa
+a=606
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 606
+aaaaaaaaaaa
+a=607
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 607
+aaaaaaaaaaa
+a=608
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 608
+aaaaaaaaaaa
+a=609
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 609
+aaaaaaaaaaa
+a=610
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 610
+aaaaaaaaaaa
+a=611
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 611
+aaaaaaaaaaa
+a=612
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 612
+aaaaaaaaaaa
+a=613
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 613
+aaaaaaaaaaa
+a=614
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 614
+aaaaaaaaaaa
+a=615
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 615
+aaaaaaaaaaa
+a=616
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 616
+aaaaaaaaaaa
+a=617
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 617
+aaaaaaaaaaa
+a=618
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 618
+aaaaaaaaaaa
+a=619
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 619
+aaaaaaaaaaa
+a=620
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 620
+aaaaaaaaaaa
+a=621
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 621
+aaaaaaaaaaa
+a=622
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 622
+aaaaaaaaaaa
+a=623
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 623
+aaaaaaaaaaa
+a=624
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 624
+aaaaaaaaaaa
+a=625
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 625
+aaaaaaaaaaa
+a=626
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 626
+aaaaaaaaaaa
+a=627
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 627
+aaaaaaaaaaa
+a=628
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 628
+aaaaaaaaaaa
+a=629
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 629
+aaaaaaaaaaa
+a=630
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 630
+aaaaaaaaaaa
+a=631
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 631
+aaaaaaaaaaa
+a=632
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 632
+aaaaaaaaaaa
+a=633
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 633
+aaaaaaaaaaa
+a=634
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 634
+aaaaaaaaaaa
+a=635
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 635
+aaaaaaaaaaa
+a=636
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 636
+aaaaaaaaaaa
+a=637
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 637
+aaaaaaaaaaa
+a=638
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 638
+aaaaaaaaaaa
+a=639
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 639
+aaaaaaaaaaa
+a=640
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 640
+aaaaaaaaaaa
+a=641
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 641
+aaaaaaaaaaa
+a=642
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 642
+aaaaaaaaaaa
+a=643
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 643
+aaaaaaaaaaa
+a=644
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 644
+aaaaaaaaaaa
+a=645
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 645
+aaaaaaaaaaa
+a=646
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 646
+aaaaaaaaaaa
+a=647
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 647
+aaaaaaaaaaa
+a=648
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 648
+aaaaaaaaaaa
+a=649
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 649
+aaaaaaaaaaa
+a=650
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 650
+aaaaaaaaaaa
+a=651
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 651
+aaaaaaaaaaa
+a=652
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 652
+aaaaaaaaaaa
+a=653
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 653
+aaaaaaaaaaa
+a=654
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 654
+aaaaaaaaaaa
+a=655
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 655
+aaaaaaaaaaa
+a=656
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 656
+aaaaaaaaaaa
+a=657
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 657
+aaaaaaaaaaa
+a=658
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 658
+aaaaaaaaaaa
+a=659
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 659
+aaaaaaaaaaa
+a=660
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 660
+aaaaaaaaaaa
+a=661
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 661
+aaaaaaaaaaa
+a=662
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 662
+aaaaaaaaaaa
+a=663
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 663
+aaaaaaaaaaa
+a=664
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 664
+aaaaaaaaaaa
+a=665
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 665
+aaaaaaaaaaa
+a=666
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 666
+aaaaaaaaaaa
+a=667
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 667
+aaaaaaaaaaa
+a=668
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 668
+aaaaaaaaaaa
+a=669
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 669
+aaaaaaaaaaa
+a=670
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 670
+aaaaaaaaaaa
+a=671
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 671
+aaaaaaaaaaa
+a=672
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 672
+aaaaaaaaaaa
+a=673
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 673
+aaaaaaaaaaa
+a=674
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 674
+aaaaaaaaaaa
+a=675
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 675
+aaaaaaaaaaa
+a=676
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 676
+aaaaaaaaaaa
+a=677
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 677
+aaaaaaaaaaa
+a=678
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 678
+aaaaaaaaaaa
+a=679
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 679
+aaaaaaaaaaa
+a=680
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 680
+aaaaaaaaaaa
+a=681
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 681
+aaaaaaaaaaa
+a=682
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 682
+aaaaaaaaaaa
+a=683
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 683
+aaaaaaaaaaa
+a=684
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 684
+aaaaaaaaaaa
+a=685
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 685
+aaaaaaaaaaa
+a=686
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 686
+aaaaaaaaaaa
+a=687
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 687
+aaaaaaaaaaa
+a=688
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 688
+aaaaaaaaaaa
+a=689
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 689
+aaaaaaaaaaa
+a=690
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 690
+aaaaaaaaaaa
+a=691
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 691
+aaaaaaaaaaa
+a=692
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 692
+aaaaaaaaaaa
+a=693
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 693
+aaaaaaaaaaa
+a=694
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 694
+aaaaaaaaaaa
+a=695
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 695
+aaaaaaaaaaa
+a=696
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 696
+aaaaaaaaaaa
+a=697
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 697
+aaaaaaaaaaa
+a=698
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 698
+aaaaaaaaaaa
+a=699
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 699
+aaaaaaaaaaa
+a=700
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 700
+aaaaaaaaaaa
+a=701
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 701
+aaaaaaaaaaa
+a=702
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 702
+aaaaaaaaaaa
+a=703
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 703
+aaaaaaaaaaa
+a=704
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 704
+aaaaaaaaaaa
+a=705
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 705
+aaaaaaaaaaa
+a=706
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 706
+aaaaaaaaaaa
+a=707
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 707
+aaaaaaaaaaa
+a=708
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 708
+aaaaaaaaaaa
+a=709
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 709
+aaaaaaaaaaa
+a=710
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 710
+aaaaaaaaaaa
+a=711
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 711
+aaaaaaaaaaa
+a=712
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 712
+aaaaaaaaaaa
+a=713
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 713
+aaaaaaaaaaa
+a=714
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 714
+aaaaaaaaaaa
+a=715
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 715
+aaaaaaaaaaa
+a=716
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 716
+aaaaaaaaaaa
+a=717
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 717
+aaaaaaaaaaa
+a=718
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 718
+aaaaaaaaaaa
+a=719
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 719
+aaaaaaaaaaa
+a=720
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 720
+aaaaaaaaaaa
+a=721
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 721
+aaaaaaaaaaa
+a=722
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 722
+aaaaaaaaaaa
+a=723
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 723
+aaaaaaaaaaa
+a=724
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 724
+aaaaaaaaaaa
+a=725
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 725
+aaaaaaaaaaa
+a=726
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 726
+aaaaaaaaaaa
+a=727
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 727
+aaaaaaaaaaa
+a=728
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 728
+aaaaaaaaaaa
+a=729
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 729
+aaaaaaaaaaa
+a=730
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 730
+aaaaaaaaaaa
+a=731
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 731
+aaaaaaaaaaa
+a=732
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 732
+aaaaaaaaaaa
+a=733
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 733
+aaaaaaaaaaa
+a=734
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 734
+aaaaaaaaaaa
+a=735
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 735
+aaaaaaaaaaa
+a=736
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 736
+aaaaaaaaaaa
+a=737
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 737
+aaaaaaaaaaa
+a=738
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 738
+aaaaaaaaaaa
+a=739
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 739
+aaaaaaaaaaa
+a=740
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 740
+aaaaaaaaaaa
+a=741
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 741
+aaaaaaaaaaa
+a=742
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 742
+aaaaaaaaaaa
+a=743
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 743
+aaaaaaaaaaa
+a=744
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 744
+aaaaaaaaaaa
+a=745
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 745
+aaaaaaaaaaa
+a=746
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 746
+aaaaaaaaaaa
+a=747
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 747
+aaaaaaaaaaa
+a=748
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 748
+aaaaaaaaaaa
+a=749
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 749
+aaaaaaaaaaa
+a=750
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 750
+aaaaaaaaaaa
+a=751
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 751
+aaaaaaaaaaa
+a=752
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 752
+aaaaaaaaaaa
+a=753
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 753
+aaaaaaaaaaa
+a=754
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 754
+aaaaaaaaaaa
+a=755
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 755
+aaaaaaaaaaa
+a=756
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 756
+aaaaaaaaaaa
+a=757
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 757
+aaaaaaaaaaa
+a=758
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 758
+aaaaaaaaaaa
+a=759
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 759
+aaaaaaaaaaa
+a=760
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 760
+aaaaaaaaaaa
+a=761
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 761
+aaaaaaaaaaa
+a=762
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 762
+aaaaaaaaaaa
+a=763
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 763
+aaaaaaaaaaa
+a=764
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 764
+aaaaaaaaaaa
+a=765
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 765
+aaaaaaaaaaa
+a=766
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 766
+aaaaaaaaaaa
+a=767
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 767
+aaaaaaaaaaa
+a=768
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 768
+aaaaaaaaaaa
+a=769
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 769
+aaaaaaaaaaa
+a=770
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 770
+aaaaaaaaaaa
+a=771
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 771
+aaaaaaaaaaa
+a=772
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 772
+aaaaaaaaaaa
+a=773
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 773
+aaaaaaaaaaa
+a=774
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 774
+aaaaaaaaaaa
+a=775
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 775
+aaaaaaaaaaa
+a=776
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 776
+aaaaaaaaaaa
+a=777
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 777
+aaaaaaaaaaa
+a=778
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 778
+aaaaaaaaaaa
+a=779
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 779
+aaaaaaaaaaa
+a=780
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 780
+aaaaaaaaaaa
+a=781
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 781
+aaaaaaaaaaa
+a=782
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 782
+aaaaaaaaaaa
+a=783
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 783
+aaaaaaaaaaa
+a=784
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 784
+aaaaaaaaaaa
+a=785
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 785
+aaaaaaaaaaa
+a=786
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 786
+aaaaaaaaaaa
+a=787
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 787
+aaaaaaaaaaa
+a=788
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 788
+aaaaaaaaaaa
+a=789
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 789
+aaaaaaaaaaa
+a=790
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 790
+aaaaaaaaaaa
+a=791
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 791
+aaaaaaaaaaa
+a=792
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 792
+aaaaaaaaaaa
+a=793
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 793
+aaaaaaaaaaa
+a=794
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 794
+aaaaaaaaaaa
+a=795
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 795
+aaaaaaaaaaa
+a=796
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 796
+aaaaaaaaaaa
+a=797
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 797
+aaaaaaaaaaa
+a=798
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 798
+aaaaaaaaaaa
+a=799
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 799
+aaaaaaaaaaa
+a=800
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 800
+aaaaaaaaaaa
+a=801
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 801
+aaaaaaaaaaa
+a=802
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 802
+aaaaaaaaaaa
+a=803
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 803
+aaaaaaaaaaa
+a=804
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 804
+aaaaaaaaaaa
+a=805
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 805
+aaaaaaaaaaa
+a=806
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 806
+aaaaaaaaaaa
+a=807
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 807
+aaaaaaaaaaa
+a=808
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 808
+aaaaaaaaaaa
+a=809
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 809
+aaaaaaaaaaa
+a=810
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 810
+aaaaaaaaaaa
+a=811
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 811
+aaaaaaaaaaa
+a=812
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 812
+aaaaaaaaaaa
+a=813
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 813
+aaaaaaaaaaa
+a=814
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 814
+aaaaaaaaaaa
+a=815
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 815
+aaaaaaaaaaa
+a=816
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 816
+aaaaaaaaaaa
+a=817
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 817
+aaaaaaaaaaa
+a=818
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 818
+aaaaaaaaaaa
+a=819
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 819
+aaaaaaaaaaa
+a=820
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 820
+aaaaaaaaaaa
+a=821
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 821
+aaaaaaaaaaa
+a=822
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 822
+aaaaaaaaaaa
+a=823
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 823
+aaaaaaaaaaa
+a=824
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 824
+aaaaaaaaaaa
+a=825
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 825
+aaaaaaaaaaa
+a=826
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 826
+aaaaaaaaaaa
+a=827
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 827
+aaaaaaaaaaa
+a=828
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 828
+aaaaaaaaaaa
+a=829
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 829
+aaaaaaaaaaa
+a=830
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 830
+aaaaaaaaaaa
+a=831
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 831
+aaaaaaaaaaa
+a=832
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 832
+aaaaaaaaaaa
+a=833
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 833
+aaaaaaaaaaa
+a=834
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 834
+aaaaaaaaaaa
+a=835
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 835
+aaaaaaaaaaa
+a=836
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 836
+aaaaaaaaaaa
+a=837
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 837
+aaaaaaaaaaa
+a=838
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 838
+aaaaaaaaaaa
+a=839
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 839
+aaaaaaaaaaa
+a=840
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 840
+aaaaaaaaaaa
+a=841
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 841
+aaaaaaaaaaa
+a=842
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 842
+aaaaaaaaaaa
+a=843
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 843
+aaaaaaaaaaa
+a=844
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 844
+aaaaaaaaaaa
+a=845
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 845
+aaaaaaaaaaa
+a=846
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 846
+aaaaaaaaaaa
+a=847
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 847
+aaaaaaaaaaa
+a=848
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 848
+aaaaaaaaaaa
+a=849
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 849
+aaaaaaaaaaa
+a=850
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 850
+aaaaaaaaaaa
+a=851
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 851
+aaaaaaaaaaa
+a=852
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 852
+aaaaaaaaaaa
+a=853
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 853
+aaaaaaaaaaa
+a=854
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 854
+aaaaaaaaaaa
+a=855
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 855
+aaaaaaaaaaa
+a=856
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 856
+aaaaaaaaaaa
+a=857
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 857
+aaaaaaaaaaa
+a=858
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 858
+aaaaaaaaaaa
+a=859
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 859
+aaaaaaaaaaa
+a=860
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 860
+aaaaaaaaaaa
+a=861
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 861
+aaaaaaaaaaa
+a=862
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 862
+aaaaaaaaaaa
+a=863
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 863
+aaaaaaaaaaa
+a=864
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 864
+aaaaaaaaaaa
+a=865
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 865
+aaaaaaaaaaa
+a=866
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 866
+aaaaaaaaaaa
+a=867
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 867
+aaaaaaaaaaa
+a=868
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 868
+aaaaaaaaaaa
+a=869
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 869
+aaaaaaaaaaa
+a=870
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 870
+aaaaaaaaaaa
+a=871
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 871
+aaaaaaaaaaa
+a=872
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 872
+aaaaaaaaaaa
+a=873
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 873
+aaaaaaaaaaa
+a=874
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 874
+aaaaaaaaaaa
+a=875
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 875
+aaaaaaaaaaa
+a=876
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 876
+aaaaaaaaaaa
+a=877
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 877
+aaaaaaaaaaa
+a=878
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 878
+aaaaaaaaaaa
+a=879
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 879
+aaaaaaaaaaa
+a=880
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 880
+aaaaaaaaaaa
+a=881
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 881
+aaaaaaaaaaa
+a=882
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 882
+aaaaaaaaaaa
+a=883
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 883
+aaaaaaaaaaa
+a=884
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 884
+aaaaaaaaaaa
+a=885
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 885
+aaaaaaaaaaa
+a=886
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 886
+aaaaaaaaaaa
+a=887
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 887
+aaaaaaaaaaa
+a=888
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 888
+aaaaaaaaaaa
+a=889
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 889
+aaaaaaaaaaa
+a=890
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 890
+aaaaaaaaaaa
+a=891
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 891
+aaaaaaaaaaa
+a=892
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 892
+aaaaaaaaaaa
+a=893
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 893
+aaaaaaaaaaa
+a=894
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 894
+aaaaaaaaaaa
+a=895
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 895
+aaaaaaaaaaa
+a=896
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 896
+aaaaaaaaaaa
+a=897
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 897
+aaaaaaaaaaa
+a=898
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 898
+aaaaaaaaaaa
+a=899
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 899
+aaaaaaaaaaa
+a=900
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 900
+aaaaaaaaaaa
+a=901
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 901
+aaaaaaaaaaa
+a=902
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 902
+aaaaaaaaaaa
+a=903
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 903
+aaaaaaaaaaa
+a=904
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 904
+aaaaaaaaaaa
+a=905
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 905
+aaaaaaaaaaa
+a=906
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 906
+aaaaaaaaaaa
+a=907
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 907
+aaaaaaaaaaa
+a=908
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 908
+aaaaaaaaaaa
+a=909
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 909
+aaaaaaaaaaa
+a=910
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 910
+aaaaaaaaaaa
+a=911
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 911
+aaaaaaaaaaa
+a=912
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 912
+aaaaaaaaaaa
+a=913
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 913
+aaaaaaaaaaa
+a=914
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 914
+aaaaaaaaaaa
+a=915
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 915
+aaaaaaaaaaa
+a=916
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 916
+aaaaaaaaaaa
+a=917
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 917
+aaaaaaaaaaa
+a=918
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 918
+aaaaaaaaaaa
+a=919
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 919
+aaaaaaaaaaa
+a=920
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 920
+aaaaaaaaaaa
+a=921
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 921
+aaaaaaaaaaa
+a=922
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 922
+aaaaaaaaaaa
+a=923
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 923
+aaaaaaaaaaa
+a=924
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 924
+aaaaaaaaaaa
+a=925
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 925
+aaaaaaaaaaa
+a=926
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 926
+aaaaaaaaaaa
+a=927
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 927
+aaaaaaaaaaa
+a=928
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 928
+aaaaaaaaaaa
+a=929
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 929
+aaaaaaaaaaa
+a=930
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 930
+aaaaaaaaaaa
+a=931
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 931
+aaaaaaaaaaa
+a=932
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 932
+aaaaaaaaaaa
+a=933
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 933
+aaaaaaaaaaa
+a=934
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 934
+aaaaaaaaaaa
+a=935
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 935
+aaaaaaaaaaa
+a=936
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 936
+aaaaaaaaaaa
+a=937
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 937
+aaaaaaaaaaa
+a=938
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 938
+aaaaaaaaaaa
+a=939
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 939
+aaaaaaaaaaa
+a=940
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 940
+aaaaaaaaaaa
+a=941
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 941
+aaaaaaaaaaa
+a=942
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 942
+aaaaaaaaaaa
+Continuing.
+Cannot execute this command while the selected thread is running.
+a=943
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 943
+aaaaaaaaaaa
+A debugging session is active.
+
+	Inferior 1 [process 2810] will be killed.
+
+Quit anyway? (y or n) Please answer y or n.
+A debugging session is active.
+
+	Inferior 1 [process 2810] will be killed.
+
+Quit anyway? (y or n) Please answer y or n.
+A debugging session is active.
+
+	Inferior 1 [process 2810] will be killed.
+
+Quit anyway? (y or n) Not confirmed.
+a=944
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 944
+aaaaaaaaaaa
+a=945
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 945
+aaaaaaaaaaa
+a=946
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 946
+aaaaaaaaaaa
+a=947
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 947
+aaaaaaaaaaa
+a=948
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 948
+aaaaaaaaaaa
+a=949
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 949
+aaaaaaaaaaa
+A debugging session is active.
+
+	Inferior 1 [process 2810] will be killed.
+
+Quit anyway? (y or n) Please answer y or n.
+A debugging session is active.
+
+	Inferior 1 [process 2810] will be killed.
+
+Quit anyway? (y or n) Please answer y or n.
+A debugging session is active.
+
+	Inferior 1 [process 2810] will be killed.
+
+Quit anyway? (y or n) Not confirmed.
+a=950
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 950
+aaaaaaaaaaa
+a=951
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 951
+aaaaaaaaaaa
+a=952
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 952
+aaaaaaaaaaa
+a=953
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 953
+aaaaaaaaaaa
+a=954
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 954
+aaaaaaaaaaa
+a=955
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 955
+aaaaaaaaaaa
+a=956
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 956
+aaaaaaaaaaa
+a=957
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 957
+aaaaaaaaaaa
+a=958
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 958
+aaaaaaaaaaa
+a=959
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 959
+aaaaaaaaaaa
+a=960
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 960
+aaaaaaaaaaa
+a=961
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 961
+aaaaaaaaaaa
+a=962
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 962
+aaaaaaaaaaa
+7	
+8	    while (1)
+9	    {
+10	        sleep(3);
+11	
+12	        a++;
+13	    }
+14	
+15	    return 0;
+16	}
+Line number 17 out of range; test11.c has 16 lines.
+Line number 17 out of range; test11.c has 16 lines.
+Line number 17 out of range; test11.c has 16 lines.
+Line number 17 out of range; test11.c has 16 lines.
+a=963
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 963
+aaaaaaaaaaa
+a=964
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 964
+aaaaaaaaaaa
+a=965
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 965
+aaaaaaaaaaa
+a=966
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 966
+aaaaaaaaaaa
+a=967
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 967
+aaaaaaaaaaa
+a=968
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 968
+aaaaaaaaaaa
+a=969
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 969
+aaaaaaaaaaa
+Quit
+a=970
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 970
+aaaaaaaaaaa
+a=971
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 971
+aaaaaaaaaaa
+a=972
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 972
+aaaaaaaaaaa
+a=973
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 973
+aaaaaaaaaaa
+a=974
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 974
+aaaaaaaaaaa
+a=975
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 975
+aaaaaaaaaaa
+a=976
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 976
+aaaaaaaaaaa
+a=977
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 977
+aaaaaaaaaaa
+a=978
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 978
+aaaaaaaaaaa
+a=979
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 979
+aaaaaaaaaaa
+a=980
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 980
+aaaaaaaaaaa
+a=981
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 981
+aaaaaaaaaaa
+a=982
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 982
+aaaaaaaaaaa
+a=983
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 983
+aaaaaaaaaaa
+a=984
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 984
+aaaaaaaaaaa
+a=985
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 985
+aaaaaaaaaaa
+a=986
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 986
+aaaaaaaaaaa
+a=987
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 987
+aaaaaaaaaaa
+a=988
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 988
+aaaaaaaaaaa
+a=989
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 989
+aaaaaaaaaaa
+a=990
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 990
+aaaaaaaaaaa
+a=991
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 991
+aaaaaaaaaaa
+a=992
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 992
+aaaaaaaaaaa
+a=993
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 993
+aaaaaaaaaaa
+a=994
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 994
+aaaaaaaaaaa
+a=995
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 995
+aaaaaaaaaaa
+a=996
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 996
+aaaaaaaaaaa
+a=997
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 997
+aaaaaaaaaaa
+a=998
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 998
+aaaaaaaaaaa
+a=999
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 999
+aaaaaaaaaaa
+a=1000
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1000
+aaaaaaaaaaa
+a=1001
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1001
+aaaaaaaaaaa
+a=1002
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1002
+aaaaaaaaaaa
+a=1003
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1003
+aaaaaaaaaaa
+a=1004
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1004
+aaaaaaaaaaa
+a=1005
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1005
+aaaaaaaaaaa
+a=1006
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1006
+aaaaaaaaaaa
+a=1007
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1007
+aaaaaaaaaaa
+a=1008
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1008
+aaaaaaaaaaa
+a=1009
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1009
+aaaaaaaaaaa
+a=1010
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1010
+aaaaaaaaaaa
+a=1011
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1011
+aaaaaaaaaaa
+a=1012
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1012
+aaaaaaaaaaa
+a=1013
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1013
+aaaaaaaaaaa
+a=1014
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1014
+aaaaaaaaaaa
+a=1015
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1015
+aaaaaaaaaaa
+a=1016
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1016
+aaaaaaaaaaa
+a=1017
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1017
+aaaaaaaaaaa
+a=1018
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1018
+aaaaaaaaaaa
+a=1019
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1019
+aaaaaaaaaaa
+a=1020
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1020
+aaaaaaaaaaa
+a=1021
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1021
+aaaaaaaaaaa
+a=1022
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1022
+aaaaaaaaaaa
+a=1023
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1023
+aaaaaaaaaaa
+a=1024
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1024
+aaaaaaaaaaa
+a=1025
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1025
+aaaaaaaaaaa
+a=1026
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1026
+aaaaaaaaaaa
+a=1027
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1027
+aaaaaaaaaaa
+a=1028
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1028
+aaaaaaaaaaa
+a=1029
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1029
+aaaaaaaaaaa
+a=1030
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1030
+aaaaaaaaaaa
+a=1031
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1031
+aaaaaaaaaaa
+a=1032
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1032
+aaaaaaaaaaa
+a=1033
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1033
+aaaaaaaaaaa
+a=1034
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1034
+aaaaaaaaaaa
+Undefined command: "qy".  Try "help".
+a=1035
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1035
+aaaaaaaaaaa
+a=1036
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1036
+aaaaaaaaaaa
+a=1037
+
+Breakpoint 3, main () at test11.c:12
+12	        a++;
+a = 1037
+aaaaaaaaaaa
+A debugging session is active.
+
+	Inferior 1 [process 2810] will be killed.
+
+Quit anyway? (y or n) 

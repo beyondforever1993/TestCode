@@ -10,6 +10,12 @@
 #include <sys/types.h>
 #include <regex.h>
 
+typedef enum
+{
+    ADD_ROUTE_ENTRY = 0,
+    DEL_ROUTE_ENTRY = 1,
+} OPERATE_ROUTE_ENTRY_MODE;
+
 #define LEN                   128
 #define IP_LEN                16
 #define ETH0_INTERFACE_NAME   "eth0"
@@ -20,7 +26,6 @@
 #define ETH0_DEFAULT_ROUTE_ENTRY_REGEX  "0.0.0.0[[:blank:]]+([0-9]{1,3}\\.){3}[0-9]{1,3}[[:blank:]]+0.0.0.0[[:blank:]]+UG[[:blank:]]+(0[[:blank:]]+)+eth0"
 #define PPP0_DEFAULT_ROUTE_ENTRY_REGEX  "(0.0.0.0[[:blank:]]+)+U[[:blank:]]+(0[[:blank:]]+)+ppp0"
 
-static int s_init_eth0_default_route = 0;
 
 static int get_eth0_gateway(char *gateway, char *domain)
 {
@@ -188,7 +193,7 @@ static int is_interface_up(char *interface_name)
     memset(&ifr, 0, sizeof(struct ifreq));
     if (get_netdevice_interface_info(&ifr, interface_name, SIOCGIFFLAGS))
     {
-        dprintf("get_netdevice_interface_info fail.\n");
+        dprintf("%s get_netdevice_interface_info fail.\n", interface_name);
         return 0;
     }
 
@@ -263,6 +268,7 @@ static int is_internet_work_on_interface(char *interface_name, char *ip_addr)
     }
 
     fread(ptr, BUFSIZ, 1, fp);
+    fclose(fp);
     if ((content_p = strchr(ptr, '%')))
     {
         if (*(content_p - 1) == '0'
@@ -271,19 +277,20 @@ static int is_internet_work_on_interface(char *interface_name, char *ip_addr)
         {
             dprintf("ptr:%s", ptr);
             free(ptr);
-            fclose(fp);
+            dprintf("%s is not connect to Internet.\n", interface_name);
             return 0;
         }
         else
         {
             dprintf("ptr:%s", ptr);
             free(ptr);
-            fclose(fp);
+            dprintf("%s connect to Internet.\n", interface_name);
             return 1;
         }
     
     }
 
+    dprintf("%s is not connect to Internet.\n", interface_name);
     return 0;
 }
 
@@ -310,7 +317,7 @@ static int is_internet_work_on_interface(char *interface_name, char *ip_addr)
  *
  */
 
-static int is_exist_default_route_entry_for_interface(const char *interface_name)
+static int is_exist_default_route_entry_for_interface(const char *interface_name, int metric)
 {
     char       route_table[BUFSIZ] = {0};
     FILE       *fp                 = NULL;
@@ -341,7 +348,7 @@ static int is_exist_default_route_entry_for_interface(const char *interface_name
         return 0;
     }
 
-    if ((fp = popen("netstat -rn", "r")))
+    if ((fp = popen("netstat -rn", "r")) != NULL)
     {
         fread(route_table, sizeof(route_table), 1, fp);
         fclose(fp);
@@ -352,11 +359,13 @@ static int is_exist_default_route_entry_for_interface(const char *interface_name
             if (match == 0)
             {
                 regfree(&preg);
+                dprintf("Match %s default route entry.\n", interface_name);
                 return 1;
             }
             else if (match == REG_NOMATCH)
             {
                 regfree(&preg);
+                dprintf("No match %s default route entry.\n", interface_name);
             }
         }
         else 
@@ -371,49 +380,55 @@ static int is_exist_default_route_entry_for_interface(const char *interface_name
     return 0;
 }
 
-static int add_eth0_default_route_entry(const char *eth0_gw)
+static int operate_default_route_entry(
+        const char *gw, 
+        const char *interface_name, 
+        int metric,
+        OPERATE_ROUTE_ENTRY_MODE mode)
 {
     char cmd[LEN] = {0};
   
-    if (!eth0_gw)
+    if (!interface_name || (metric < 0))
     {
-        dprintf("eth0_gw is null.\n");
+        dprintf("interface_name is null or metric less than 0\n");
         return -1;
     }
 
-    snprintf(cmd, sizeof(cmd), "route add -net 0.0.0.0 netmask 0.0.0.0 gw %s dev eth0", eth0_gw);
-    system("cmd");
-    s_init_eth0_default_route = 1;
-    return 0;
-}
-
-static int del_eth0_default_route_entry(const char *eth0_gw)
-{
-    char cmd[LEN] = {0};
-  
-    if (!eth0_gw)
+    if (mode < ADD_ROUTE_ENTRY || mode > DEL_ROUTE_ENTRY)
     {
-        dprintf("eth0_gw is null.\n");
+        dprintf("Wrong operate route mode.\n");
         return -1;
     }
 
-    snprintf(cmd, sizeof(cmd), "route del -net 0.0.0.0 netmask 0.0.0.0 gw %s dev eth0", eth0_gw);
-    system("cmd");
-    s_init_eth0_default_route = 0;
+    if(strstr(interface_name, ETH0_INTERFACE_NAME))
+    {
+        if (gw)
+        {
+            snprintf(cmd, sizeof(cmd), "route %s -net 0.0.0.0 netmask 0.0.0.0 gw %s metric %d dev %s", 
+                    (mode == ADD_ROUTE_ENTRY)?"add":"del",
+                    gw, 
+                    metric, 
+                    interface_name);
+        }
+        else 
+        {
+            dprintf("Loss gateway for interface %s.\n", interface_name);
+            return -1;
+        }
+    
+    }
+    else if(strstr(interface_name, PPP0_INTERFACE_NAME))
+    {
+        snprintf(cmd, sizeof(cmd), "route %s -net 0.0.0.0 netmask 0.0.0.0 metric %d dev %s", 
+                (mode==ADD_ROUTE_ENTRY)?"add":"del",
+                metric, 
+                interface_name);
+    }
+    dprintf("cmd: %s\n", cmd);
+    system(cmd);
     return 0;
 }
 
-static int add_ppp0_default_route_entry()
-{
-    system("route add -net 0.0.0.0 netmask 0.0.0.0 dev ppp0");
-    return 0;
-}
-
-static int del_ppp0_default_route_entry()
-{
-    system("route del -net 0.0.0.0 netmask 0.0.0.0 dev ppp0");
-    return 0;
-}
 
 int main(int argc, char *argv[])
 {
@@ -441,12 +456,14 @@ int main(int argc, char *argv[])
         dprintf("Cann't find eth0's gateway\n");
         exit(EXIT_FAILURE);
     }
+
     /* 1. 3g is connected to network and ethernet is connected to network
      * 2. 3g is connected to network and ethernet isn't connected to network
      * 3. 3g isn't connected to network and ethernet is connected to network
      * 4. 3g isn't connected to network and ethernet isn't connected to network*/
     while (1)
     {
+        printf("\n\n*************************************************\n");
         sleep(30);
     
         if (is_interface_up(ETH0_INTERFACE_NAME) == 0)
@@ -461,13 +478,17 @@ int main(int argc, char *argv[])
                     && is_in_same_subnet(gateway, eth0_ip))
             {
 
-                if (s_init_eth0_default_route  == 0)
-                {
+                /*
+                 *if (s_init_eth0_default_route  == 0)
+                 *{
+                 */
                     if (is_exist_default_route_entry_for_interface(ETH0_INTERFACE_NAME) == 0)
                     {
                         add_eth0_default_route_entry(gateway);
                     }
-                }
+                /*
+                 *}
+                 */
             
                 if (is_internet_work_on_interface(ETH0_INTERFACE_NAME, argv[1]))
                 {

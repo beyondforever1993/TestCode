@@ -1,0 +1,621 @@
+desc: (none)
+cmd: ./high_load_test
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=22004797
+mem_heap_B=39524
+mem_heap_extra_B=17036
+mem_stacks_B=0
+heap_tree=peak
+n4: 39524 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 32736 0x8049628: workqueue_add_work (work_queue.c:485)
+  n0: 16352 0x8048A40: main (high_load_test.c:48)
+  n0: 8192 0x8048AE2: main (high_load_test.c:62)
+  n0: 8192 0x8048BA3: main (high_load_test.c:77)
+ n1: 4352 0x401117D: allocate_dtv (dl-tls.c:296)
+  n1: 4352 0x40118EA: _dl_allocate_tls (dl-tls.c:460)
+   n1: 4352 0x404D7A1: pthread_create@@GLIBC_2.1 (allocatestack.c:589)
+    n1: 4352 0x80494EA: __workqueue_init (work_queue.c:433)
+     n1: 4352 0x80495FA: workqueue_init (work_queue.c:473)
+      n0: 4352 0x8048A13: main (high_load_test.c:45)
+ n1: 2176 0x804943B: __workqueue_init (work_queue.c:422)
+  n1: 2176 0x80495FA: workqueue_init (work_queue.c:473)
+   n0: 2176 0x8048A13: main (high_load_test.c:45)
+ n0: 260 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=2
+#-----------
+time=202103007
+mem_heap_B=39172
+mem_heap_extra_B=16860
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=539740820
+mem_heap_B=38292
+mem_heap_extra_B=16420
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=764769569
+mem_heap_B=37700
+mem_heap_extra_B=16124
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=913721494
+mem_heap_B=37332
+mem_heap_extra_B=15940
+mem_stacks_B=0
+heap_tree=detailed
+n4: 37332 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 30544 0x8049628: workqueue_add_work (work_queue.c:485)
+  n0: 14160 0x8048A40: main (high_load_test.c:48)
+  n0: 8192 0x8048AE2: main (high_load_test.c:62)
+  n0: 8192 0x8048BA3: main (high_load_test.c:77)
+ n1: 4352 0x401117D: allocate_dtv (dl-tls.c:296)
+  n1: 4352 0x40118EA: _dl_allocate_tls (dl-tls.c:460)
+   n1: 4352 0x404D7A1: pthread_create@@GLIBC_2.1 (allocatestack.c:589)
+    n1: 4352 0x80494EA: __workqueue_init (work_queue.c:433)
+     n1: 4352 0x80495FA: workqueue_init (work_queue.c:473)
+      n0: 4352 0x8048A13: main (high_load_test.c:45)
+ n1: 2176 0x804943B: __workqueue_init (work_queue.c:422)
+  n1: 2176 0x80495FA: workqueue_init (work_queue.c:473)
+   n0: 2176 0x8048A13: main (high_load_test.c:45)
+ n0: 260 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=6
+#-----------
+time=1209444497
+mem_heap_B=36580
+mem_heap_extra_B=15564
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=1420393578
+mem_heap_B=36020
+mem_heap_extra_B=15284
+mem_stacks_B=0
+heap_tree=detailed
+n4: 36020 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 29232 0x8049628: workqueue_add_work (work_queue.c:485)
+  n0: 12848 0x8048A40: main (high_load_test.c:48)
+  n0: 8192 0x8048AE2: main (high_load_test.c:62)
+  n0: 8192 0x8048BA3: main (high_load_test.c:77)
+ n1: 4352 0x401117D: allocate_dtv (dl-tls.c:296)
+  n1: 4352 0x40118EA: _dl_allocate_tls (dl-tls.c:460)
+   n1: 4352 0x404D7A1: pthread_create@@GLIBC_2.1 (allocatestack.c:589)
+    n1: 4352 0x80494EA: __workqueue_init (work_queue.c:433)
+     n1: 4352 0x80495FA: workqueue_init (work_queue.c:473)
+      n0: 4352 0x8048A13: main (high_load_test.c:45)
+ n1: 2176 0x804943B: __workqueue_init (work_queue.c:422)
+  n1: 2176 0x80495FA: workqueue_init (work_queue.c:473)
+   n0: 2176 0x8048A13: main (high_load_test.c:45)
+ n0: 260 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=8
+#-----------
+time=1724113486
+mem_heap_B=35252
+mem_heap_extra_B=14900
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=1949929297
+mem_heap_B=34660
+mem_heap_extra_B=14604
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=2177042901
+mem_heap_B=34084
+mem_heap_extra_B=14316
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=2363648033
+mem_heap_B=33636
+mem_heap_extra_B=14092
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=2703204678
+mem_heap_B=32724
+mem_heap_extra_B=13636
+mem_stacks_B=0
+heap_tree=detailed
+n4: 32724 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 25936 0x8049628: workqueue_add_work (work_queue.c:485)
+  n0: 9552 0x8048A40: main (high_load_test.c:48)
+  n0: 8192 0x8048AE2: main (high_load_test.c:62)
+  n0: 8192 0x8048BA3: main (high_load_test.c:77)
+ n1: 4352 0x401117D: allocate_dtv (dl-tls.c:296)
+  n1: 4352 0x40118EA: _dl_allocate_tls (dl-tls.c:460)
+   n1: 4352 0x404D7A1: pthread_create@@GLIBC_2.1 (allocatestack.c:589)
+    n1: 4352 0x80494EA: __workqueue_init (work_queue.c:433)
+     n1: 4352 0x80495FA: workqueue_init (work_queue.c:473)
+      n0: 4352 0x8048A13: main (high_load_test.c:45)
+ n1: 2176 0x804943B: __workqueue_init (work_queue.c:422)
+  n1: 2176 0x80495FA: workqueue_init (work_queue.c:473)
+   n0: 2176 0x8048A13: main (high_load_test.c:45)
+ n0: 260 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=13
+#-----------
+time=2939112705
+mem_heap_B=32132
+mem_heap_extra_B=13340
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=3220135933
+mem_heap_B=31460
+mem_heap_extra_B=13004
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=3375076125
+mem_heap_B=31076
+mem_heap_extra_B=12812
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=3597840565
+mem_heap_B=30468
+mem_heap_extra_B=12508
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=3807312344
+mem_heap_B=29972
+mem_heap_extra_B=12260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=4026701108
+mem_heap_B=29396
+mem_heap_extra_B=11972
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=4264508130
+mem_heap_B=28788
+mem_heap_extra_B=11668
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=4438062171
+mem_heap_B=28324
+mem_heap_extra_B=11436
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=4656236073
+mem_heap_B=27716
+mem_heap_extra_B=11132
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=4872400768
+mem_heap_B=27156
+mem_heap_extra_B=10852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=5108046613
+mem_heap_B=26596
+mem_heap_extra_B=10572
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=5322466548
+mem_heap_B=26036
+mem_heap_extra_B=10292
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=5599414373
+mem_heap_B=25316
+mem_heap_extra_B=9932
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=5826435755
+mem_heap_B=24708
+mem_heap_extra_B=9628
+mem_stacks_B=0
+heap_tree=detailed
+n4: 24708 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 17920 0x8049628: workqueue_add_work (work_queue.c:485)
+  n0: 8192 0x8048AE2: main (high_load_test.c:62)
+  n0: 8192 0x8048BA3: main (high_load_test.c:77)
+  n0: 1536 0x8048A40: main (high_load_test.c:48)
+ n1: 4352 0x401117D: allocate_dtv (dl-tls.c:296)
+  n1: 4352 0x40118EA: _dl_allocate_tls (dl-tls.c:460)
+   n1: 4352 0x404D7A1: pthread_create@@GLIBC_2.1 (allocatestack.c:589)
+    n1: 4352 0x80494EA: __workqueue_init (work_queue.c:433)
+     n1: 4352 0x80495FA: workqueue_init (work_queue.c:473)
+      n0: 4352 0x8048A13: main (high_load_test.c:45)
+ n1: 2176 0x804943B: __workqueue_init (work_queue.c:422)
+  n1: 2176 0x80495FA: workqueue_init (work_queue.c:473)
+   n0: 2176 0x8048A13: main (high_load_test.c:45)
+ n0: 260 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=27
+#-----------
+time=6055998250
+mem_heap_B=24148
+mem_heap_extra_B=9348
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=6223205833
+mem_heap_B=23716
+mem_heap_extra_B=9132
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=6508236255
+mem_heap_B=22948
+mem_heap_extra_B=8748
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=6690045787
+mem_heap_B=22500
+mem_heap_extra_B=8524
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=6953442754
+mem_heap_B=21812
+mem_heap_extra_B=8180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=7131873904
+mem_heap_B=21332
+mem_heap_extra_B=7940
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=7314898047
+mem_heap_B=20900
+mem_heap_extra_B=7724
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=7493758419
+mem_heap_B=20452
+mem_heap_extra_B=7500
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=7668639281
+mem_heap_B=19940
+mem_heap_extra_B=7244
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=7856703551
+mem_heap_B=19460
+mem_heap_extra_B=7004
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=8122774267
+mem_heap_B=18756
+mem_heap_extra_B=6652
+mem_stacks_B=0
+heap_tree=detailed
+n4: 18756 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 11968 0x8049628: workqueue_add_work (work_queue.c:485)
+  n0: 8192 0x8048BA3: main (high_load_test.c:77)
+  n0: 3776 0x8048AE2: main (high_load_test.c:62)
+  n0: 0 in 1 place, below massif's threshold (01.00%)
+ n1: 4352 0x401117D: allocate_dtv (dl-tls.c:296)
+  n1: 4352 0x40118EA: _dl_allocate_tls (dl-tls.c:460)
+   n1: 4352 0x404D7A1: pthread_create@@GLIBC_2.1 (allocatestack.c:589)
+    n1: 4352 0x80494EA: __workqueue_init (work_queue.c:433)
+     n1: 4352 0x80495FA: workqueue_init (work_queue.c:473)
+      n0: 4352 0x8048A13: main (high_load_test.c:45)
+ n1: 2176 0x804943B: __workqueue_init (work_queue.c:422)
+  n1: 2176 0x80495FA: workqueue_init (work_queue.c:473)
+   n0: 2176 0x8048A13: main (high_load_test.c:45)
+ n0: 260 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=38
+#-----------
+time=8391722343
+mem_heap_B=18052
+mem_heap_extra_B=6300
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=8663895090
+mem_heap_B=17364
+mem_heap_extra_B=5956
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=8845704020
+mem_heap_B=16884
+mem_heap_extra_B=5716
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=9019869970
+mem_heap_B=16404
+mem_heap_extra_B=5476
+mem_stacks_B=0
+heap_tree=detailed
+n4: 16404 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 9616 0x8049628: workqueue_add_work (work_queue.c:485)
+  n0: 8192 0x8048BA3: main (high_load_test.c:77)
+  n0: 1424 0x8048AE2: main (high_load_test.c:62)
+  n0: 0 in 1 place, below massif's threshold (01.00%)
+ n1: 4352 0x401117D: allocate_dtv (dl-tls.c:296)
+  n1: 4352 0x40118EA: _dl_allocate_tls (dl-tls.c:460)
+   n1: 4352 0x404D7A1: pthread_create@@GLIBC_2.1 (allocatestack.c:589)
+    n1: 4352 0x80494EA: __workqueue_init (work_queue.c:433)
+     n1: 4352 0x80495FA: workqueue_init (work_queue.c:473)
+      n0: 4352 0x8048A13: main (high_load_test.c:45)
+ n1: 2176 0x804943B: __workqueue_init (work_queue.c:422)
+  n1: 2176 0x80495FA: workqueue_init (work_queue.c:473)
+   n0: 2176 0x8048A13: main (high_load_test.c:45)
+ n0: 260 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=42
+#-----------
+time=9207005502
+mem_heap_B=15956
+mem_heap_extra_B=5252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=9471761507
+mem_heap_B=15268
+mem_heap_extra_B=4908
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=9648194157
+mem_heap_B=14852
+mem_heap_extra_B=4700
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=9912091142
+mem_heap_B=14132
+mem_heap_extra_B=4340
+mem_stacks_B=0
+heap_tree=detailed
+n4: 14132 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 7344 0x8049628: workqueue_add_work (work_queue.c:485)
+  n0: 7184 0x8048BA3: main (high_load_test.c:77)
+  n0: 160 in 2 places, all below massif's threshold (01.00%)
+ n1: 4352 0x401117D: allocate_dtv (dl-tls.c:296)
+  n1: 4352 0x40118EA: _dl_allocate_tls (dl-tls.c:460)
+   n1: 4352 0x404D7A1: pthread_create@@GLIBC_2.1 (allocatestack.c:589)
+    n1: 4352 0x80494EA: __workqueue_init (work_queue.c:433)
+     n1: 4352 0x80495FA: workqueue_init (work_queue.c:473)
+      n0: 4352 0x8048A13: main (high_load_test.c:45)
+ n1: 2176 0x804943B: __workqueue_init (work_queue.c:422)
+  n1: 2176 0x80495FA: workqueue_init (work_queue.c:473)
+   n0: 2176 0x8048A13: main (high_load_test.c:45)
+ n0: 260 in 3 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=46
+#-----------
+time=10172610749
+mem_heap_B=13444
+mem_heap_extra_B=3996
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=10443896076
+mem_heap_B=12756
+mem_heap_extra_B=3652
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=10706140523
+mem_heap_B=12068
+mem_heap_extra_B=3308
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=10965793232
+mem_heap_B=11412
+mem_heap_extra_B=2980
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=11118481453
+mem_heap_B=10980
+mem_heap_extra_B=2764
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=11270740629
+mem_heap_B=10596
+mem_heap_extra_B=2572
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=11424030725
+mem_heap_B=10212
+mem_heap_extra_B=2380
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=11581596477
+mem_heap_B=9828
+mem_heap_extra_B=2188
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=11746885569
+mem_heap_B=9380
+mem_heap_extra_B=1964
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=11896869585
+mem_heap_B=8996
+mem_heap_extra_B=1772
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=12046454510
+mem_heap_B=8596
+mem_heap_extra_B=1572
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=12198601795
+mem_heap_B=8196
+mem_heap_extra_B=1372
+mem_stacks_B=0
+heap_tree=detailed
+n6: 8196 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4352 0x401117D: allocate_dtv (dl-tls.c:296)
+  n1: 4352 0x40118EA: _dl_allocate_tls (dl-tls.c:460)
+   n1: 4352 0x404D7A1: pthread_create@@GLIBC_2.1 (allocatestack.c:589)
+    n1: 4352 0x80494EA: __workqueue_init (work_queue.c:433)
+     n1: 4352 0x80495FA: workqueue_init (work_queue.c:473)
+      n0: 4352 0x8048A13: main (high_load_test.c:45)
+ n1: 2176 0x804943B: __workqueue_init (work_queue.c:422)
+  n1: 2176 0x80495FA: workqueue_init (work_queue.c:473)
+   n0: 2176 0x8048A13: main (high_load_test.c:45)
+ n2: 1408 0x8049628: workqueue_add_work (work_queue.c:485)
+  n0: 1408 0x8048BA3: main (high_load_test.c:77)
+  n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n1: 132 0x80493A1: __workqueue_init (work_queue.c:412)
+  n1: 132 0x80495FA: workqueue_init (work_queue.c:473)
+   n0: 132 0x8048A13: main (high_load_test.c:45)
+ n1: 120 0x80495DC: workqueue_init (work_queue.c:471)
+  n0: 120 0x8048A13: main (high_load_test.c:45)
+ n0: 8 in 1 place, below massif's threshold (01.00%)
+#-----------
+snapshot=58
+#-----------
+time=12350942480
+mem_heap_B=7796
+mem_heap_extra_B=1172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=12501037885
+mem_heap_B=7396
+mem_heap_extra_B=972
+mem_stacks_B=0
+heap_tree=empty

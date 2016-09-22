@@ -1,0 +1,7 @@
+dprintf /home/genglei/git/TestCode/test11.c:12,"a=%d\n",a
+dprintf /home/genglei/git/TestCode/test11.c:10,"aaaaaaaaaaa\n"
+break /home/genglei/git/TestCode/test11.c:11
+  commands
+    info locals
+    c &
+  end

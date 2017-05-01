@@ -1,8 +1,0 @@
-set:len = 4+len
-È¡Öµ·¶Î§
-
-typedef struct
-{
-    HC_UINT32                   len;
-    HC_UINT8                    dat[DAT_LENTH_MAX];
-} DIFFERENT_DATA_STRUCT;

@@ -1,9 +1,0 @@
-reply&set:len = 20 byte
-get:len = 0
-È¡Öµ·¶Î§
-
-typedef struct
-{
-    HC_INT8       name[20];//end with '/0'
-} CORS_DATA_SOURCE_STRUCT;
-

@@ -1,5 +1,0 @@
-reply&set:len = 1byte
-get:len = 0
-取值范围
-
-char fec_enable;//1开启0关闭

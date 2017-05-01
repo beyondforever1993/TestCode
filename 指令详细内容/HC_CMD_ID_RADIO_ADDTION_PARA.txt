@@ -1,8 +1,0 @@
-reply&set:len = 26byte
-get:len = 0
-取值范围
-uint sensitivity//1低2中3高
-char fec_enable;//1开启0关闭
-char callsign_enable;//1开启0关闭
-uint inter_time//
-char callsign_message[16]

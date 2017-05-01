@@ -1,0 +1,9 @@
+仅AP使用
+reply&set:len = 1byte
+get:len = 0
+取值范围
+
+1开启
+0关闭
+
+

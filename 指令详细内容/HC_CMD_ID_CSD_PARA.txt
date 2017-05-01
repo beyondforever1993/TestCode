@@ -1,0 +1,5 @@
+﻿set&reply:len = 21byte
+get:len = 0
+
+uchar base_mode;   0 rover 1 base
+char csd_num[20];

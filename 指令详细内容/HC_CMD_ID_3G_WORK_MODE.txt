@@ -1,0 +1,9 @@
+﻿set&reply:len = 2byte
+get:len = 0
+
+{
+	HC_3G_WORK_MODE__START,
+	HC_3G_WORK_MODE__GPRS,
+	HC_3G_WORK_MODE__CSD,
+	HC_3G_WORK_MODE__END,
+}

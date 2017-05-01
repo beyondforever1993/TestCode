@@ -1,0 +1,18 @@
+reply&set:len = 42byte
+get:len = 0
+È¡Öµ·¶Î§
+
+typedef struct
+{
+    HC_UINT8                   ssid[20];
+    HC_UINT16                  passwd_type;//HC_WIFI_PASSWD_TYPE_ENUM;
+    HC_UINT8                   passwd[20];
+} HC_WIFI_SET_PARA_AP_STRUCT;
+
+typedef enum
+{
+    HC_WIFI_PASSWD_TYPE__START = 0,
+    HC_WIFI_PASSWD_TYPE__WAP,
+    HC_WIFI_PASSWD_TYPE__WAP2,
+    HC_WIFI_PASSWD_TYPE__END
+} HC_WIFI_PASSWD_TYPE_ENUM;

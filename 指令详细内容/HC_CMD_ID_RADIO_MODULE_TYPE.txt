@@ -1,0 +1,33 @@
+reply:len = 2byte
+get:len = 0
+取值范围
+
+
+typedef enum
+{
+    RADIO_MODULE_TYPE__START = 0,
+    RADIO_MODULE_TYPE__NONE,
+    RADIO_MODULE_TYPE__HC_RX,
+    RADIO_MODULE_TYPE__HC_RXTX,
+    RADIO_MODULE_TYPE__LFS,
+    RADIO_MODULE_TYPE__SATEL,
+    RADIO_MODULE_TYPE__LFS_LOW,
+    RADIO_MODULE_TYPE__HX_FULL,
+    RADIO_MODULE_TYPE__END,
+} RADIO_MODULE_TYPE_ENUM;
+
+RADIO_MODULE_TYPE__HC_RX特性
+单收
+范围450~470 
+功率 0.1 0.5  1.0 2.0
+步进12.5k
+协议 华测 透明 tt450s
+空中波特率 9600 19200 4800
+
+RADIO_MODULE_TYPE__HC_RXTX特性
+收发
+范围450~470 
+功率 0.1 0.5  1.0 2.0
+步进12.5k
+协议 华测 透明 tt450s
+空中波特率 9600 19200 4800

@@ -1,0 +1,51 @@
+获取列表
+get:len 0
+reply:len = 10+SIZEOF(POS_STRUCT)*count
+/*
+typedef
+{
+    double  b; 
+    double  l;
+    float h;
+}POS_STRUCT
+*/
+reply&set:
+
+typedef struct
+{
+    double b;
+    double l;
+}BASE_POSITION
+
+typedef struct
+{
+    double      torD;
+    uchar       max; // 列表最多支持个数
+    uchar       count;
+    BASE_POSITION  *list;
+}
+
+reply: len = 10 + count * 16
+set: 
+    1、发送清空列表指令时，设置count = 0；最他参数全部无效（接收机内部不会处理和记忆此时的其他参数）；
+       len = 10；
+
+    2、设置基站坐标列表时，len = 10 + count * 16；
+
+    3、max是只读值，设置的时候，max无需初始化或赋值。
+
+get：len = 0
+
+
+
+
+
+typedef struct
+{
+    double torD;
+    uchar count;  <=20
+    uchar max; 20
+   POS_STRUCT bl[count]
+} GNSS_RECENT_BASE_POSITION;
+
+set时，max也需要设置，但接收机会忽略掉

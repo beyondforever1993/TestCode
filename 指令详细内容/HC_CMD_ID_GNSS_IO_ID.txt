@@ -1,0 +1,58 @@
+﻿set:len = 2 byte
+ȡֵΧ
+typedef enum 
+{
+	IO_ID__DSM_START = 0,
+		
+	IO_ID__COM_1,//接收机COM1串口
+	IO_ID__COM_2,
+	IO_ID__COM_3,
+
+	IO_ID__BT,//蓝牙
+	IO_ID__RADIO,//内置电台
+	
+	IO_ID__NETLINK_ROVER,//RTK客户端包括Ntrip ApisBase ApisRover
+	IO_ID__NETLINK_1,//TCP/UDP client
+	IO_ID__NETLINK_2,//TCP/UDP client
+	IO_ID__NETLINK_3,//TCP/UDP client
+
+	IO_ID__NETLINK_4,//TCP/UDP client
+	IO_ID__NETLINK_5,//TCP/UDP client
+	IO_ID__NETLINK_6,//TCP/UDP client
+
+	IO_ID__NETSERVER_1,//TCP/Ntrip Server
+	IO_ID__NETSERVER_2,//TCP/Ntrip Server
+	IO_ID__NETSERVER_3,//TCP/Ntrip Server
+	IO_ID__NETSERVER_4,//TCP/Ntrip Server
+
+
+	IO_ID_WIFI,//wifi 默认端口1212
+
+/// no use =================
+	IO_ID__TCP_CLIENT_1,
+	IO_ID__TCP_CLIENT_2,
+	IO_ID__TCP_CLIENT_3,
+	IO_ID__TCP_CLIENT_4,
+	IO_ID__TCP_CLIENT_5,
+	
+	IO_ID__TCP_SERVER_1,
+	IO_ID__TCP_SERVER_2,
+
+	IO_ID__NTRIP_CLIENT_1,
+	IO_ID__NTRIP_CLIENT_2,
+	IO_ID__NTRIP_CLIENT_3,
+
+	IO_ID__NTRIP_SERVER_1,
+	IO_ID__NTRIP_SERVER_2,
+	IO_ID__NTRIP_SERVER_3,
+
+	IO_ID__NTRIP_CASTER_1,
+	IO_ID__NTRIP_CASTER_2,
+	IO_ID__NTRIP_CASTER_3,
+
+
+	IO_ID__NETLINK,//for X10
+// no use =================
+	IO_ID__GSM,
+	IO_ID__DSM_NUM,
+}IO_ID__DSM;

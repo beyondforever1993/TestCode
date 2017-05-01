@@ -1,0 +1,29 @@
+get:len = 0
+
+{
+    G3_CSD_STATUS_ENUM status;  //2 char
+    HC_UINT32 csd_cnt;//²¦ºÅ´íÎó
+    G3_CSD_ERR_NUM_ENUM csd_err_num;//´íÎó´úÂë 2 char
+}
+
+
+
+typedef enum
+{
+    G3_CSD_STATUS__START = 0,
+    G3_CSD_STATUS__DAIL_OFF,//closed
+    G3_CSD_STATUS__DAIL_ERR,
+    G3_CSD_STATUS__DAIL_ING,
+    G3_CSD_STATUS__BASE_ON,
+    G3_CSD_STATUS__BASE_WAITING,
+    G3_CSD_STATUS__ROVER_ON,
+    G3_CSD_STATUS__DAIL_OFF_ING,//
+    G3_CSD_STATUS__END
+} G3_CSD_STATUS_ENUM;
+
+typedef enum
+{
+    G3_CSD_ERR_NUM__START = 0,
+    G3_CSD_ERR_NUM__SIM_ERR,
+    G3_CSD_ERR_NUM__END
+} G3_CSD_ERR_NUM_ENUM;//´íÎó´úÂë

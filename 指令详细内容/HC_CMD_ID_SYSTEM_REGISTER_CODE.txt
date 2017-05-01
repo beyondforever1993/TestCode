@@ -1,0 +1,9 @@
+get:len = 0byte
+set&reply:len = 20byte
+È¡Öµ·¶Î§
+typedef struct
+{
+  HC_UINT8 reg_code[20];
+} REGISTER_CODE_STRUCT;
+
+

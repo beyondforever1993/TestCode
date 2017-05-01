@@ -1,0 +1,4 @@
+reply&set:len = 1byte
+get:len = 0
+取值范围
+char sensitivity//1低2中3高

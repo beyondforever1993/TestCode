@@ -1,0 +1,10 @@
+reply&set:len = 21byte
+get:len = 0
+È¡Öµ·¶Î§
+{
+
+    HC_INT8  csd_num[20]; 
+    unsigned char csd_base_mode;
+
+
+}

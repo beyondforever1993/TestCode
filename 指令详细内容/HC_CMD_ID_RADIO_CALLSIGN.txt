@@ -1,0 +1,7 @@
+reply&set:len = 19byte
+get:len = 0
+取值范围
+
+char callsign_enable;//1开启0关闭
+char inter_time// 
+char callsign_message[17] 16位

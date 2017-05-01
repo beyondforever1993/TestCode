@@ -1,0 +1,8 @@
+set:len = 2byte
+reply:len < 500
+È¡Öµ·¶Î§
+set: 1
+reply < 500 
+buff[500]
+
+

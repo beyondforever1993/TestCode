@@ -1,0 +1,9 @@
+set:len= 4 + dat_len byte
+取值范围
+
+typedef struct
+{
+  HC_UINT32 dat_len;
+  HC_UINT8  dat_buf[150];
+} RECORD_PPK_CMD_STRUCT;
+注：dat_buf内容与原FY协议相同

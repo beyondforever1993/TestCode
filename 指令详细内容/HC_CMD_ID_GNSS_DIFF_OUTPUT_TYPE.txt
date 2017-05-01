@@ -1,0 +1,19 @@
+reply&set:len = 2 byte
+get:len = 0
+È¡Öµ£º
+typedef enum
+{
+    //used for pub and sub
+    DAT_ID_START = 0,
+    
+    DAT_ID_NONE, // 1
+    
+    DAT_ID_CMR,  // 2
+    DAT_ID_CMR2, // cmr+
+    DAT_ID_SCMR, // scmrx
+    DAT_ID_RTCM, // V2.3
+    DAT_ID_RTCMV3, // V3.x
+    DAT_ID_RTD,
+    DAT_ID_RTCA,
+    DAT_ID_END
+} DAT_ID;

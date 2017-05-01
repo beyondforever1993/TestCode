@@ -1,0 +1,11 @@
+get:len = 0byte
+reply:len = 12byte
+取值范围
+typedef struct
+{
+    HC_UINT32 charge_status;//充电状态，暂时不支持
+    float volt1;
+    float volt2;
+} POWER_STATUS_STRUCT;
+
+

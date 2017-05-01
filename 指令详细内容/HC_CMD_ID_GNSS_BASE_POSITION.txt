@@ -1,0 +1,23 @@
+reply&set:len = 26
+get:len = 0
+È¡Öµ·¶Î§
+reply&set:
+typedef enum
+{
+    GNSS_BASE_MODE__START = 0,
+    GNSS_BASE_MODE__NONE,
+    GNSS_BASE_MODE__AUTO,
+    GNSS_BASE_MODE__MANUAL,
+    GNSS_BASE_MODE__END,
+} GNSS_BASE_MODE_ENUM;
+
+typedef struct
+{
+    HC_UINT16 mode;//GNSS_BASE_MODE_ENUM;
+    double  b;//radian
+    double  l;
+    double  h;
+    
+} GNSS_BASE_SET_STRUCT;
+
+

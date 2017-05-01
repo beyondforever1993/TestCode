@@ -1,0 +1,16 @@
+﻿set&reply:len = 2byte
+get:len = 0
+
+
+
+typedef enum
+{
+	GRPS_BAND_MODE__STATR,
+	GRPS_BAND_MODE__2G_ONLY,
+	GRPS_BAND_MODE__3G_ONLY,
+	GRPS_BAND_MODE__2G_3G_AUTO,
+	GRPS_BAND_MODE__END
+} GRPS_BAND_MODE_ENUM;
+
+
+ushort GRPS_BAND_MODE_ENUM;

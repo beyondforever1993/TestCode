@@ -1,0 +1,22 @@
+reply&set:len = 2byte
+get:len = 0
+取值范围
+typedef enum
+{
+    HC_COM_BAUD_START   = 0 ,
+    HC_COM_BAUD_2400            ,
+    HC_COM_BAUD_4800            ,
+    HC_COM_BAUD_9600            ,
+    HC_COM_BAUD_14400       ,//暂不支持
+    HC_COM_BAUD_19200       ,
+    HC_COM_BAUD_38400       ,
+    HC_COM_BAUD_56K         ,//暂不支持
+    HC_COM_BAUD_57600            ,
+    HC_COM_BAUD_115200      ,
+    HC_COM_BAUD_128K            ,//暂不支持
+    HC_COM_BAUD_256K            ,//暂不支持
+    HC_COM_BAUD_512K            ,//暂不支持
+    HC_COM_BAUD_END
+} HC_COM_BAUD_PARAMET_EUM;
+
+注：此命令需配合HC_CMD_ID_COM_PORT设置某一端口，如单独发送，对COM1进行设置

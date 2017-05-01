@@ -1,0 +1,13 @@
+reply&set:len = 2byte
+get:len = 0
+È¡Öµ·¶Î§
+
+typedef enum
+{
+    HC_WIFI_MODE__START = 0,
+    HC_WIFI_MODE__AP,
+    HC_WIFI_MODE__CLIENT,
+    HC_WIFI_MODE__END
+} HC_WIFI_MODE_ENUM;
+
+

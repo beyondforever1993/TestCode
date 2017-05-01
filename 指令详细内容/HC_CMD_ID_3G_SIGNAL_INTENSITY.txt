@@ -1,0 +1,4 @@
+reply:len = 4byte
+get:len = 0
+
+HC_INT32 signal //dbm

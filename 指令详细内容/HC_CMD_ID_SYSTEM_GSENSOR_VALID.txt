@@ -1,0 +1,9 @@
+set:len = 3byte
+取值范围
+typedef struct
+{
+  HC_UINT8 enable_data;//0取消平面校正 1开始平面校正 2开始方位校正（方位校正不能被取消）
+  HC_UINT16 effect_data;
+}GSENSOR_VALID_PERIOD;
+内容参照老的华测协议:FG
+

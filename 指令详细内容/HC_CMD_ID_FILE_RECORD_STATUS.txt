@@ -1,0 +1,12 @@
+reply:len = 2byte
+get:len = 0
+È¡Öµ·¶Î§
+
+typedef enum
+{
+    RECORD_STATUS__START = 0,
+    RECORD_STATUS__ON,
+    RECORD_STATUS__OFF,
+    RECORD_STATUS__ERR,
+    RECORD_STATUS__END
+} RECORD_STATUS_ENUM;

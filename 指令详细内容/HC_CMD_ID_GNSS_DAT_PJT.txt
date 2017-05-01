@@ -1,0 +1,33 @@
+send:len = 4+len
+set:len = 0
+get:len = 0
+È¡Öµ·¶Î§
+set:
+typedef enum
+{
+    DAT_FRQ_START = 0,
+    
+    DAT_FRQ_OFF,
+    DAT_FRQ_ONCE,
+    //DAT_FRQ_ONCHANGED,
+    DAT_FRQ_AUTO,
+    DAT_FRQ_50HZ,
+    DAT_FRQ_20HZ,
+    DAT_FRQ_10HZ,
+    DAT_FRQ_5HZ,
+    DAT_FRQ_2HZ,
+    DAT_FRQ_1HZ,
+    DAT_FRQ_2S,
+    DAT_FRQ_5S,
+    DAT_FRQ_10S,
+    DAT_FRQ_15S,
+    DAT_FRQ_30S,
+    DAT_FRQ_1M,
+    DAT_FRQ_5M,
+    DAT_FRQ_10M,        //mintue
+    
+    DAT_FRQ_END
+} DAT_FRQ;
+send:
+NMEA-0183
+

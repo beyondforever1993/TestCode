@@ -1,0 +1,7 @@
+reply&get&set:len =4byte
+取值范围
+
+大于等于0
+
+注：此命令需配合NETLINK模块其他命令使用，单独发送无意义
+    用来使netlink请求与应答对应起来。

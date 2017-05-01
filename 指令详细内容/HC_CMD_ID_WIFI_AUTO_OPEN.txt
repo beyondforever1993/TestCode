@@ -1,0 +1,8 @@
+reply&set:len = 1byte
+get:len = 0
+取值范围
+
+1自动开启
+0不自动开启
+
+

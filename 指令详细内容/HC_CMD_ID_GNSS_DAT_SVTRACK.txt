@@ -1,0 +1,67 @@
+send:len = 8+(gps_num+glo_num+bds_num+sbas_num)*9
+set:len = 2
+get:len = 0
+取值范围
+set:
+typedef enum
+{
+    DAT_FRQ_START = 0,
+    
+    DAT_FRQ_OFF,
+    DAT_FRQ_ONCE,
+    //DAT_FRQ_ONCHANGED,
+    DAT_FRQ_AUTO,
+    DAT_FRQ_50HZ,
+    DAT_FRQ_20HZ,
+    DAT_FRQ_10HZ,
+    DAT_FRQ_5HZ,
+    DAT_FRQ_2HZ,
+    DAT_FRQ_1HZ,
+    DAT_FRQ_2S,
+    DAT_FRQ_5S,
+    DAT_FRQ_10S,
+    DAT_FRQ_15S,
+    DAT_FRQ_30S,
+    DAT_FRQ_1M,
+    DAT_FRQ_5M,
+    DAT_FRQ_10M,        //mintue
+    
+    DAT_FRQ_END
+} DAT_FRQ;
+send:
+typedef enum
+{
+    GALAXY_GPS = 0,
+    GALAXY_GLO,
+    GALAXY_BDS,
+    GALAXY_SBAS,
+    GALAXY_GALILEO,
+} GALAXY_TYPE;
+
+typedef struct
+{
+    HC_UINT8    prn;
+    HC_UINT8    type;     //GALAXY_TYPE
+    HC_UINT8    elevation;
+    HC_UINT16   azimuth;
+    HC_UINT8    L1;
+    HC_UINT8    L2;
+    HC_UINT8    L5;
+    HC_UINT8    use;//0未使用 1使用
+} SV_INFO;
+
+typedef struct
+{
+    HC_UINT8  gps_num;
+    HC_UINT8  glo_num;
+    HC_UINT8  bds_num;
+    HC_UINT8  sbas_num;
+    HC_UINT8  galileo_num;
+    HC_UINT8  reserved;//预留扩展位
+    HC_UINT8  reserved;//预留扩展位
+    HC_UINT8  reserved;//预留扩展位
+    SV_INFO    sv_info[ 64];
+} DAT_STRUCT_SV_TRACK;
+
+
+

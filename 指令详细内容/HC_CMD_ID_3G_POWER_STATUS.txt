@@ -1,0 +1,15 @@
+reply:len = 2byte
+get:len = 0
+È¡Öµ·¶Î§
+
+
+
+typedef enum
+{
+    G3_POWER_STATUS__START = 0,
+    G3_POWER_STATUS__POWER_ING,//initializing
+    G3_POWER_STATUS__POWER_ON,
+    G3_POWER_STATUS__POWER_OFF,
+    G3_POWER_STATUS__END
+} G3_POWER_STATUS_ENUM;
+

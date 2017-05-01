@@ -1,0 +1,4 @@
+reply&set:len = 1byte
+get:len = 0
+取值范围
+0关1开

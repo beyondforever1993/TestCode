@@ -1,0 +1,27 @@
+reply:len = 8byte
+get:len = 0
+È¡Öµ·¶Î§
+
+typedef struct
+{
+    HC_UINT16 dail_status;//²¦ºÅ×´Ì¬G3_DIAL_STATUS_ENUM
+    HC_UINT32 dail_cnt;//²¦ºÅ´íÎó
+    HC_UINT16 dail_err_num;//´íÎó´úÂëG3_DIAL_ERR_NUM_ENUM
+} G3_DIAL_STATUS_STRUCT;
+
+typedef enum
+{
+    G3_DIAL_STATUS__START = 0,
+    G3_DIAL_STATUS__DAIL_ON,//dail ok
+    G3_DIAL_STATUS__DAIL_OFF,//closed
+    G3_DIAL_STATUS__DAIL_FAIL,//dail fail
+    G3_DIAL_STATUS__DAIL_ING,//dailing with err_num
+    G3_DIAL_STATUS__END
+} G3_DIAL_STATUS_ENUM;//²¦ºÅ×´Ì¬
+
+typedef enum
+{
+    G3_DIAL_ERR_NUM__START = 0,
+    G3_DIAL_ERR_NUM__SIM_ERR,
+    G3_DIAL_ERR_NUM__END
+} G3_DIAL_ERR_NUM_ENUM;//´íÎó´úÂë

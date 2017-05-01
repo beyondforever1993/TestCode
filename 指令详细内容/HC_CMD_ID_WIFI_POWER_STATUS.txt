@@ -1,0 +1,14 @@
+get:len = 0byte
+reply:len = 2byte
+È¡Öµ·¶Î§
+typedef enum
+{
+    WIFI_POWER_STATUS__START = 0,
+    WIFI_POWER_STATUS__POWER_ING,//initialing
+    WIFI_POWER_STATUS__POWER_ON,
+    WIFI_POWER_STATUS__POWER_OFF,
+    WIFI_POWER_STATUS__END
+} WIFI_POWER_STATUS_ENUM;
+
+
+

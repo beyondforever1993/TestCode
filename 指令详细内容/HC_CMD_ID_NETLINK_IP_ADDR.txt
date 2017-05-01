@@ -1,0 +1,11 @@
+reply&set:len = 57byte
+get:len = 0
+È¡Öµ·¶Î§
+
+typedef struct
+{
+    HC_UINT32       ip;//ÍøÂç×Ö½ÚÐò
+    HC_UINT16       port;
+    HC_UINT8        use_domain;
+    HC_UINT8        domain[50];
+} HC_IP_ADDRESS_STRUCT;

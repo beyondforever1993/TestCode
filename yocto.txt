@@ -1,0 +1,38 @@
+sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat libsdl1.2-dev
+
+sudo apt-get install libsdl1.2-dev xterm sed cvs subversion coreutils texi2html docbook-utils python-pysqlite2 help2man make gcc g++ desktop-file-utils libgl1-mesa-dev libglu1-mesa-dev mercurial autoconf automake groff curl lzop asciidoc
+
+sudo apt-get install uboot-mkimage
+
+cd ~
+
+mkdir ~/bin 
+curl http://php.webtutor.pl/en/wp-content/uploads/2011/09/repo > ~/bin/repo
+chmod a+x ~/bin/repo
+
+export PATH=~/bin:$PATH
+
+git config --global user.name "Your Name"
+git config --global user.email "Your Email"
+git config --list
+
+mkdir fsl-release-bsp
+cd fsl-release-bsp
+repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-3.14.52-1.1.0_ga
+repo sync
+
+MACHINE=imx6ulevk source fsl-setup-release.sh -b ./core-image-base-imx6ulevk
+bitbake core-image-base
+bitbake linux-imx -c menuconfig
+
+./configure --host=arm-poky-linux-gnueabi  libsocketcan_LIBS="-L/data/can4imx6/libsocketcan-0.0.10/src/.libs -lsocketcan" libsocketcan_CFLAGS="-I/data/can4imx6/libsocketcan-0.0.10/include"
+
+
+export CC=arm-poky-linux-gnueabi-gcc 
+ ./configure --prefix=/data/tools/imx6/sysroots/i686-pokysdk-linux/usr/lib/arm-poky-linux-gnueabi 
+
+
+
+
+
+

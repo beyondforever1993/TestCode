@@ -1,0 +1,844 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.6.4896/W32 for ARM      11/Mar/2017  15:34:25 #
+# Copyright 1999-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\ucos2\uCO #
+#                    S-II\Source\os_mem.c                                     #
+#    Command line =  D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\ucos2\uCO #
+#                    S-II\Source\os_mem.c -lCN D:\wangfan2\×ÀÃæ\receiverfirm\ #
+#                    RTU\´úÂë\RTU_1.2\project\iar\Debug\List\ -o              #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\Debug\Obj\ --no_cse --no_unroll --no_inline           #
+#                    --no_code_motion --no_tbaa --no_clustering               #
+#                    --no_scheduling --debug --endian=little --cpu=Cortex-M3  #
+#                    -e --fpu=None --dlib_config "C:\Program Files (x86)\IAR  #
+#                    Systems\Embedded Workbench 6.5_2\arm\INC\c\DLib_Config_F #
+#                    ull.h" -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2 #
+#                    \project\iar\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\ #
+#                    RTU_1.2\project\iar\..\..\BSP\ -I                        #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\BSP\ADC\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´ #
+#                    úÂë\RTU_1.2\project\iar\..\..\BSP\RTC\ -I                #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\BSP\TILT\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\ #
+#                    ´úÂë\RTU_1.2\project\iar\..\..\BSP\RDLevel\ -I           #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\BSP\RS232\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU #
+#                    \´úÂë\RTU_1.2\project\iar\..\..\BSP\OS-v2\ -I            #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\BSP\VibrationString\ -I                         #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\ucos2\uCOS-II\Ports\ARM-Cortex-M3\Generic\IAR\  #
+#                    -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\projec #
+#                    t\iar\..\..\ucos2\uCOS-II\Source\ -I                     #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\ucos2\uC-LIB\ -I D:\wangfan2\×ÀÃæ\receiverfirm\ #
+#                    RTU\´úÂë\RTU_1.2\project\iar\..\..\ucos2\uC-CPU\ -I      #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\ucos2\uC-CPU\ARM-Cortex-M3\IAR\ -I              #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\cmsis\Drivers\source\ -I                        #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\cmsis\Drivers\include\ -I                       #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\app\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\ #
+#                    RTU_1.2\project\iar\..\..\uC-Probe\Target\Plugins\uCOS-I #
+#                    I\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\pro #
+#                    ject\iar\..\..\uC-Probe\Target\Demos\Intro\Workspaces\   #
+#                    -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\projec #
+#                    t\iar\..\..\uC-Probe\Target\Demos\Intro\Source\ -I       #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\uC-Probe\Target\Communication\Generic\Source\   #
+#                    -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\projec #
+#                    t\iar\..\..\uC-Probe\Target\Communication\Generic\RS-232 #
+#                    \Source\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1 #
+#                    .2\project\iar\..\..\uC-Probe\Target\Communication\Gener #
+#                    ic\RS-232\Ports\NXP\LPC17xx\ -I                          #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\uC-Probe\Target\Communication\Generic\RS-232\OS #
+#                    \uCOS-II\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_ #
+#                    1.2\project\iar\..\..\cmsis\Core\CM3\CoreSupport\ -I     #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\cmsis\Core\CM3\DeviceSupport\NXP\LPC177x_8x\    #
+#                    -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\projec #
+#                    t\iar\..\..\HuaceApp\ -I D:\wangfan2\×ÀÃæ\receiverfirm\R #
+#                    TU\´úÂë\RTU_1.2\project\iar\..\..\HuaceApp\DEVICE_BT\    #
+#                    -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\projec #
+#                    t\iar\..\..\HuaceApp\DEVICE_COM\ -I                      #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\HuaceApp\DEVICE_GPRS\ -I                        #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\HuaceApp\DEVICE_GPS\ -I                         #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\HuaceApp\DEVICE_RADIO\ -I                       #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\HuaceApp\iap\ -I D:\wangfan2\×ÀÃæ\receiverfirm\ #
+#                    RTU\´úÂë\RTU_1.2\project\iar\..\..\FatFs\ -I             #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\USB\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\ #
+#                    RTU_1.2\project\iar\..\..\bsp\spi_flash\ -I              #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\HuaceApp\LED\ -On --use_c++_inline              #
+#    List file    =  D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\Debug\List\os_mem.lst                                 #
+#    Object file  =  D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\Debug\Obj\os_mem.o                                    #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\ucos2\uCOS-II\Source\os_mem.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/OS-II
+      4          *                                          The Real-Time Kernel
+      5          *                                            MEMORY MANAGEMENT
+      6          *
+      7          *                              (c) Copyright 1992-2009, Micrium, Weston, FL
+      8          *                                           All Rights Reserved
+      9          *
+     10          * File    : OS_MEM.C
+     11          * By      : Jean J. Labrosse
+     12          * Version : V2.89
+     13          *
+     14          * LICENSING TERMS:
+     15          * ---------------
+     16          *   uC/OS-II is provided in source form for FREE evaluation, for educational use or for peaceful research.
+     17          * If you plan on using  uC/OS-II  in a commercial product you need to contact Micriµm to properly license
+     18          * its use in your product. We provide ALL the source code for your convenience and to help you experience
+     19          * uC/OS-II.   The fact that the  source is provided does  NOT  mean that you can use it without  paying a
+     20          * licensing fee.
+     21          *********************************************************************************************************
+     22          */
+     23          
+     24          #ifndef  OS_MASTER_FILE
+     25          #include <ucos_ii.h>
+     26          #endif
+     27          
+     28          #if (OS_MEM_EN > 0u) && (OS_MAX_MEM_PART > 0u)
+     29          /*
+     30          *********************************************************************************************************
+     31          *                                        CREATE A MEMORY PARTITION
+     32          *
+     33          * Description : Create a fixed-sized memory partition that will be managed by uC/OS-II.
+     34          *
+     35          * Arguments   : addr     is the starting address of the memory partition
+     36          *
+     37          *               nblks    is the number of memory blocks to create from the partition.
+     38          *
+     39          *               blksize  is the size (in bytes) of each block in the memory partition.
+     40          *
+     41          *               perr     is a pointer to a variable containing an error message which will be set by
+     42          *                        this function to either:
+     43          *
+     44          *                        OS_ERR_NONE              if the memory partition has been created correctly.
+     45          *                        OS_ERR_MEM_INVALID_ADDR  if you are specifying an invalid address for the memory
+     46          *                                                 storage of the partition or, the block does not align
+     47          *                                                 on a pointer boundary
+     48          *                        OS_ERR_MEM_INVALID_PART  no free partitions available
+     49          *                        OS_ERR_MEM_INVALID_BLKS  user specified an invalid number of blocks (must be >= 2)
+     50          *                        OS_ERR_MEM_INVALID_SIZE  user specified an invalid block size
+     51          *                                                   - must be greater than the size of a pointer
+     52          *                                                   - must be able to hold an integral number of pointers
+     53          * Returns    : != (OS_MEM *)0  is the partition was created
+     54          *              == (OS_MEM *)0  if the partition was not created because of invalid arguments or, no
+     55          *                              free partition is available.
+     56          *********************************************************************************************************
+     57          */
+     58          
+
+   \                                 In section .text, align 2, keep-with-next
+     59          OS_MEM  *OSMemCreate (void   *addr,
+     60                                INT32U  nblks,
+     61                                INT32U  blksize,
+     62                                INT8U  *perr)
+     63          {
+   \                     OSMemCreate:
+   \   00000000   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+   \   00000008   0x0016             MOVS     R6,R2
+     64              OS_MEM    *pmem;
+     65              INT8U     *pblk;
+     66              void     **plink;
+     67              INT32U     i;
+     68          #if OS_CRITICAL_METHOD == 3u                          /* Allocate storage for CPU status register      */
+     69              OS_CPU_SR  cpu_sr = 0u;
+   \   0000000A   0xF05F 0x0B00      MOVS     R11,#+0
+     70          #endif
+     71          
+     72          
+     73          
+     74          #if OS_ARG_CHK_EN > 0u
+     75              if (perr == (INT8U *)0) {                         /* Validate 'perr'                               */
+     76                  return ((OS_MEM *)0);
+     77              }
+     78              if (addr == (void *)0) {                          /* Must pass a valid address for the memory part.*/
+     79                  *perr = OS_ERR_MEM_INVALID_ADDR;
+     80                  return ((OS_MEM *)0);
+     81              }
+     82              if (((INT32U)addr & (sizeof(void *) - 1u)) != 0u){  /* Must be pointer size aligned                */
+     83                  *perr = OS_ERR_MEM_INVALID_ADDR;
+     84                  return ((OS_MEM *)0);
+     85              }
+     86              if (nblks < 2u) {                                 /* Must have at least 2 blocks per partition     */
+     87                  *perr = OS_ERR_MEM_INVALID_BLKS;
+     88                  return ((OS_MEM *)0);
+     89              }
+     90              if (blksize < sizeof(void *)) {                   /* Must contain space for at least a pointer     */
+     91                  *perr = OS_ERR_MEM_INVALID_SIZE;
+     92                  return ((OS_MEM *)0);
+     93              }
+     94          #endif
+     95              OS_ENTER_CRITICAL();
+   \   0000000E   0x.... 0x....      BL       OS_CPU_SR_Save
+   \   00000012   0x4683             MOV      R11,R0
+     96              pmem = OSMemFreeList;                             /* Get next free memory partition                */
+   \   00000014   0x....             LDR.N    R0,??DataTable3_1
+   \   00000016   0x6800             LDR      R0,[R0, #+0]
+   \   00000018   0x0007             MOVS     R7,R0
+     97              if (OSMemFreeList != (OS_MEM *)0) {               /* See if pool of free partitions was empty      */
+   \   0000001A   0x....             LDR.N    R0,??DataTable3_1
+   \   0000001C   0x6800             LDR      R0,[R0, #+0]
+   \   0000001E   0x2800             CMP      R0,#+0
+   \   00000020   0xD004             BEQ.N    ??OSMemCreate_0
+     98                  OSMemFreeList = (OS_MEM *)OSMemFreeList->OSMemFreeList;
+   \   00000022   0x....             LDR.N    R0,??DataTable3_1
+   \   00000024   0x6800             LDR      R0,[R0, #+0]
+   \   00000026   0x6840             LDR      R0,[R0, #+4]
+   \   00000028   0x....             LDR.N    R1,??DataTable3_1
+   \   0000002A   0x6008             STR      R0,[R1, #+0]
+     99              }
+    100              OS_EXIT_CRITICAL();
+   \                     ??OSMemCreate_0:
+   \   0000002C   0x4658             MOV      R0,R11
+   \   0000002E   0x.... 0x....      BL       OS_CPU_SR_Restore
+    101              if (pmem == (OS_MEM *)0) {                        /* See if we have a memory partition             */
+   \   00000032   0x2F00             CMP      R7,#+0
+   \   00000034   0xD104             BNE.N    ??OSMemCreate_1
+    102                  *perr = OS_ERR_MEM_INVALID_PART;
+   \   00000036   0x9800             LDR      R0,[SP, #+0]
+   \   00000038   0x215A             MOVS     R1,#+90
+   \   0000003A   0x7001             STRB     R1,[R0, #+0]
+    103                  return ((OS_MEM *)0);
+   \   0000003C   0x2000             MOVS     R0,#+0
+   \   0000003E   0xE01B             B.N      ??OSMemCreate_2
+    104              }
+    105              plink = (void **)addr;                            /* Create linked list of free memory blocks      */
+   \                     ??OSMemCreate_1:
+   \   00000040   0x46A1             MOV      R9,R4
+    106              pblk  = (INT8U *)((INT32U)addr + blksize);
+   \   00000042   0x1930             ADDS     R0,R6,R4
+   \   00000044   0x4680             MOV      R8,R0
+    107              for (i = 0u; i < (nblks - 1u); i++) {
+   \   00000046   0x2000             MOVS     R0,#+0
+   \   00000048   0x4682             MOV      R10,R0
+   \                     ??OSMemCreate_3:
+   \   0000004A   0x1E68             SUBS     R0,R5,#+1
+   \   0000004C   0x4582             CMP      R10,R0
+   \   0000004E   0xD207             BCS.N    ??OSMemCreate_4
+    108                 *plink = (void *)pblk;                         /* Save pointer to NEXT block in CURRENT block   */
+   \   00000050   0xF8C9 0x8000      STR      R8,[R9, #+0]
+    109                  plink = (void **)pblk;                        /* Position to  NEXT      block                  */
+   \   00000054   0x46C1             MOV      R9,R8
+    110                  pblk  = (INT8U *)((INT32U)pblk + blksize);    /* Point to the FOLLOWING block                  */
+   \   00000056   0xEB16 0x0808      ADDS     R8,R6,R8
+    111              }
+   \   0000005A   0xF11A 0x0A01      ADDS     R10,R10,#+1
+   \   0000005E   0xE7F4             B.N      ??OSMemCreate_3
+    112              *plink              = (void *)0;                  /* Last memory block points to NULL              */
+   \                     ??OSMemCreate_4:
+   \   00000060   0x2000             MOVS     R0,#+0
+   \   00000062   0xF8C9 0x0000      STR      R0,[R9, #+0]
+    113              pmem->OSMemAddr     = addr;                       /* Store start address of memory partition       */
+   \   00000066   0x603C             STR      R4,[R7, #+0]
+    114              pmem->OSMemFreeList = addr;                       /* Initialize pointer to pool of free blocks     */
+   \   00000068   0x607C             STR      R4,[R7, #+4]
+    115              pmem->OSMemNFree    = nblks;                      /* Store number of free blocks in MCB            */
+   \   0000006A   0x613D             STR      R5,[R7, #+16]
+    116              pmem->OSMemNBlks    = nblks;
+   \   0000006C   0x60FD             STR      R5,[R7, #+12]
+    117              pmem->OSMemBlkSize  = blksize;                    /* Store block size of each memory blocks        */
+   \   0000006E   0x60BE             STR      R6,[R7, #+8]
+    118              *perr               = OS_ERR_NONE;
+   \   00000070   0x9800             LDR      R0,[SP, #+0]
+   \   00000072   0x2100             MOVS     R1,#+0
+   \   00000074   0x7001             STRB     R1,[R0, #+0]
+    119              return (pmem);
+   \   00000076   0x0038             MOVS     R0,R7
+   \                     ??OSMemCreate_2:
+   \   00000078   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}   ;; return
+    120          }
+    121          /*$PAGE*/
+    122          /*
+    123          *********************************************************************************************************
+    124          *                                          GET A MEMORY BLOCK
+    125          *
+    126          * Description : Get a memory block from a partition
+    127          *
+    128          * Arguments   : pmem    is a pointer to the memory partition control block
+    129          *
+    130          *               perr    is a pointer to a variable containing an error message which will be set by this
+    131          *                       function to either:
+    132          *
+    133          *                       OS_ERR_NONE             if the memory partition has been created correctly.
+    134          *                       OS_ERR_MEM_NO_FREE_BLKS if there are no more free memory blocks to allocate to caller
+    135          *                       OS_ERR_MEM_INVALID_PMEM if you passed a NULL pointer for 'pmem'
+    136          *
+    137          * Returns     : A pointer to a memory block if no error is detected
+    138          *               A pointer to NULL if an error is detected
+    139          *********************************************************************************************************
+    140          */
+    141          
+
+   \                                 In section .text, align 2, keep-with-next
+    142          void  *OSMemGet (OS_MEM  *pmem,
+    143                           INT8U   *perr)
+    144          {
+   \                     OSMemGet:
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    145              void      *pblk;
+    146          #if OS_CRITICAL_METHOD == 3u                          /* Allocate storage for CPU status register      */
+    147              OS_CPU_SR  cpu_sr = 0u;
+   \   00000006   0x2700             MOVS     R7,#+0
+    148          #endif
+    149          
+    150          
+    151          
+    152          #if OS_ARG_CHK_EN > 0u
+    153              if (perr == (INT8U *)0) {                         /* Validate 'perr'                               */
+    154                  return ((void *)0);
+    155              }
+    156              if (pmem == (OS_MEM *)0) {                        /* Must point to a valid memory partition        */
+    157                  *perr = OS_ERR_MEM_INVALID_PMEM;
+    158                  return ((void *)0);
+    159              }
+    160          #endif
+    161              OS_ENTER_CRITICAL();
+   \   00000008   0x.... 0x....      BL       OS_CPU_SR_Save
+   \   0000000C   0x0007             MOVS     R7,R0
+    162              if (pmem->OSMemNFree > 0u) {                      /* See if there are any free memory blocks       */
+   \   0000000E   0x6920             LDR      R0,[R4, #+16]
+   \   00000010   0x2800             CMP      R0,#+0
+   \   00000012   0xD00D             BEQ.N    ??OSMemGet_0
+    163                  pblk                = pmem->OSMemFreeList;    /* Yes, point to next free memory block          */
+   \   00000014   0x6860             LDR      R0,[R4, #+4]
+   \   00000016   0x0006             MOVS     R6,R0
+    164                  pmem->OSMemFreeList = *(void **)pblk;         /*      Adjust pointer to new free list          */
+   \   00000018   0x6830             LDR      R0,[R6, #+0]
+   \   0000001A   0x6060             STR      R0,[R4, #+4]
+    165                  pmem->OSMemNFree--;                           /*      One less memory block in this partition  */
+   \   0000001C   0x6920             LDR      R0,[R4, #+16]
+   \   0000001E   0x1E40             SUBS     R0,R0,#+1
+   \   00000020   0x6120             STR      R0,[R4, #+16]
+    166                  OS_EXIT_CRITICAL();
+   \   00000022   0x0038             MOVS     R0,R7
+   \   00000024   0x.... 0x....      BL       OS_CPU_SR_Restore
+    167                  *perr = OS_ERR_NONE;                          /*      No error                                 */
+   \   00000028   0x2000             MOVS     R0,#+0
+   \   0000002A   0x7028             STRB     R0,[R5, #+0]
+    168                  return (pblk);                                /*      Return memory block to caller            */
+   \   0000002C   0x0030             MOVS     R0,R6
+   \   0000002E   0xE005             B.N      ??OSMemGet_1
+    169              }
+    170              OS_EXIT_CRITICAL();
+   \                     ??OSMemGet_0:
+   \   00000030   0x0038             MOVS     R0,R7
+   \   00000032   0x.... 0x....      BL       OS_CPU_SR_Restore
+    171              *perr = OS_ERR_MEM_NO_FREE_BLKS;                  /* No,  Notify caller of empty memory partition  */
+   \   00000036   0x205D             MOVS     R0,#+93
+   \   00000038   0x7028             STRB     R0,[R5, #+0]
+    172              return ((void *)0);                               /*      Return NULL pointer to caller            */
+   \   0000003A   0x2000             MOVS     R0,#+0
+   \                     ??OSMemGet_1:
+   \   0000003C   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    173          }
+    174          /*$PAGE*/
+    175          /*
+    176          *********************************************************************************************************
+    177          *                                   GET THE NAME OF A MEMORY PARTITION
+    178          *
+    179          * Description: This function is used to obtain the name assigned to a memory partition.
+    180          *
+    181          * Arguments  : pmem      is a pointer to the memory partition
+    182          *
+    183          *              pname     is a pointer to a pointer to an ASCII string that will receive the name of the memory partition.
+    184          *
+    185          *              perr      is a pointer to an error code that can contain one of the following values:
+    186          *
+    187          *                        OS_ERR_NONE                if the name was copied to 'pname'
+    188          *                        OS_ERR_MEM_INVALID_PMEM    if you passed a NULL pointer for 'pmem'
+    189          *                        OS_ERR_PNAME_NULL          You passed a NULL pointer for 'pname'
+    190          *                        OS_ERR_NAME_GET_ISR        You called this function from an ISR
+    191          *
+    192          * Returns    : The length of the string or 0 if 'pmem' is a NULL pointer.
+    193          *********************************************************************************************************
+    194          */
+    195          
+    196          #if OS_MEM_NAME_EN > 0u
+
+   \                                 In section .text, align 2, keep-with-next
+    197          INT8U  OSMemNameGet (OS_MEM   *pmem,
+    198                               INT8U   **pname,
+    199                               INT8U    *perr)
+    200          {
+   \                     OSMemNameGet:
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+   \   00000008   0x0016             MOVS     R6,R2
+    201              INT8U      len;
+    202          #if OS_CRITICAL_METHOD == 3u                     /* Allocate storage for CPU status register           */
+    203              OS_CPU_SR  cpu_sr = 0u;
+   \   0000000A   0xF05F 0x0800      MOVS     R8,#+0
+    204          #endif
+    205          
+    206          
+    207          
+    208          #if OS_ARG_CHK_EN > 0u
+    209              if (perr == (INT8U *)0) {                    /* Validate 'perr'                                    */
+    210                  return (0u);
+    211              }
+    212              if (pmem == (OS_MEM *)0) {                   /* Is 'pmem' a NULL pointer?                          */
+    213                  *perr = OS_ERR_MEM_INVALID_PMEM;
+    214                  return (0u);
+    215              }
+    216              if (pname == (INT8U **)0) {                  /* Is 'pname' a NULL pointer?                         */
+    217                  *perr = OS_ERR_PNAME_NULL;
+    218                  return (0u);
+    219              }
+    220          #endif
+    221              if (OSIntNesting > 0u) {                     /* See if trying to call from an ISR                  */
+   \   0000000E   0x....             LDR.N    R0,??DataTable3_2
+   \   00000010   0x7800             LDRB     R0,[R0, #+0]
+   \   00000012   0x2800             CMP      R0,#+0
+   \   00000014   0xD003             BEQ.N    ??OSMemNameGet_0
+    222                  *perr = OS_ERR_NAME_GET_ISR;
+   \   00000016   0x2011             MOVS     R0,#+17
+   \   00000018   0x7030             STRB     R0,[R6, #+0]
+    223                  return (0u);
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0xE00F             B.N      ??OSMemNameGet_1
+    224              }
+    225              OS_ENTER_CRITICAL();
+   \                     ??OSMemNameGet_0:
+   \   0000001E   0x.... 0x....      BL       OS_CPU_SR_Save
+   \   00000022   0x4680             MOV      R8,R0
+    226              *pname = pmem->OSMemName;
+   \   00000024   0x6960             LDR      R0,[R4, #+20]
+   \   00000026   0x6028             STR      R0,[R5, #+0]
+    227              len    = OS_StrLen(*pname);
+   \   00000028   0x6828             LDR      R0,[R5, #+0]
+   \   0000002A   0x.... 0x....      BL       OS_StrLen
+   \   0000002E   0x0007             MOVS     R7,R0
+    228              OS_EXIT_CRITICAL();
+   \   00000030   0x4640             MOV      R0,R8
+   \   00000032   0x.... 0x....      BL       OS_CPU_SR_Restore
+    229              *perr  = OS_ERR_NONE;
+   \   00000036   0x2000             MOVS     R0,#+0
+   \   00000038   0x7030             STRB     R0,[R6, #+0]
+    230              return (len);
+   \   0000003A   0x0038             MOVS     R0,R7
+   \   0000003C   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \                     ??OSMemNameGet_1:
+   \   0000003E   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    231          }
+    232          #endif
+    233          
+    234          /*$PAGE*/
+    235          /*
+    236          *********************************************************************************************************
+    237          *                                 ASSIGN A NAME TO A MEMORY PARTITION
+    238          *
+    239          * Description: This function assigns a name to a memory partition.
+    240          *
+    241          * Arguments  : pmem      is a pointer to the memory partition
+    242          *
+    243          *              pname     is a pointer to an ASCII string that contains the name of the memory partition.
+    244          *
+    245          *              perr      is a pointer to an error code that can contain one of the following values:
+    246          *
+    247          *                        OS_ERR_NONE                if the name was copied to 'pname'
+    248          *                        OS_ERR_MEM_INVALID_PMEM    if you passed a NULL pointer for 'pmem'
+    249          *                        OS_ERR_PNAME_NULL          You passed a NULL pointer for 'pname'
+    250          *                        OS_ERR_MEM_NAME_TOO_LONG   if the name doesn't fit in the storage area
+    251          *                        OS_ERR_NAME_SET_ISR        if you called this function from an ISR
+    252          *
+    253          * Returns    : None
+    254          *********************************************************************************************************
+    255          */
+    256          
+    257          #if OS_MEM_NAME_EN > 0u
+
+   \                                 In section .text, align 2, keep-with-next
+    258          void  OSMemNameSet (OS_MEM  *pmem,
+    259                              INT8U   *pname,
+    260                              INT8U   *perr)
+    261          {
+   \                     OSMemNameSet:
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+   \   00000006   0x0016             MOVS     R6,R2
+    262          #if OS_CRITICAL_METHOD == 3u                     /* Allocate storage for CPU status register           */
+    263              OS_CPU_SR  cpu_sr = 0u;
+   \   00000008   0x2700             MOVS     R7,#+0
+    264          #endif
+    265          
+    266          
+    267          
+    268          #if OS_ARG_CHK_EN > 0u
+    269              if (perr == (INT8U *)0) {                    /* Validate 'perr'                                    */
+    270                  return;
+    271              }
+    272              if (pmem == (OS_MEM *)0) {                   /* Is 'pmem' a NULL pointer?                          */
+    273                  *perr = OS_ERR_MEM_INVALID_PMEM;
+    274                  return;
+    275              }
+    276              if (pname == (INT8U *)0) {                   /* Is 'pname' a NULL pointer?                         */
+    277                  *perr = OS_ERR_PNAME_NULL;
+    278                  return;
+    279              }
+    280          #endif
+    281              if (OSIntNesting > 0u) {                     /* See if trying to call from an ISR                  */
+   \   0000000A   0x....             LDR.N    R0,??DataTable3_2
+   \   0000000C   0x7800             LDRB     R0,[R0, #+0]
+   \   0000000E   0x2800             CMP      R0,#+0
+   \   00000010   0xD002             BEQ.N    ??OSMemNameSet_0
+    282                  *perr = OS_ERR_NAME_SET_ISR;
+   \   00000012   0x2012             MOVS     R0,#+18
+   \   00000014   0x7030             STRB     R0,[R6, #+0]
+    283                  return;
+   \   00000016   0xE008             B.N      ??OSMemNameSet_1
+    284              }
+    285              OS_ENTER_CRITICAL();
+   \                     ??OSMemNameSet_0:
+   \   00000018   0x.... 0x....      BL       OS_CPU_SR_Save
+   \   0000001C   0x0007             MOVS     R7,R0
+    286              pmem->OSMemName = pname;
+   \   0000001E   0x6165             STR      R5,[R4, #+20]
+    287              OS_EXIT_CRITICAL();
+   \   00000020   0x0038             MOVS     R0,R7
+   \   00000022   0x.... 0x....      BL       OS_CPU_SR_Restore
+    288              *perr           = OS_ERR_NONE;
+   \   00000026   0x2000             MOVS     R0,#+0
+   \   00000028   0x7030             STRB     R0,[R6, #+0]
+    289          }
+   \                     ??OSMemNameSet_1:
+   \   0000002A   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    290          #endif
+    291          
+    292          /*$PAGE*/
+    293          /*
+    294          *********************************************************************************************************
+    295          *                                         RELEASE A MEMORY BLOCK
+    296          *
+    297          * Description : Returns a memory block to a partition
+    298          *
+    299          * Arguments   : pmem    is a pointer to the memory partition control block
+    300          *
+    301          *               pblk    is a pointer to the memory block being released.
+    302          *
+    303          * Returns     : OS_ERR_NONE              if the memory block was inserted into the partition
+    304          *               OS_ERR_MEM_FULL          if you are returning a memory block to an already FULL memory
+    305          *                                        partition (You freed more blocks than you allocated!)
+    306          *               OS_ERR_MEM_INVALID_PMEM  if you passed a NULL pointer for 'pmem'
+    307          *               OS_ERR_MEM_INVALID_PBLK  if you passed a NULL pointer for the block to release.
+    308          *********************************************************************************************************
+    309          */
+    310          
+
+   \                                 In section .text, align 2, keep-with-next
+    311          INT8U  OSMemPut (OS_MEM  *pmem,
+    312                           void    *pblk)
+    313          {
+   \                     OSMemPut:
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    314          #if OS_CRITICAL_METHOD == 3u                     /* Allocate storage for CPU status register           */
+    315              OS_CPU_SR  cpu_sr = 0u;
+   \   00000006   0x2600             MOVS     R6,#+0
+    316          #endif
+    317          
+    318          
+    319          
+    320          #if OS_ARG_CHK_EN > 0u
+    321              if (pmem == (OS_MEM *)0) {                   /* Must point to a valid memory partition             */
+    322                  return (OS_ERR_MEM_INVALID_PMEM);
+    323              }
+    324              if (pblk == (void *)0) {                     /* Must release a valid block                         */
+    325                  return (OS_ERR_MEM_INVALID_PBLK);
+    326              }
+    327          #endif
+    328              OS_ENTER_CRITICAL();
+   \   00000008   0x.... 0x....      BL       OS_CPU_SR_Save
+   \   0000000C   0x0006             MOVS     R6,R0
+    329              if (pmem->OSMemNFree >= pmem->OSMemNBlks) {  /* Make sure all blocks not already returned          */
+   \   0000000E   0x6920             LDR      R0,[R4, #+16]
+   \   00000010   0x68E1             LDR      R1,[R4, #+12]
+   \   00000012   0x4288             CMP      R0,R1
+   \   00000014   0xD304             BCC.N    ??OSMemPut_0
+    330                  OS_EXIT_CRITICAL();
+   \   00000016   0x0030             MOVS     R0,R6
+   \   00000018   0x.... 0x....      BL       OS_CPU_SR_Restore
+    331                  return (OS_ERR_MEM_FULL);
+   \   0000001C   0x205E             MOVS     R0,#+94
+   \   0000001E   0xE009             B.N      ??OSMemPut_1
+    332              }
+    333              *(void **)pblk      = pmem->OSMemFreeList;   /* Insert released block into free block list         */
+   \                     ??OSMemPut_0:
+   \   00000020   0x6860             LDR      R0,[R4, #+4]
+   \   00000022   0x6028             STR      R0,[R5, #+0]
+    334              pmem->OSMemFreeList = pblk;
+   \   00000024   0x6065             STR      R5,[R4, #+4]
+    335              pmem->OSMemNFree++;                          /* One more memory block in this partition            */
+   \   00000026   0x6920             LDR      R0,[R4, #+16]
+   \   00000028   0x1C40             ADDS     R0,R0,#+1
+   \   0000002A   0x6120             STR      R0,[R4, #+16]
+    336              OS_EXIT_CRITICAL();
+   \   0000002C   0x0030             MOVS     R0,R6
+   \   0000002E   0x.... 0x....      BL       OS_CPU_SR_Restore
+    337              return (OS_ERR_NONE);                        /* Notify caller that memory block was released       */
+   \   00000032   0x2000             MOVS     R0,#+0
+   \                     ??OSMemPut_1:
+   \   00000034   0xBD70             POP      {R4-R6,PC}       ;; return
+    338          }
+    339          /*$PAGE*/
+    340          /*
+    341          *********************************************************************************************************
+    342          *                                          QUERY MEMORY PARTITION
+    343          *
+    344          * Description : This function is used to determine the number of free memory blocks and the number of
+    345          *               used memory blocks from a memory partition.
+    346          *
+    347          * Arguments   : pmem        is a pointer to the memory partition control block
+    348          *
+    349          *               p_mem_data  is a pointer to a structure that will contain information about the memory
+    350          *                           partition.
+    351          *
+    352          * Returns     : OS_ERR_NONE               if no errors were found.
+    353          *               OS_ERR_MEM_INVALID_PMEM   if you passed a NULL pointer for 'pmem'
+    354          *               OS_ERR_MEM_INVALID_PDATA  if you passed a NULL pointer to the data recipient.
+    355          *********************************************************************************************************
+    356          */
+    357          
+    358          #if OS_MEM_QUERY_EN > 0u
+
+   \                                 In section .text, align 2, keep-with-next
+    359          INT8U  OSMemQuery (OS_MEM       *pmem,
+    360                             OS_MEM_DATA  *p_mem_data)
+    361          {
+   \                     OSMemQuery:
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    362          #if OS_CRITICAL_METHOD == 3u                     /* Allocate storage for CPU status register           */
+    363              OS_CPU_SR  cpu_sr = 0u;
+   \   00000006   0x2600             MOVS     R6,#+0
+    364          #endif
+    365          
+    366          
+    367          
+    368          #if OS_ARG_CHK_EN > 0u
+    369              if (pmem == (OS_MEM *)0) {                   /* Must point to a valid memory partition             */
+    370                  return (OS_ERR_MEM_INVALID_PMEM);
+    371              }
+    372              if (p_mem_data == (OS_MEM_DATA *)0) {        /* Must release a valid storage area for the data     */
+    373                  return (OS_ERR_MEM_INVALID_PDATA);
+    374              }
+    375          #endif
+    376              OS_ENTER_CRITICAL();
+   \   00000008   0x.... 0x....      BL       OS_CPU_SR_Save
+   \   0000000C   0x0006             MOVS     R6,R0
+    377              p_mem_data->OSAddr     = pmem->OSMemAddr;
+   \   0000000E   0x6820             LDR      R0,[R4, #+0]
+   \   00000010   0x6028             STR      R0,[R5, #+0]
+    378              p_mem_data->OSFreeList = pmem->OSMemFreeList;
+   \   00000012   0x6860             LDR      R0,[R4, #+4]
+   \   00000014   0x6068             STR      R0,[R5, #+4]
+    379              p_mem_data->OSBlkSize  = pmem->OSMemBlkSize;
+   \   00000016   0x68A0             LDR      R0,[R4, #+8]
+   \   00000018   0x60A8             STR      R0,[R5, #+8]
+    380              p_mem_data->OSNBlks    = pmem->OSMemNBlks;
+   \   0000001A   0x68E0             LDR      R0,[R4, #+12]
+   \   0000001C   0x60E8             STR      R0,[R5, #+12]
+    381              p_mem_data->OSNFree    = pmem->OSMemNFree;
+   \   0000001E   0x6920             LDR      R0,[R4, #+16]
+   \   00000020   0x6128             STR      R0,[R5, #+16]
+    382              OS_EXIT_CRITICAL();
+   \   00000022   0x0030             MOVS     R0,R6
+   \   00000024   0x.... 0x....      BL       OS_CPU_SR_Restore
+    383              p_mem_data->OSNUsed    = p_mem_data->OSNBlks - p_mem_data->OSNFree;
+   \   00000028   0x68E8             LDR      R0,[R5, #+12]
+   \   0000002A   0x6929             LDR      R1,[R5, #+16]
+   \   0000002C   0x1A40             SUBS     R0,R0,R1
+   \   0000002E   0x6168             STR      R0,[R5, #+20]
+    384              return (OS_ERR_NONE);
+   \   00000030   0x2000             MOVS     R0,#+0
+   \   00000032   0xBD70             POP      {R4-R6,PC}       ;; return
+    385          }
+    386          #endif                                           /* OS_MEM_QUERY_EN                                    */
+    387          /*$PAGE*/
+    388          /*
+    389          *********************************************************************************************************
+    390          *                                    INITIALIZE MEMORY PARTITION MANAGER
+    391          *
+    392          * Description : This function is called by uC/OS-II to initialize the memory partition manager.  Your
+    393          *               application MUST NOT call this function.
+    394          *
+    395          * Arguments   : none
+    396          *
+    397          * Returns     : none
+    398          *
+    399          * Note(s)    : This function is INTERNAL to uC/OS-II and your application should not call it.
+    400          *********************************************************************************************************
+    401          */
+    402          
+
+   \                                 In section .text, align 2, keep-with-next
+    403          void  OS_MemInit (void)
+    404          {
+   \                     OS_MemInit:
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+    405          #if OS_MAX_MEM_PART == 1u
+    406              OS_MemClr((INT8U *)&OSMemTbl[0], sizeof(OSMemTbl));   /* Clear the memory partition table          */
+    407              OSMemFreeList               = (OS_MEM *)&OSMemTbl[0]; /* Point to beginning of free list           */
+    408          #if OS_MEM_NAME_EN > 0u
+    409              OSMemFreeList->OSMemName    = (INT8U *)"?";           /* Unknown name                              */
+    410          #endif
+    411          #endif
+    412          
+    413          #if OS_MAX_MEM_PART >= 2u
+    414              OS_MEM  *pmem;
+    415              INT16U   i;
+    416          
+    417          
+    418              OS_MemClr((INT8U *)&OSMemTbl[0], sizeof(OSMemTbl));   /* Clear the memory partition table          */
+   \   00000002   0xF44F 0x71F0      MOV      R1,#+480
+   \   00000006   0x....             LDR.N    R0,??DataTable3_3
+   \   00000008   0x.... 0x....      BL       OS_MemClr
+    419              pmem = &OSMemTbl[0];                                  /* Point to memory control block (MCB)       */
+   \   0000000C   0x....             LDR.N    R0,??DataTable3_3
+   \   0000000E   0x0004             MOVS     R4,R0
+    420              for (i = 0u; i < (OS_MAX_MEM_PART - 1u); i++) {       /* Init. list of free memory partitions      */
+   \   00000010   0x2000             MOVS     R0,#+0
+   \   00000012   0x0005             MOVS     R5,R0
+   \                     ??OS_MemInit_0:
+   \   00000014   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000016   0x2D13             CMP      R5,#+19
+   \   00000018   0xD20B             BCS.N    ??OS_MemInit_1
+    421                  pmem->OSMemFreeList = (void *)&OSMemTbl[i+1];     /* Chain list of free partitions             */
+   \   0000001A   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000001C   0x2018             MOVS     R0,#+24
+   \   0000001E   0x....             LDR.N    R1,??DataTable3_3
+   \   00000020   0xFB00 0x1005      MLA      R0,R0,R5,R1
+   \   00000024   0x3018             ADDS     R0,R0,#+24
+   \   00000026   0x6060             STR      R0,[R4, #+4]
+    422          #if OS_MEM_NAME_EN > 0u
+    423                  pmem->OSMemName  = (INT8U *)"?";
+   \   00000028   0x....             ADR.N    R0,??DataTable3  ;; "\?"
+   \   0000002A   0x6160             STR      R0,[R4, #+20]
+    424          #endif
+    425                  pmem++;
+   \   0000002C   0x3418             ADDS     R4,R4,#+24
+    426              }
+   \   0000002E   0x1C6D             ADDS     R5,R5,#+1
+   \   00000030   0xE7F0             B.N      ??OS_MemInit_0
+    427              pmem->OSMemFreeList = (void *)0;                      /* Initialize last node                      */
+   \                     ??OS_MemInit_1:
+   \   00000032   0x2000             MOVS     R0,#+0
+   \   00000034   0x6060             STR      R0,[R4, #+4]
+    428          #if OS_MEM_NAME_EN > 0u
+    429              pmem->OSMemName = (INT8U *)"?";
+   \   00000036   0x....             ADR.N    R0,??DataTable3  ;; "\?"
+   \   00000038   0x6160             STR      R0,[R4, #+20]
+    430          #endif
+    431          
+    432              OSMemFreeList   = &OSMemTbl[0];                       /* Point to beginning of free list           */
+   \   0000003A   0x....             LDR.N    R0,??DataTable3_1
+   \   0000003C   0x....             LDR.N    R1,??DataTable3_3
+   \   0000003E   0x6001             STR      R1,[R0, #+0]
+    433          #endif
+    434          }
+   \   00000040   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   0x3F 0x00          DC8      "\?",0x0,0x0
+   \              0x00 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \   00000000   0x........         DC32     OSMemFreeList
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \   00000000   0x........         DC32     OSIntNesting
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \   00000000   0x........         DC32     OSMemTbl
+
+   \                                 In section .rodata, align 2
+   \   00000000   0x3F 0x00          DC8 "?"
+    435          #endif                                                    /* OS_MEM_EN                                 */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   OSMemCreate
+        40   -> OS_CPU_SR_Restore
+        40   -> OS_CPU_SR_Save
+      24   OSMemGet
+        24   -> OS_CPU_SR_Restore
+        24   -> OS_CPU_SR_Save
+      24   OSMemNameGet
+        24   -> OS_CPU_SR_Restore
+        24   -> OS_CPU_SR_Save
+        24   -> OS_StrLen
+      24   OSMemNameSet
+        24   -> OS_CPU_SR_Restore
+        24   -> OS_CPU_SR_Save
+      16   OSMemPut
+        16   -> OS_CPU_SR_Restore
+        16   -> OS_CPU_SR_Save
+      16   OSMemQuery
+        16   -> OS_CPU_SR_Restore
+        16   -> OS_CPU_SR_Save
+      16   OS_MemInit
+        16   -> OS_MemClr
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       2  ?<Constant "?">
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+     124  OSMemCreate
+      62  OSMemGet
+      66  OSMemNameGet
+      44  OSMemNameSet
+      54  OSMemPut
+      52  OSMemQuery
+      66  OS_MemInit
+
+ 
+   2 bytes in section .rodata
+ 484 bytes in section .text
+ 
+ 484 bytes of CODE  memory
+   2 bytes of CONST memory
+
+Errors: none
+Warnings: none

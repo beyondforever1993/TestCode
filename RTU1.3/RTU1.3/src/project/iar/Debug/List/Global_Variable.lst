@@ -1,0 +1,1915 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.6.4896/W32 for ARM      26/Mar/2017  12:36:33 #
+# Copyright 1999-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  D:\wangfan2\桌面\RTU_1.2\HuaceApp\DEVICE_GPRS\Global_Var #
+#                    iable.c                                                  #
+#    Command line =  D:\wangfan2\桌面\RTU_1.2\HuaceApp\DEVICE_GPRS\Global_Var #
+#                    iable.c -lCN D:\wangfan2\桌面\RTU_1.2\project\iar\Debug\ #
+#                    List\ -o D:\wangfan2\桌面\RTU_1.2\project\iar\Debug\Obj\ #
+#                     --no_cse --no_unroll --no_inline --no_code_motion       #
+#                    --no_tbaa --no_clustering --no_scheduling --debug        #
+#                    --endian=little --cpu=Cortex-M3 -e --fpu=None            #
+#                    --dlib_config "C:\Program Files (x86)\IAR                #
+#                    Systems\Embedded Workbench 6.5_2\arm\INC\c\DLib_Config_F #
+#                    ull.h" -I D:\wangfan2\桌面\RTU_1.2\project\iar\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\ADC\ -I   #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\RTC\ -I   #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\TILT\ -I  #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\RDLevel\  #
+#                    -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\RS232\ #
+#                     -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\OS-v2 #
+#                    \ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\Vibr #
+#                    ationString\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\ #
+#                    ..\ucos2\uCOS-II\Ports\ARM-Cortex-M3\Generic\IAR\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\ucos2\uCOS-II #
+#                    \Source\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\u #
+#                    cos2\uC-LIB\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\ #
+#                    ..\ucos2\uC-CPU\ -I D:\wangfan2\桌面\RTU_1.2\project\iar #
+#                    \..\..\ucos2\uC-CPU\ARM-Cortex-M3\IAR\ -I                #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\cmsis\Drivers #
+#                    \source\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\c #
+#                    msis\Drivers\include\ -I D:\wangfan2\桌面\RTU_1.2\projec #
+#                    t\iar\..\..\app\ -I D:\wangfan2\桌面\RTU_1.2\project\iar #
+#                    \..\..\uC-Probe\Target\Plugins\uCOS-II\ -I               #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\uC-Probe\Targ #
+#                    et\Demos\Intro\Workspaces\ -I                            #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\uC-Probe\Targ #
+#                    et\Demos\Intro\Source\ -I D:\wangfan2\桌面\RTU_1.2\proje #
+#                    ct\iar\..\..\uC-Probe\Target\Communication\Generic\Sourc #
+#                    e\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\uC-Prob #
+#                    e\Target\Communication\Generic\RS-232\Source\ -I         #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\uC-Probe\Targ #
+#                    et\Communication\Generic\RS-232\Ports\NXP\LPC17xx\ -I    #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\uC-Probe\Targ #
+#                    et\Communication\Generic\RS-232\OS\uCOS-II\ -I           #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\cmsis\Core\CM #
+#                    3\CoreSupport\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\. #
+#                    .\..\cmsis\Core\CM3\DeviceSupport\NXP\LPC177x_8x\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\HuaceApp\ -I  #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\HuaceApp\DEVI #
+#                    CE_BT\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\Hua #
+#                    ceApp\DEVICE_COM\ -I D:\wangfan2\桌面\RTU_1.2\project\ia #
+#                    r\..\..\HuaceApp\DEVICE_GPRS\ -I                         #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\HuaceApp\DEVI #
+#                    CE_GPS\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\Hu #
+#                    aceApp\DEVICE_RADIO\ -I D:\wangfan2\桌面\RTU_1.2\project #
+#                    \iar\..\..\HuaceApp\iap\ -I                              #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\FatFs\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\USB\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\bsp\spi_flash #
+#                    \ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\HuaceApp #
+#                    \LED\ -On --use_c++_inline                               #
+#    List file    =  D:\wangfan2\桌面\RTU_1.2\project\iar\Debug\List\Global_V #
+#                    ariable.lst                                              #
+#    Object file  =  D:\wangfan2\桌面\RTU_1.2\project\iar\Debug\Obj\Global_Va #
+#                    riable.o                                                 #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+D:\wangfan2\桌面\RTU_1.2\HuaceApp\DEVICE_GPRS\Global_Variable.c
+      1          /**************************Copyright (C) 2003-2014. All rights reserved*********************************
+      2          **                                  上海华测导航科技有限公司
+      3          **                                  http://www.huace.cn
+      4          **                                  Email:support@huace.cn
+      5          **
+      6          **--------------文件信息--------------------------------------------------------------------------------
+      7          **文   件   名: Global_Variable.c
+      8          **创   建   人:
+      9          **最后修改日期: 2014年08月12日
+     10          **描        述: 定义网络，电台需要用到的变量
+     11          ********************************************************************************************************/
+     12          
+     13          #include "includes.h"
+     14          
+
+   \                                 In section .bss, align 4
+     15          struct SYS_Config SYS;
+   \                     SYS:
+   \   00000000                      DS8 272
+     16          
+
+   \                                 In section .bss, align 4
+     17          struct CORS_Pcb CORS;
+   \                     CORS:
+   \   00000000                      DS8 1004
+     18          
+
+   \                                 In section .bss, align 4
+     19          struct APIS_Pcb APIS;
+   \                     APIS:
+   \   00000000                      DS8 1032
+     20          
+
+   \                                 In section .bss, align 4
+     21          struct Timer   Timer_Flag;
+   \                     Timer_Flag:
+   \   00000000                      DS8 28
+     22          
+     23          //edit 2012.08.20
+
+   \                                 In section .bss, align 1
+     24          Common_State Common_Connection_State = START;
+   \                     Common_Connection_State:
+   \   00000000                      DS8 1
+
+   \                                 In section .bss, align 1
+     25          Q26_State Q26_Connection_State = CHECK_SIMCARD;
+   \                     Q26_Connection_State:
+   \   00000000                      DS8 1
+
+   \                                 In section .bss, align 1
+     26          Q26Elite_State Q26Elite_Connection_State = C_CHECK_SIMCARD;
+   \                     Q26Elite_Connection_State:
+   \   00000000                      DS8 1
+
+   \                                 In section .bss, align 1
+     27          Telit_State Telit_Connection_State = T_CHECK_SIMCARD;
+   \                     Telit_Connection_State:
+   \   00000000                      DS8 1
+     28          /*
+     29          Q26_State Q26_Connection_State = START;
+     30          Q26Elite_State Q26Elite_Connection_State = C_START;
+     31          Telit_State Telit_Connection_State = T_START;*/
+     32          
+     33          /*--------------------------------AT Commands--------------------------------*/
+     34          /*--------------------------------AT Check Commands--------------------------------*/
+     35          //edit 2012.08.20
+
+   \                                 In section .data, align 4
+     36          unsigned char * Common_ATCmd[3]=
+   \                     Common_ATCmd:
+   \   00000000   0x........         DC32 `?<Constant "AT\\r">`, `?<Constant "AT+CGMR\\r">`
+   \              0x........   
+   \   00000008   0x........         DC32 `?<Constant "AT+CGMM\\r">`
+     37          {
+     38          	"AT\r",
+     39              "AT+CGMR\r",
+     40              "AT+CGMM\r",
+     41          };
+     42          //edit 2012.10.10
+     43          //edit 2012.08.20
+     44          //Wavecom Q2687 AT  命令
+
+   \                                 In section .data, align 4
+     45          unsigned char * Q26_ATCmd[20]=
+   \                     Q26_ATCmd:
+   \   00000000   0x........         DC32 `?<Constant "AT+CPIN?\\r\\n">`, `?<Constant "AT+WOPEN=1\\r\\n">`
+   \              0x........   
+   \   00000008   0x........         DC32 `?<Constant "AT+CGCLASS=\\"B\\"\\r">`
+   \   0000000C   0x........         DC32 `?<Constant "AT+IFC=0,0\\r">`, `?<Constant "AT+WIPCFG=1\\r">`
+   \              0x........   
+   \   00000014   0x........         DC32 `?<Constant "AT+WIPBR=1,6\\r">`
+   \   00000018   0x........         DC32 `?<Constant "AT+WIPBR=2,6,11,\\"">`, `?<Constant "AT+CREG?\\r">`
+   \              0x........   
+   \   00000020   0x........         DC32 `?<Constant "AT+CSQ\\r">`, `?<Constant "AT+CGATT=1\\r">`
+   \              0x........   
+   \   00000028   0x........         DC32 `?<Constant "AT+WIPBR=2,6,0,\\"">`
+   \   0000002C   0x........         DC32 `?<Constant "AT+WIPBR=2,6,1,\\"">`
+   \   00000030   0x........         DC32 `?<Constant "AT+WIPBR=4,6,0\\r\\n">`
+   \   00000034   0x........         DC32 `?<Constant "AT+WIPCLOSE=1,1\\r">`
+   \   00000038   0x........         DC32 `?<Constant "AT+WIPCREATE=1,1,1024,\\"">`
+   \   0000003C   0x........         DC32 `?<Constant "AT+WIPDATA=1,1,2\\r">`
+   \   00000040   0x........         DC32 `?<Constant "AT+WIPCLOSE=2,1\\r">`
+   \   00000044   0x........         DC32 `?<Constant "AT+WIPCFG=2,12,3\\r">`
+   \   00000048   0x........         DC32 `?<Constant "AT+WIPCREATE=2,1,\\"">`
+   \   0000004C   0x........         DC32 `?<Constant "AT+WIPDATA=2,1,2\\r">`
+     46          {
+     47          	//"AT\r",
+     48          	//"AT+CGMR\r",
+     49          	"AT+CPIN?\r\n",
+     50          	"AT+WOPEN=1\r\n",
+     51              "AT+CGCLASS=\"B\"\r",   // edit 2013.05.07
+     52              "AT+IFC=0,0\r",
+     53          	"AT+WIPCFG=1\r",
+     54          	"AT+WIPBR=1,6\r" ,
+     55          	"AT+WIPBR=2,6,11,\"",
+     56              "AT+CREG?\r",           // edit 2013.05.07
+     57              "AT+CSQ\r",
+     58              "AT+CGATT=1\r",       // edit 2013.05.07
+     59          	"AT+WIPBR=2,6,0,\"",
+     60          	"AT+WIPBR=2,6,1,\"",
+     61          	"AT+WIPBR=4,6,0\r\n",
+     62          	"AT+WIPCLOSE=1,1\r" ,
+     63          	"AT+WIPCREATE=1,1,1024,\"",
+     64          	"AT+WIPDATA=1,1,2\r",	 //edit 2013.01.25
+     65          	"AT+WIPCLOSE=2,1\r",
+     66          	"AT+WIPCFG=2,12,3\r",
+     67          	"AT+WIPCREATE=2,1,\"",
+     68              "AT+WIPDATA=2,1,2\r"
+     69          };
+     70          //edit 2012.10.10
+     71          //edit 2012.08.20
+     72          //Wavecom Q26Elite AT  命令
+
+   \                                 In section .data, align 4
+     73          unsigned char * Q26EL_ATCmd[15]=
+   \                     Q26EL_ATCmd:
+   \   00000000   0x........         DC32 `?<Constant "AT+CPIN?\\r">`, `?<Constant "AT+CSQ\\r">`
+   \              0x........   
+   \   00000008   0x........         DC32 `?<Constant "AT+IFC=0,0\\r">`, `?<Constant "AT+WIPCFG=1\\r">`
+   \              0x........   
+   \   00000010   0x........         DC32 `?<Constant "AT$QCMIP=0\\r">`, `?<Constant "AT+WIPBR=2,6,0,\\"">`
+   \              0x........   
+   \   00000018   0x........         DC32 `?<Constant "AT+WIPBR=2,6,1,\\"">`
+   \   0000001C   0x........         DC32 `?<Constant "AT+WIPBR=4,6\\r\\n">`
+   \   00000020   0x........         DC32 `?<Constant "AT+WIPCLOSE=1,1\\r">`
+   \   00000024   0x........         DC32 `?<Constant "AT+WIPCREATE=1,1,1024,\\"">`
+   \   00000028   0x........         DC32 `?<Constant "AT+WIPDATA=1,1,1\\r">`
+   \   0000002C   0x........         DC32 `?<Constant "AT+WIPCLOSE=2,1\\r">`
+   \   00000030   0x........         DC32 `?<Constant "AT+WIPCFG=2,12,3\\r">`
+   \   00000034   0x........         DC32 `?<Constant "AT+WIPCREATE=2,1,\\"">`
+   \   00000038   0x........         DC32 `?<Constant "AT+WIPDATA=2,1,2\\r">`
+     74          {
+     75          	//"AT\r",
+     76          	//"AT+CGMR\r",
+     77          	"AT+CPIN?\r",	
+     78          	"AT+CSQ\r",
+     79              "AT+IFC=0,0\r",
+     80          	"AT+WIPCFG=1\r",
+     81          	"AT$QCMIP=0\r",
+     82          	"AT+WIPBR=2,6,0,\"",
+     83          	"AT+WIPBR=2,6,1,\"",
+     84          	"AT+WIPBR=4,6\r\n",	
+     85          	"AT+WIPCLOSE=1,1\r" ,
+     86          	"AT+WIPCREATE=1,1,1024,\"",
+     87          	"AT+WIPDATA=1,1,1\r",	
+     88          	"AT+WIPCLOSE=2,1\r",
+     89          	"AT+WIPCFG=2,12,3\r",
+     90          	"AT+WIPCREATE=2,1,\"",
+     91              "AT+WIPDATA=2,1,2\r"
+     92          };
+     93          
+     94          //edit 2012.08.20
+     95          //Telit GL868-DUAL HE910 AT 命令
+
+   \                                 In section .data, align 4
+     96          unsigned char * T_ATCmd[15]=
+   \                     T_ATCmd:
+   \   00000000   0x........         DC32 `?<Constant "AT+CPIN?\\r\\n">`, `?<Constant "AT+FLO=0\\r">`
+   \              0x........   
+   \   00000008   0x........         DC32 `?<Constant "ATS0=1\\r">`
+   \   0000000C   0x........         DC32 `?<Constant "AT+CGDCONT=1,\\"IP\\",\\"">`
+   \   00000010   0x........         DC32 `?<Constant "AT#SKIPESC=1\\r">`, `?<Constant "AT+CREG?\\r">`
+   \              0x........   
+   \   00000018   0x........         DC32 `?<Constant "AT+CSQ\\r">`, `?<Constant "AT+CGATT=1\\r">`
+   \              0x........   
+   \   00000020   0x........         DC32 `?<Constant "AT#USERID=\\"">`, `?<Constant "AT#PASSW=\\"">`
+   \              0x........   
+   \   00000028   0x........         DC32 `?<Constant "AT#GPRS=1\\r">`
+   \   0000002C   0x........         DC32 `?<Constant "AT#SCFG=1,1,1024,0,60,1\\r">`
+   \   00000030   0x........         DC32 `?<Constant "AT#SH=1\\r">`, `?<Constant "AT#SD=1,1,">`
+   \              0x........   
+   \   00000038   0x........         DC32 `?<Constant "AT#SD=1,0,">`
+     97          {
+     98            //"AT\r",
+     99            //"AT+CGMM\r",
+    100            "AT+CPIN?\r\n",	
+    101            "AT+FLO=0\r",
+    102            "ATS0=1\r",           //edit 2013.05.07 modify by xxw 20140801
+    103            "AT+CGDCONT=1,\"IP\",\"",
+    104            "AT#SKIPESC=1\r",
+    105            "AT+CREG?\r",                   //edit 2013.05.07
+    106            "AT+CSQ\r",                     //edit 2013.05.07
+    107            "AT+CGATT=1\r",
+    108            "AT#USERID=\"",	
+    109            "AT#PASSW=\"",
+    110            "AT#GPRS=1\r",
+    111            "AT#SCFG=1,1,1024,0,60,1\r",    //edit 2013.12.20
+    112            "AT#SH=1\r",
+    113            "AT#SD=1,1,",
+    114            "AT#SD=1,0,"
+    115          };
+    116          
+    117          //Common AT  命令
+
+   \                                 In section .data, align 4
+    118          unsigned char  _3plus[4]="+++";
+   \                     _3plus:
+   \   00000000   0x2B 0x2B          DC8 "+++"
+   \              0x2B 0x00    
+
+   \                                 In section .data, align 4
+    119          unsigned char  AT[4]="AT\r";
+   \                     AT:
+   \   00000000   0x41 0x54          DC8 "AT\015"
+   \              0x0D 0x00    
+    120          
+    121          //Wavecom common AT 命令
+
+   \                                 In section .data, align 4
+    122          unsigned char AT_WIPCFG_0[14]="AT+WIPCFG=0\r\n";	
+   \                     AT_WIPCFG_0:
+   \   00000000   0x41 0x54          DC8 "AT+WIPCFG=0\015\012"
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x43 0x46    
+   \              0x47 0x3D    
+   \              0x30 0x0D    
+   \              0x0A 0x00    
+   \   0000000E   0x00 0x00          DC8 0, 0
+
+   \                                 In section .data, align 4
+    123          unsigned char AT_CFUN_1[11]="AT+CFUN=1\r";	
+   \                     AT_CFUN_1:
+   \   00000000   0x41 0x54          DC8 "AT+CFUN=1\015"
+   \              0x2B 0x43    
+   \              0x46 0x55    
+   \              0x4E 0x3D    
+   \              0x31 0x0D    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+
+   \                                 In section .data, align 4
+    124          unsigned char WMBS_2[13]="AT+WMBS=2,1\r"; //edit 2013.04.28
+   \                     WMBS_2:
+   \   00000000   0x41 0x54          DC8 "AT+WMBS=2,1\015"
+   \              0x2B 0x57    
+   \              0x4D 0x42    
+   \              0x53 0x3D    
+   \              0x32 0x2C    
+   \              0x31 0x0D    
+   \              0x00         
+   \   0000000D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+    125          //unsigend char WMBS_1[11]= ""AT+WMBS=2,1\r";
+
+   \                                 In section .data, align 4
+    126          unsigned char AT_CFUN_0[11]="AT+CFUN=0\r"; //edit 2013.04.28
+   \                     AT_CFUN_0:
+   \   00000000   0x41 0x54          DC8 "AT+CFUN=0\015"
+   \              0x2B 0x43    
+   \              0x46 0x55    
+   \              0x4E 0x3D    
+   \              0x30 0x0D    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+
+   \                                 In section .data, align 4
+    127          unsigned char AT_CFUN_10[13] ="AT+CFUN=1,0\r";//edit 2013.04.28
+   \                     AT_CFUN_10:
+   \   00000000   0x41 0x54          DC8 "AT+CFUN=1,0\015"
+   \              0x2B 0x43    
+   \              0x46 0x55    
+   \              0x4E 0x3D    
+   \              0x31 0x2C    
+   \              0x30 0x0D    
+   \              0x00         
+   \   0000000D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+    128          //unsigned char AT_GET_PPP[11]="AT+WIPBR?\r";	
+    129          
+    130          //unsigned char AT_REPEAT[5]="A\/\r\n";	
+    131          
+    132          //Telit common AT 命令
+
+   \                                 In section .data, align 4
+    133          unsigned char AT_CHECK_PPP[11] = "AT#GPRS?\r\n";
+   \                     AT_CHECK_PPP:
+   \   00000000   0x41 0x54          DC8 "AT#GPRS?\015\012"
+   \              0x23 0x47    
+   \              0x50 0x52    
+   \              0x53 0x3F    
+   \              0x0D 0x0A    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+
+   \                                 In section .data, align 4
+    134          unsigned char AT_CDMA_PPP[14] = "AT#CDMADC=1\r\n";   //edit 2013.07.25
+   \                     AT_CDMA_PPP:
+   \   00000000   0x41 0x54          DC8 "AT#CDMADC=1\015\012"
+   \              0x23 0x43    
+   \              0x44 0x4D    
+   \              0x41 0x44    
+   \              0x43 0x3D    
+   \              0x31 0x0D    
+   \              0x0A 0x00    
+   \   0000000E   0x00 0x00          DC8 0, 0
+    135          
+    136          /*--------------------------------AT Commands ACK--------------------------------*/
+    137          //模块信息
+
+   \                                 In section .data, align 4
+    138          unsigned char  * Module_Infor[12]=
+   \                     Module_Infor:
+   \   00000000   0x........         DC32 `?<Constant "NONE">`, `?<Constant "GL865">`, `?<Constant "GE910">`
+   \              0x........   
+   \              0x........   
+   \   0000000C   0x........         DC32 `?<Constant "HE910">`, `?<Constant "GL868">`
+   \              0x........   
+   \   00000014   0x........         DC32 `?<Constant "Q26EL">`, `?<Constant "Q2687">`
+   \              0x........   
+   \   0000001C   0x........         DC32 `?<Constant "CE910">`, `?<Constant "DE910">`
+   \              0x........   
+   \   00000024   0x........         DC32 `?<Constant "UE910">`, `?<Constant "LE910">`
+   \              0x........   
+   \   0000002C   0x........         DC32 `?<Constant "UL865">`
+    139          {
+    140              "NONE",
+    141              "GL865",  //edit 2013.07.11
+    142              "GE910",  //edit 2013.08.13
+    143              "HE910",  //edit 2012.08.16
+    144              "GL868",
+    145              "Q26EL",
+    146              "Q2687",
+    147              "CE910",  //edit 2013.07.11
+    148              "DE910",   //edit 2013.07.11
+    149              "UE910",  //edit 2013.07.11 add by xxw 20140801
+    150              "LE910",   //edit 2013.07.11
+    151              "UL865",
+    152          };
+    153          
+    154          //Wavecom Q26Elite AT 响应
+
+   \                                 In section .data, align 4
+    155          unsigned char  _WIND7[8]="+WIND: 7";
+   \                     _WIND7:
+   \   00000000   0x2B 0x57          DC8 2BH, 57H, 49H, 4EH, 44H, 3AH, 20H, 37H
+   \              0x49 0x4E    
+   \              0x44 0x3A    
+   \              0x20 0x37    
+    156          
+    157          //Wavecom Common AT 响应	
+
+   \                                 In section .data, align 4
+    158          unsigned char  _CSQ[6]="+CSQ:";
+   \                     _CSQ:
+   \   00000000   0x2B 0x43          DC8 "+CSQ:"
+   \              0x53 0x51    
+   \              0x3A 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+
+   \                                 In section .data, align 4
+    159          unsigned char  _CREG[7]="+CREG:";     //edit 2013.04.04
+   \                     _CREG:
+   \   00000000   0x2B 0x43          DC8 "+CREG:"
+   \              0x52 0x45    
+   \              0x47 0x3A    
+   \              0x00         
+   \   00000007   0x00               DC8 0
+
+   \                                 In section .data, align 4
+    160          unsigned char  OK[3]="OK";
+   \                     OK:
+   \   00000000   0x4F 0x4B          DC8 "OK"
+   \              0x00         
+   \   00000003   0x00               DC8 0
+
+   \                                 In section .data, align 4
+    161          unsigned char  _ERROR[6]="ERROR";
+   \                     _ERROR:
+   \   00000000   0x45 0x52          DC8 "ERROR"
+   \              0x52 0x4F    
+   \              0x52 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+
+   \                                 In section .data, align 4
+    162          unsigned char  WIPREADY[10]="+WIPREADY";
+   \                     WIPREADY:
+   \   00000000   0x2B 0x57          DC8 "+WIPREADY"
+   \              0x49 0x50    
+   \              0x52 0x45    
+   \              0x41 0x44    
+   \              0x59 0x00    
+   \   0000000A   0x00 0x00          DC8 0, 0
+
+   \                                 In section .data, align 4
+    163          unsigned char  CONNECT[8]="CONNECT";
+   \                     CONNECT:
+   \   00000000   0x43 0x4F          DC8 "CONNECT"
+   \              0x4E 0x4E    
+   \              0x45 0x43    
+   \              0x54 0x00    
+
+   \                                 In section .data, align 4
+    164          unsigned char  _WIPPEERCLOSE[14]="+WIPPEERCLOSE";
+   \                     _WIPPEERCLOSE:
+   \   00000000   0x2B 0x57          DC8 "+WIPPEERCLOSE"
+   \              0x49 0x50    
+   \              0x50 0x45    
+   \              0x45 0x52    
+   \              0x43 0x4C    
+   \              0x4F 0x53    
+   \              0x45 0x00    
+   \   0000000E   0x00 0x00          DC8 0, 0
+
+   \                                 In section .data, align 4
+    165          unsigned char  _SHUTDOWN[9]="SHUTDOWN";
+   \                     _SHUTDOWN:
+   \   00000000   0x53 0x48          DC8 "SHUTDOWN"
+   \              0x55 0x54    
+   \              0x44 0x4F    
+   \              0x57 0x4E    
+   \              0x00         
+   \   00000009   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+    166          
+
+   \                                 In section .data, align 4
+    167          unsigned char  _WIPBR_ACTIVE[12]="+WIPBR: 6,1";
+   \                     _WIPBR_ACTIVE:
+   \   00000000   0x2B 0x57          DC8 "+WIPBR: 6,1"
+   \              0x49 0x50    
+   \              0x42 0x52    
+   \              0x3A 0x20    
+   \              0x36 0x2C    
+   \              0x31 0x00    
+
+   \                                 In section .data, align 4
+    168          unsigned char  _WIPBR_DEACTIVE[12]="+WIPBR: 6,0";
+   \                     _WIPBR_DEACTIVE:
+   \   00000000   0x2B 0x57          DC8 "+WIPBR: 6,0"
+   \              0x49 0x50    
+   \              0x42 0x52    
+   \              0x3A 0x20    
+   \              0x36 0x2C    
+   \              0x30 0x00    
+    169          
+    170          //Telit Common AT 响应
+
+   \                                 In section .data, align 4
+    171          unsigned char  _PPP_ACTIVE[9] = "#GPRS: 1";
+   \                     _PPP_ACTIVE:
+   \   00000000   0x23 0x47          DC8 "#GPRS: 1"
+   \              0x50 0x52    
+   \              0x53 0x3A    
+   \              0x20 0x31    
+   \              0x00         
+   \   00000009   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .data, align 4
+    172          unsigned char  _PPP_DEACTIVE[9] = "#GPRS: 0";
+   \                     _PPP_DEACTIVE:
+   \   00000000   0x23 0x47          DC8 "#GPRS: 0"
+   \              0x50 0x52    
+   \              0x53 0x3A    
+   \              0x20 0x30    
+   \              0x00         
+   \   00000009   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+    173          
+    174          //Telit UC864 AT 响应
+    175          // unsigned char  PNST[9]="#PSNT: 2";
+    176          
+    177          //Wavecom and Telit Common AT 响应	
+
+   \                                 In section .data, align 4
+    178          unsigned char  NO_CARRIER[11]="NO CARRIER";
+   \                     NO_CARRIER:
+   \   00000000   0x4E 0x4F          DC8 "NO CARRIER"
+   \              0x20 0x43    
+   \              0x41 0x52    
+   \              0x52 0x49    
+   \              0x45 0x52    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+
+   \                                 In section .data, align 4
+    179          unsigned char  READY[6]="READY";
+   \                     READY:
+   \   00000000   0x52 0x45          DC8 "READY"
+   \              0x41 0x44    
+   \              0x59 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+    180          
+    181          //华测数据包内容
+
+   \                                 In section .data, align 4
+    182          unsigned char _GPGGA[7]="$GPGGA";
+   \                     _GPGGA:
+   \   00000000   0x24 0x47          DC8 "$GPGGA"
+   \              0x50 0x47    
+   \              0x47 0x41    
+   \              0x00         
+   \   00000007   0x00               DC8 0
+
+   \                                 In section .data, align 4
+    183          unsigned char _GPGSV[7]="$GPGSV";
+   \                     _GPGSV:
+   \   00000000   0x24 0x47          DC8 "$GPGSV"
+   \              0x50 0x47    
+   \              0x53 0x56    
+   \              0x00         
+   \   00000007   0x00               DC8 0
+    184          /*--------------------------------公用-----------------------------------------*/
+    185          
+    186          //模块串口数据缓冲器
+
+   \                                 In section .bss, align 4
+    187          unsigned  char Module_Data_Buffer[Module_Data_Buffer_Size];
+   \                     Module_Data_Buffer:
+   \   00000000                      DS8 2048
+
+   \                                 In section .bss, align 2
+    188          unsigned  short Module_Data_WrSp = 0;
+   \                     Module_Data_WrSp:
+   \   00000000                      DS8 2
+
+   \                                 In section .bss, align 2
+    189          unsigned  short Module_Data_RdSp = 0;
+   \                     Module_Data_RdSp:
+   \   00000000                      DS8 2
+    190          
+    191          //模块类型
+
+   \                                 In section .bss, align 1
+    192          unsigned char Module_Type = 0;
+   \                     Module_Type:
+   \   00000000                      DS8 1
+    193          
+    194          //edit 2013.02.22 del
+    195          //接收机模式
+    196          //unsigned char g_nReceiverMode = RTK_MODE;
+    197          
+    198          //模块状态
+
+   \                                 In section .bss, align 4
+    199          unsigned char  Module_Status[4]={0x00,0x00,0x00,0x00};
+   \                     Module_Status:
+   \   00000000                      DS8 4
+    200          
+    201          //缺省参数标志
+
+   \                                 In section .bss, align 1
+    202          unsigned char  Default_Parameter_Flag[1] = {0};
+   \                     Default_Parameter_Flag:
+   \   00000000                      DS8 1
+    203          
+    204          //固件版本
+
+   \                                 In section .data, align 4
+    205          unsigned char  Firm[6] = "4.69";
+   \                     Firm:
+   \   00000000   0x34 0x2E          DC8 "4.69"
+   \              0x36 0x39    
+   \              0x00         
+   \   00000005   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+    206          
+    207          //工作模式切换标志
+
+   \                                 In section .bss, align 1
+    208          unsigned char  Work_Mode_Change_Flag = 0;
+   \                     Work_Mode_Change_Flag:
+   \   00000000                      DS8 1
+    209          
+    210          //设置包含APN 服务商号码 拨号用户名密码 等拨号连接参数更改标志
+
+   \                                 In section .bss, align 1
+    211          unsigned char  Dial_Parameter_Change_Flag = 0;
+   \                     Dial_Parameter_Change_Flag:
+   \   00000000                      DS8 1
+    212          
+    213          //设置IP端口号 通信协议 基准站移动站模式 网址 源列表用户名密码等通讯协议参数 更改标志
+
+   \                                 In section .bss, align 1
+    214          unsigned char  Protocol_Parameter_Change_Flag = 0;
+   \                     Protocol_Parameter_Change_Flag:
+   \   00000000                      DS8 1
+    215          
+    216          //设置网址和端口号以及协议标志
+
+   \                                 In section .bss, align 1
+    217          unsigned char Set_Net_Address_Flag = 0;
+   \                     Set_Net_Address_Flag:
+   \   00000000                      DS8 1
+    218          
+    219          //信号强度低标志
+
+   \                                 In section .bss, align 1
+    220          unsigned char Signal_Weak_Flag = 0;
+   \                     Signal_Weak_Flag:
+   \   00000000                      DS8 1
+    221          
+    222          //SIMCARD检测标志
+
+   \                                 In section .bss, align 1
+    223          unsigned char Simcard_Check_Flag = 0;
+   \                     Simcard_Check_Flag:
+   \   00000000                      DS8 1
+    224          
+    225          #define STATE_INTIALING 0x00
+    226          #define STATE_PPP_CONNECTING 0x05
+    227          #define STATE_UDP_CONNECTING 0x03
+    228          #define STATE_LOGGED_APIS 0x01
+    229          #define STATE_TCP_CONNECTING 0x02
+    230          #define STATE_LOGGED_CORS 0x04
+    231          #define STATE_RADIO 0x09
+
+   \                                 In section .bss, align 1
+    232          unsigned char Current_State;//上线连网状态
+   \                     Current_State:
+   \   00000000                      DS8 1
+    233          
+    234          #define ERRCODE_NORMAL 0x00
+    235          #define ERRCODE_WEAK_SIGNAL 0x01
+    236          #define ERRCODE_NO_SIMCARD  0x02
+    237          #define ERRCODE_TCP_UDP_UNCONNECTED  0x03
+    238          #define ERRCODE_WRONG_USERNAME_OR_PASSWORD 0x04
+    239          #define ERRCODE_WRONG_SOURCELIST 0x05
+    240          #define ERRCODE_DIAL_FAILED 0x07
+
+   \                                 In section .bss, align 2
+    241          unsigned short Err_Code;//错误代码
+   \                     Err_Code:
+   \   00000000                      DS8 2
+    242          
+    243          //通讯模块RST复位标志
+
+   \                                 In section .bss, align 1
+    244          unsigned char g_bModuleRestartFlag = 0;
+   \                     g_bModuleRestartFlag:
+   \   00000000                      DS8 1
+    245          
+    246          //通讯软件复位命令标志
+
+   \                                 In section .bss, align 1
+    247          unsigned char g_bResetCmdFlag = 0;//edit 2012.09.19
+   \                     g_bResetCmdFlag:
+   \   00000000                      DS8 1
+    248          
+
+   \                                 In section .bss, align 1
+    249          unsigned char Auto_Update_Flag = 0; //edit 2012.12.07
+   \                     Auto_Update_Flag:
+   \   00000000                      DS8 1
+    250          //收发电台复位标志
+
+   \                                 In section .bss, align 1
+    251          unsigned char Reset_TRRadio_Flag = 0;
+   \                     Reset_TRRadio_Flag:
+   \   00000000                      DS8 1
+    252          
+    253          //通讯模块初始化完成标志 用于信号强度的显示
+
+   \                                 In section .bss, align 1
+    254          unsigned char g_bMoudule_Initialized_Flag = 0;
+   \                     g_bMoudule_Initialized_Flag:
+   \   00000000                      DS8 1
+    255          
+    256          //华测设置命令包结束标志
+
+   \                                 In section .bss, align 1
+    257          unsigned char Msg_Set_Receive_End_Flag = 0;
+   \                     Msg_Set_Receive_End_Flag:
+   \   00000000                      DS8 1
+    258          
+    259          //华测数据包结束标志
+
+   \                                 In section .bss, align 1
+    260          unsigned char Msg_Data_Receive_End_Flag = 0;
+   \                     Msg_Data_Receive_End_Flag:
+   \   00000000                      DS8 1
+    261          
+    262          //模块数据输出标志
+
+   \                                 In section .bss, align 1
+    263          unsigned char g_bPrintDataFlag = 0;
+   \                     g_bPrintDataFlag:
+   \   00000000                      DS8 1
+    264          
+    265          //AT 命令发送计数器
+
+   \                                 In section .bss, align 1
+    266          unsigned char  AT_Repeat_Cnt = 0;
+   \                     AT_Repeat_Cnt:
+   \   00000000                      DS8 1
+    267          
+    268          //AT_WIPCFG0命令发送计数器
+
+   \                                 In section .bss, align 1
+    269          unsigned char AT_WIPCFG0_Repeat_Cnt = 0;
+   \                     AT_WIPCFG0_Repeat_Cnt:
+   \   00000000                      DS8 1
+    270          
+    271          //AT上线重连标志
+
+   \                                 In section .bss, align 1
+    272          unsigned char  Reconnect_Flag = 0;
+   \                     Reconnect_Flag:
+   \   00000000                      DS8 1
+    273          
+    274          //断开网络按钮标志
+
+   \                                 In section .bss, align 1
+    275          unsigned char  Disconnect_Click_Flag = 0;
+   \                     Disconnect_Click_Flag:
+   \   00000000                      DS8 1
+    276          
+    277          //获取源列表按钮标志
+
+   \                                 In section .bss, align 1
+    278          unsigned char Get_Sourcelist_Flag = 0;
+   \                     Get_Sourcelist_Flag:
+   \   00000000                      DS8 1
+    279          
+    280          //数据断线后重连标志
+
+   \                                 In section .bss, align 1
+    281          unsigned char Service_Relog_Flag = 0;
+   \                     Service_Relog_Flag:
+   \   00000000                      DS8 1
+    282          
+    283          //指示当前的AT指令数
+
+   \                                 In section .bss, align 1
+    284          unsigned char   AT_Cmd_Index = 0;
+   \                     AT_Cmd_Index:
+   \   00000000                      DS8 1
+    285          
+    286          //统计AT指令总数
+
+   \                                 In section .bss, align 1
+    287          unsigned char   All_AT_Cmd = 0;
+   \                     All_AT_Cmd:
+   \   00000000                      DS8 1
+    288          
+    289          //VS命令源地址
+
+   \                                 In section .bss, align 1
+    290          unsigned char  VSCommand_Source = 0;
+   \                     VSCommand_Source:
+   \   00000000                      DS8 1
+    291          
+    292          //VL命令源地址
+
+   \                                 In section .bss, align 1
+    293          unsigned char  VLCommand_Source = 0;
+   \                     VLCommand_Source:
+   \   00000000                      DS8 1
+    294          
+    295          //VM命令源地址
+
+   \                                 In section .bss, align 1
+    296          unsigned char  VMCommand_Source = 0;  //edit 2014.05.29 add by xxw 20140801
+   \                     VMCommand_Source:
+   \   00000000                      DS8 1
+    297          
+    298          //拨号用户名和密码
+
+   \                                 In section .bss, align 4
+    299          unsigned char  UserName[33];   //heyunchun from 29 to 33
+   \                     UserName:
+   \   00000000                      DS8 36
+
+   \                                 In section .bss, align 4
+    300          unsigned char  PassWord[17];   //heyunchun from 16 to 17
+   \                     PassWord:
+   \   00000000                      DS8 20
+    301          
+    302          //仪器ID
+
+   \                                 In section .bss, align 4
+    303          unsigned char SYS_ID_PW_Code[22];
+   \                     SYS_ID_PW_Code:
+   \   00000000                      DS8 24
+    304          
+    305          /*-------------------------------- APIS -----------------------------------------*/
+    306          
+    307          //APIS 工作域
+
+   \                                 In section .data, align 4
+    308          unsigned char Huace[9] = "Huacenav";
+   \                     Huace:
+   \   00000000   0x48 0x75          DC8 "Huacenav"
+   \              0x61 0x63    
+   \              0x65 0x6E    
+   \              0x61 0x76    
+   \              0x00         
+   \   00000009   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+    309          
+    310          //APIS移动站绑定的基准站ID
+
+   \                                 In section .data, align 4
+    311          unsigned char BindID[7] = "000000";
+   \                     BindID:
+   \   00000000   0x30 0x30          DC8 "000000"
+   \              0x30 0x30    
+   \              0x30 0x30    
+   \              0x00         
+   \   00000007   0x00               DC8 0
+    312          
+    313          
+    314          //APIS 密码
+
+   \                                 In section .data, align 4
+    315          unsigned char pWord[17]="PassWordPassWord";
+   \                     pWord:
+   \   00000000   0x50 0x61          DC8 "PassWordPassWord"
+   \              0x73 0x73    
+   \              0x57 0x6F    
+   \              0x72 0x64    
+   \              0x50 0x61    
+   \              0x73 0x73    
+   \              0x57 0x6F    
+   \              0x72 0x64    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+    316          
+    317          //APIS GPRS动态IP地址
+
+   \                                 In section .data, align 4
+    318          unsigned char GPRS_Dynamic_IP_Address[5]={0x0A,0x0A,0x0A,0x0A};
+   \                     GPRS_Dynamic_IP_Address:
+   \   00000000   0x0A 0x0A          DC8 10, 10, 10, 10, 0, 0, 0, 0
+   \              0x0A 0x0A    
+   \              0x00 0x00    
+   \              0x00 0x00    
+    319          
+    320          /*--------------------------------VRS or CORS-----------------------------------------*/
+    321          // Base 64 加密 The 7-bit alphabet used to encode binary information
+
+   \                                 In section .data, align 4
+    322          unsigned char  codes[65]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+   \                     codes:
+   \   00000000   0x41 0x42          DC8 41H, 42H, 43H, 44H, 45H, 46H, 47H, 48H
+   \              0x43 0x44    
+   \              0x45 0x46    
+   \              0x47 0x48    
+   \   00000008   0x49 0x4A          DC8 49H, 4AH, 4BH, 4CH, 4DH, 4EH, 4FH, 50H
+   \              0x4B 0x4C    
+   \              0x4D 0x4E    
+   \              0x4F 0x50    
+   \   00000010   0x51 0x52          DC8 51H, 52H, 53H, 54H, 55H, 56H, 57H, 58H
+   \              0x53 0x54    
+   \              0x55 0x56    
+   \              0x57 0x58    
+   \   00000018   0x59 0x5A          DC8 59H, 5AH, 61H, 62H, 63H, 64H, 65H, 66H
+   \              0x61 0x62    
+   \              0x63 0x64    
+   \              0x65 0x66    
+   \   00000020   0x67 0x68          DC8 67H, 68H, 69H, 6AH, 6BH, 6CH, 6DH, 6EH
+   \              0x69 0x6A    
+   \              0x6B 0x6C    
+   \              0x6D 0x6E    
+   \   00000028   0x6F 0x70          DC8 6FH, 70H, 71H, 72H, 73H, 74H, 75H, 76H
+   \              0x71 0x72    
+   \              0x73 0x74    
+   \              0x75 0x76    
+   \   00000030   0x77 0x78          DC8 77H, 78H, 79H, 7AH, 30H, 31H, 32H, 33H
+   \              0x79 0x7A    
+   \              0x30 0x31    
+   \              0x32 0x33    
+   \   00000038   0x34 0x35          DC8 34H, 35H, 36H, 37H, 38H, 39H, 2BH, 2FH
+   \              0x36 0x37    
+   \              0x38 0x39    
+   \              0x2B 0x2F    
+   \   00000040   0x00               DC8 0
+   \   00000041   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+    323          
+    324          // CORS 登录成功
+
+   \                                 In section .data, align 4
+    325          unsigned char  Log_CORS_OK[19]="\r\nLog CORS OK!\r\n\r\n";
+   \                     Log_CORS_OK:
+   \   00000000   0x0D 0x0A          DC8 "\015\012Log CORS OK!\015\012\015\012"
+   \              0x4C 0x6F    
+   \              0x67 0x20    
+   \              0x43 0x4F    
+   \              0x52 0x53    
+   \              0x20 0x4F    
+   \              0x4B 0x21    
+   \              0x0D 0x0A    
+   \              0x0D 0x0A    
+   \              0x00         
+   \   00000013   0x00               DC8 0
+
+   \                                 In section .data, align 4
+    326          unsigned char  CY_200_OK[10]="CY 200 OK";
+   \                     CY_200_OK:
+   \   00000000   0x43 0x59          DC8 "CY 200 OK"
+   \              0x20 0x32    
+   \              0x30 0x30    
+   \              0x20 0x4F    
+   \              0x4B 0x00    
+   \   0000000A   0x00 0x00          DC8 0, 0
+    327          //unsigned char  ICY_200_OK[7]="200 OK";
+    328          // CORS 登录错误判断及其错误
+
+   \                                 In section .data, align 4
+    329          unsigned char  Unauthorized[17]="401 Unauthorized";
+   \                     Unauthorized:
+   \   00000000   0x34 0x30          DC8 "401 Unauthorized"
+   \              0x31 0x20    
+   \              0x55 0x6E    
+   \              0x61 0x75    
+   \              0x74 0x68    
+   \              0x6F 0x72    
+   \              0x69 0x7A    
+   \              0x65 0x64    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .data, align 4
+    330          unsigned char  Source[19]="SOURCETABLE 200 OK";
+   \                     Source:
+   \   00000000   0x53 0x4F          DC8 "SOURCETABLE 200 OK"
+   \              0x55 0x52    
+   \              0x43 0x45    
+   \              0x54 0x41    
+   \              0x42 0x4C    
+   \              0x45 0x20    
+   \              0x32 0x30    
+   \              0x30 0x20    
+   \              0x4F 0x4B    
+   \              0x00         
+   \   00000013   0x00               DC8 0
+
+   \                                 In section .data, align 4
+    331          unsigned char  ENDSource[15]="ENDSOURCETABLE";
+   \                     ENDSource:
+   \   00000000   0x45 0x4E          DC8 "ENDSOURCETABLE"
+   \              0x44 0x53    
+   \              0x4F 0x55    
+   \              0x52 0x43    
+   \              0x45 0x54    
+   \              0x41 0x42    
+   \              0x4C 0x45    
+   \              0x00         
+   \   0000000F   0x00               DC8 0
+    332          
+    333          //Cors Error1-IP地址和端口号错误
+    334          //Cors_Error2-用户名和密码错误or 已经被使用
+    335          //Cors_Error3-源列表错误
+
+   \                                 In section .data, align 4
+    336          unsigned char  Cors_Error1[57]="\r\nCors Error: Server IP or Port do not exsit or open!!\r\n";
+   \                     Cors_Error1:
+   \   00000000   0x0D 0x0A          DC8 0DH, 0AH, 43H, 6FH, 72H, 73H, 20H, 45H
+   \              0x43 0x6F    
+   \              0x72 0x73    
+   \              0x20 0x45    
+   \   00000008   0x72 0x72          DC8 72H, 72H, 6FH, 72H, 3AH, 20H, 53H, 65H
+   \              0x6F 0x72    
+   \              0x3A 0x20    
+   \              0x53 0x65    
+   \   00000010   0x72 0x76          DC8 72H, 76H, 65H, 72H, 20H, 49H, 50H, 20H
+   \              0x65 0x72    
+   \              0x20 0x49    
+   \              0x50 0x20    
+   \   00000018   0x6F 0x72          DC8 6FH, 72H, 20H, 50H, 6FH, 72H, 74H, 20H
+   \              0x20 0x50    
+   \              0x6F 0x72    
+   \              0x74 0x20    
+   \   00000020   0x64 0x6F          DC8 64H, 6FH, 20H, 6EH, 6FH, 74H, 20H, 65H
+   \              0x20 0x6E    
+   \              0x6F 0x74    
+   \              0x20 0x65    
+   \   00000028   0x78 0x73          DC8 78H, 73H, 69H, 74H, 20H, 6FH, 72H, 20H
+   \              0x69 0x74    
+   \              0x20 0x6F    
+   \              0x72 0x20    
+   \   00000030   0x6F 0x70          DC8 6FH, 70H, 65H, 6EH, 21H, 21H, 0DH, 0AH
+   \              0x65 0x6E    
+   \              0x21 0x21    
+   \              0x0D 0x0A    
+   \   00000038   0x00               DC8 0
+   \   00000039   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .data, align 4
+    337          unsigned char  Cors_Error2[74]="\r\nCors Error: Password Username error or this cors user has been used!!\r\n";
+   \                     Cors_Error2:
+   \   00000000   0x0D 0x0A          DC8 0DH, 0AH, 43H, 6FH, 72H, 73H, 20H, 45H
+   \              0x43 0x6F    
+   \              0x72 0x73    
+   \              0x20 0x45    
+   \   00000008   0x72 0x72          DC8 72H, 72H, 6FH, 72H, 3AH, 20H, 50H, 61H
+   \              0x6F 0x72    
+   \              0x3A 0x20    
+   \              0x50 0x61    
+   \   00000010   0x73 0x73          DC8 73H, 73H, 77H, 6FH, 72H, 64H, 20H, 55H
+   \              0x77 0x6F    
+   \              0x72 0x64    
+   \              0x20 0x55    
+   \   00000018   0x73 0x65          DC8 73H, 65H, 72H, 6EH, 61H, 6DH, 65H, 20H
+   \              0x72 0x6E    
+   \              0x61 0x6D    
+   \              0x65 0x20    
+   \   00000020   0x65 0x72          DC8 65H, 72H, 72H, 6FH, 72H, 20H, 6FH, 72H
+   \              0x72 0x6F    
+   \              0x72 0x20    
+   \              0x6F 0x72    
+   \   00000028   0x20 0x74          DC8 20H, 74H, 68H, 69H, 73H, 20H, 63H, 6FH
+   \              0x68 0x69    
+   \              0x73 0x20    
+   \              0x63 0x6F    
+   \   00000030   0x72 0x73          DC8 72H, 73H, 20H, 75H, 73H, 65H, 72H, 20H
+   \              0x20 0x75    
+   \              0x73 0x65    
+   \              0x72 0x20    
+   \   00000038   0x68 0x61          DC8 68H, 61H, 73H, 20H, 62H, 65H, 65H, 6EH
+   \              0x73 0x20    
+   \              0x62 0x65    
+   \              0x65 0x6E    
+   \   00000040   0x20 0x75          DC8 20H, 75H, 73H, 65H, 64H, 21H, 21H, 0DH
+   \              0x73 0x65    
+   \              0x64 0x21    
+   \              0x21 0x0D    
+   \   00000048   0x0A 0x00          DC8 0AH, 0
+   \   0000004A   0x00 0x00          DC8 0, 0
+
+   \                                 In section .data, align 4
+    338          unsigned char  Cors_Error3[36]="\r\nCors Error: Source List Error!!\r\n";
+   \                     Cors_Error3:
+   \   00000000   0x0D 0x0A          DC8 "\015\012Cors Error: Source List Error!!\015\012"
+   \              0x43 0x6F    
+   \              0x72 0x73    
+   \              0x20 0x45    
+   \              0x72 0x72    
+   \              0x6F 0x72    
+   \              0x3A 0x20    
+   \              0x53 0x6F    
+   \              0x75 0x72    
+   \              0x63 0x65    
+   \              0x20 0x4C    
+   \              0x69 0x73    
+   \              0x74 0x20    
+   \              0x45 0x72    
+   \              0x72 0x6F    
+   \              0x72 0x21    
+   \              0x21 0x0D    
+   \              0x0A 0x00    
+    339          
+    340          //CORS 信息数据
+
+   \                                 In section .data, align 4
+    341          unsigned char  Cors_Infor1[6] ="GET /";
+   \                     Cors_Infor1:
+   \   00000000   0x47 0x45          DC8 "GET /"
+   \              0x54 0x20    
+   \              0x2F 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+
+   \                                 In section .data, align 4
+    342          unsigned char  Cors_Infor2[12]=" HTTP/1.0\r\n";
+   \                     Cors_Infor2:
+   \   00000000   0x20 0x48          DC8 " HTTP/1.0\015\012"
+   \              0x54 0x54    
+   \              0x50 0x2F    
+   \              0x31 0x2E    
+   \              0x30 0x0D    
+   \              0x0A 0x00    
+
+   \                                 In section .data, align 4
+    343          unsigned char  Cors_Infor3[44]="User-Agent: NTRIP GNSSInternetRadio/1.4.5\r\n";
+   \                     Cors_Infor3:
+   \   00000000   0x55 0x73          DC8 "User-Agent: NTRIP GNSSInternetRadio/1.4.5\015\012"
+   \              0x65 0x72    
+   \              0x2D 0x41    
+   \              0x67 0x65    
+   \              0x6E 0x74    
+   \              0x3A 0x20    
+   \              0x4E 0x54    
+   \              0x52 0x49    
+   \              0x50 0x20    
+   \              0x47 0x4E    
+   \              0x53 0x53    
+   \              0x49 0x6E    
+   \              0x74 0x65    
+   \              0x72 0x6E    
+   \              0x65 0x74    
+   \              0x52 0x61    
+   \              0x64 0x69    
+   \              0x6F 0x2F    
+   \              0x31 0x2E    
+   \              0x34 0x2E    
+   \              0x35 0x0D    
+   \              0x0A 0x00    
+
+   \                                 In section .data, align 4
+    344          unsigned char  Cors_Infor4[14]="Accept: */*\r\n";
+   \                     Cors_Infor4:
+   \   00000000   0x41 0x63          DC8 "Accept: */*\015\012"
+   \              0x63 0x65    
+   \              0x70 0x74    
+   \              0x3A 0x20    
+   \              0x2A 0x2F    
+   \              0x2A 0x0D    
+   \              0x0A 0x00    
+   \   0000000E   0x00 0x00          DC8 0, 0
+
+   \                                 In section .data, align 4
+    345          unsigned char  Cors_Infor5[20]="Connection: close\r\n";
+   \                     Cors_Infor5:
+   \   00000000   0x43 0x6F          DC8 "Connection: close\015\012"
+   \              0x6E 0x6E    
+   \              0x65 0x63    
+   \              0x74 0x69    
+   \              0x6F 0x6E    
+   \              0x3A 0x20    
+   \              0x63 0x6C    
+   \              0x6F 0x73    
+   \              0x65 0x0D    
+   \              0x0A 0x00    
+
+   \                                 In section .data, align 4
+    346          unsigned char  Cors_Infor6[22]="Authorization: Basic ";
+   \                     Cors_Infor6:
+   \   00000000   0x41 0x75          DC8 "Authorization: Basic "
+   \              0x74 0x68    
+   \              0x6F 0x72    
+   \              0x69 0x7A    
+   \              0x61 0x74    
+   \              0x69 0x6F    
+   \              0x6E 0x3A    
+   \              0x20 0x42    
+   \              0x61 0x73    
+   \              0x69 0x63    
+   \              0x20 0x00    
+   \   00000016   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT\015"
+   \              0x0D 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+CGMR\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+CGMR\015"
+   \              0x2B 0x43    
+   \              0x47 0x4D    
+   \              0x52 0x0D    
+   \              0x00         
+   \   00000009   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+CGMM\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+CGMM\015"
+   \              0x2B 0x43    
+   \              0x47 0x4D    
+   \              0x4D 0x0D    
+   \              0x00         
+   \   00000009   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+CPIN?\\r\\n">`:
+   \   00000000   0x41 0x54          DC8 "AT+CPIN?\015\012"
+   \              0x2B 0x43    
+   \              0x50 0x49    
+   \              0x4E 0x3F    
+   \              0x0D 0x0A    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WOPEN=1\\r\\n">`:
+   \   00000000   0x41 0x54          DC8 "AT+WOPEN=1\015\012"
+   \              0x2B 0x57    
+   \              0x4F 0x50    
+   \              0x45 0x4E    
+   \              0x3D 0x31    
+   \              0x0D 0x0A    
+   \              0x00         
+   \   0000000D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+CGCLASS=\\"B\\"\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+CGCLASS=\"B\"\015"
+   \              0x2B 0x43    
+   \              0x47 0x43    
+   \              0x4C 0x41    
+   \              0x53 0x53    
+   \              0x3D 0x22    
+   \              0x42 0x22    
+   \              0x0D 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+IFC=0,0\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+IFC=0,0\015"
+   \              0x2B 0x49    
+   \              0x46 0x43    
+   \              0x3D 0x30    
+   \              0x2C 0x30    
+   \              0x0D 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WIPCFG=1\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+WIPCFG=1\015"
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x43 0x46    
+   \              0x47 0x3D    
+   \              0x31 0x0D    
+   \              0x00         
+   \   0000000D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WIPBR=1,6\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+WIPBR=1,6\015"
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x42 0x52    
+   \              0x3D 0x31    
+   \              0x2C 0x36    
+   \              0x0D 0x00    
+   \   0000000E   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WIPBR=2,6,11,\\"">`:
+   \   00000000   0x41 0x54          DC8 "AT+WIPBR=2,6,11,\""
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x42 0x52    
+   \              0x3D 0x32    
+   \              0x2C 0x36    
+   \              0x2C 0x31    
+   \              0x31 0x2C    
+   \              0x22 0x00    
+   \   00000012   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+CREG?\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+CREG?\015"
+   \              0x2B 0x43    
+   \              0x52 0x45    
+   \              0x47 0x3F    
+   \              0x0D 0x00    
+   \   0000000A   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+CSQ\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+CSQ\015"
+   \              0x2B 0x43    
+   \              0x53 0x51    
+   \              0x0D 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+CGATT=1\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+CGATT=1\015"
+   \              0x2B 0x43    
+   \              0x47 0x41    
+   \              0x54 0x54    
+   \              0x3D 0x31    
+   \              0x0D 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WIPBR=2,6,0,\\"">`:
+   \   00000000   0x41 0x54          DC8 "AT+WIPBR=2,6,0,\""
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x42 0x52    
+   \              0x3D 0x32    
+   \              0x2C 0x36    
+   \              0x2C 0x30    
+   \              0x2C 0x22    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WIPBR=2,6,1,\\"">`:
+   \   00000000   0x41 0x54          DC8 "AT+WIPBR=2,6,1,\""
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x42 0x52    
+   \              0x3D 0x32    
+   \              0x2C 0x36    
+   \              0x2C 0x31    
+   \              0x2C 0x22    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WIPBR=4,6,0\\r\\n">`:
+   \   00000000   0x41 0x54          DC8 "AT+WIPBR=4,6,0\015\012"
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x42 0x52    
+   \              0x3D 0x34    
+   \              0x2C 0x36    
+   \              0x2C 0x30    
+   \              0x0D 0x0A    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WIPCLOSE=1,1\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+WIPCLOSE=1,1\015"
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x43 0x4C    
+   \              0x4F 0x53    
+   \              0x45 0x3D    
+   \              0x31 0x2C    
+   \              0x31 0x0D    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WIPCREATE=1,1,1024,\\"">`:
+   \   00000000   0x41 0x54          DC8 "AT+WIPCREATE=1,1,1024,\""
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x43 0x52    
+   \              0x45 0x41    
+   \              0x54 0x45    
+   \              0x3D 0x31    
+   \              0x2C 0x31    
+   \              0x2C 0x31    
+   \              0x30 0x32    
+   \              0x34 0x2C    
+   \              0x22 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WIPDATA=1,1,2\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+WIPDATA=1,1,2\015"
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x44 0x41    
+   \              0x54 0x41    
+   \              0x3D 0x31    
+   \              0x2C 0x31    
+   \              0x2C 0x32    
+   \              0x0D 0x00    
+   \   00000012   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WIPCLOSE=2,1\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+WIPCLOSE=2,1\015"
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x43 0x4C    
+   \              0x4F 0x53    
+   \              0x45 0x3D    
+   \              0x32 0x2C    
+   \              0x31 0x0D    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WIPCFG=2,12,3\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+WIPCFG=2,12,3\015"
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x43 0x46    
+   \              0x47 0x3D    
+   \              0x32 0x2C    
+   \              0x31 0x32    
+   \              0x2C 0x33    
+   \              0x0D 0x00    
+   \   00000012   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WIPCREATE=2,1,\\"">`:
+   \   00000000   0x41 0x54          DC8 "AT+WIPCREATE=2,1,\""
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x43 0x52    
+   \              0x45 0x41    
+   \              0x54 0x45    
+   \              0x3D 0x32    
+   \              0x2C 0x31    
+   \              0x2C 0x22    
+   \              0x00         
+   \   00000013   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WIPDATA=2,1,2\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+WIPDATA=2,1,2\015"
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x44 0x41    
+   \              0x54 0x41    
+   \              0x3D 0x32    
+   \              0x2C 0x31    
+   \              0x2C 0x32    
+   \              0x0D 0x00    
+   \   00000012   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+CPIN?\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+CPIN?\015"
+   \              0x2B 0x43    
+   \              0x50 0x49    
+   \              0x4E 0x3F    
+   \              0x0D 0x00    
+   \   0000000A   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT$QCMIP=0\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT$QCMIP=0\015"
+   \              0x24 0x51    
+   \              0x43 0x4D    
+   \              0x49 0x50    
+   \              0x3D 0x30    
+   \              0x0D 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WIPBR=4,6\\r\\n">`:
+   \   00000000   0x41 0x54          DC8 "AT+WIPBR=4,6\015\012"
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x42 0x52    
+   \              0x3D 0x34    
+   \              0x2C 0x36    
+   \              0x0D 0x0A    
+   \              0x00         
+   \   0000000F   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+WIPDATA=1,1,1\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+WIPDATA=1,1,1\015"
+   \              0x2B 0x57    
+   \              0x49 0x50    
+   \              0x44 0x41    
+   \              0x54 0x41    
+   \              0x3D 0x31    
+   \              0x2C 0x31    
+   \              0x2C 0x31    
+   \              0x0D 0x00    
+   \   00000012   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+FLO=0\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT+FLO=0\015"
+   \              0x2B 0x46    
+   \              0x4C 0x4F    
+   \              0x3D 0x30    
+   \              0x0D 0x00    
+   \   0000000A   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "ATS0=1\\r">`:
+   \   00000000   0x41 0x54          DC8 "ATS0=1\015"
+   \              0x53 0x30    
+   \              0x3D 0x31    
+   \              0x0D 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT+CGDCONT=1,\\"IP\\",\\"">`:
+   \   00000000   0x41 0x54          DC8 "AT+CGDCONT=1,\"IP\",\""
+   \              0x2B 0x43    
+   \              0x47 0x44    
+   \              0x43 0x4F    
+   \              0x4E 0x54    
+   \              0x3D 0x31    
+   \              0x2C 0x22    
+   \              0x49 0x50    
+   \              0x22 0x2C    
+   \              0x22 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT#SKIPESC=1\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT#SKIPESC=1\015"
+   \              0x23 0x53    
+   \              0x4B 0x49    
+   \              0x50 0x45    
+   \              0x53 0x43    
+   \              0x3D 0x31    
+   \              0x0D 0x00    
+   \   0000000E   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT#USERID=\\"">`:
+   \   00000000   0x41 0x54          DC8 "AT#USERID=\""
+   \              0x23 0x55    
+   \              0x53 0x45    
+   \              0x52 0x49    
+   \              0x44 0x3D    
+   \              0x22 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT#PASSW=\\"">`:
+   \   00000000   0x41 0x54          DC8 "AT#PASSW=\""
+   \              0x23 0x50    
+   \              0x41 0x53    
+   \              0x53 0x57    
+   \              0x3D 0x22    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT#GPRS=1\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT#GPRS=1\015"
+   \              0x23 0x47    
+   \              0x50 0x52    
+   \              0x53 0x3D    
+   \              0x31 0x0D    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT#SCFG=1,1,1024,0,60,1\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT#SCFG=1,1,1024,0,60,1\015"
+   \              0x23 0x53    
+   \              0x43 0x46    
+   \              0x47 0x3D    
+   \              0x31 0x2C    
+   \              0x31 0x2C    
+   \              0x31 0x30    
+   \              0x32 0x34    
+   \              0x2C 0x30    
+   \              0x2C 0x36    
+   \              0x30 0x2C    
+   \              0x31 0x0D    
+   \              0x00         
+   \   00000019   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT#SH=1\\r">`:
+   \   00000000   0x41 0x54          DC8 "AT#SH=1\015"
+   \              0x23 0x53    
+   \              0x48 0x3D    
+   \              0x31 0x0D    
+   \              0x00         
+   \   00000009   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT#SD=1,1,">`:
+   \   00000000   0x41 0x54          DC8 "AT#SD=1,1,"
+   \              0x23 0x53    
+   \              0x44 0x3D    
+   \              0x31 0x2C    
+   \              0x31 0x2C    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "AT#SD=1,0,">`:
+   \   00000000   0x41 0x54          DC8 "AT#SD=1,0,"
+   \              0x23 0x53    
+   \              0x44 0x3D    
+   \              0x31 0x2C    
+   \              0x30 0x2C    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "NONE">`:
+   \   00000000   0x4E 0x4F          DC8 "NONE"
+   \              0x4E 0x45    
+   \              0x00         
+   \   00000005   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "GL865">`:
+   \   00000000   0x47 0x4C          DC8 "GL865"
+   \              0x38 0x36    
+   \              0x35 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "GE910">`:
+   \   00000000   0x47 0x45          DC8 "GE910"
+   \              0x39 0x31    
+   \              0x30 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "HE910">`:
+   \   00000000   0x48 0x45          DC8 "HE910"
+   \              0x39 0x31    
+   \              0x30 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "GL868">`:
+   \   00000000   0x47 0x4C          DC8 "GL868"
+   \              0x38 0x36    
+   \              0x38 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "Q26EL">`:
+   \   00000000   0x51 0x32          DC8 "Q26EL"
+   \              0x36 0x45    
+   \              0x4C 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "Q2687">`:
+   \   00000000   0x51 0x32          DC8 "Q2687"
+   \              0x36 0x38    
+   \              0x37 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "CE910">`:
+   \   00000000   0x43 0x45          DC8 "CE910"
+   \              0x39 0x31    
+   \              0x30 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "DE910">`:
+   \   00000000   0x44 0x45          DC8 "DE910"
+   \              0x39 0x31    
+   \              0x30 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "UE910">`:
+   \   00000000   0x55 0x45          DC8 "UE910"
+   \              0x39 0x31    
+   \              0x30 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "LE910">`:
+   \   00000000   0x4C 0x45          DC8 "LE910"
+   \              0x39 0x31    
+   \              0x30 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "UL865">`:
+   \   00000000   0x55 0x4C          DC8 "UL865"
+   \              0x38 0x36    
+   \              0x35 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+    347          
+    348          /*--------------------------------打印输出信息-----------------------------------------*/
+    349          // unsigned char  Initialized[13] = "初始化完成\r\n";
+    350          // unsigned char  SIMCARD_OK[16] = "SIM卡检测通过\r\n";
+    351          // unsigned char  SIGNAL_OK[19]= "信号强度检测通过\r\n";
+    352          // unsigned char  PPP_OK[11]="拨号成功\r\n";
+    353          // unsigned char  PPP_FAIL[11]="拨号失败\r\n";
+    354          // unsigned char  APIS_OK[21]="APIS服务器连接成功\r\n";
+    355          // unsigned char  CORS_OK[21]="CORS服务器连接成功\r\n";
+    356          
+    357          
+    358          
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      12  ?<Constant "AT#GPRS=1\r">
+      12  ?<Constant "AT#PASSW=\"">
+      28  ?<Constant "AT#SCFG=1,1,1024,0,60,1\r">
+      12  ?<Constant "AT#SD=1,0,">
+      12  ?<Constant "AT#SD=1,1,">
+      12  ?<Constant "AT#SH=1\r">
+      16  ?<Constant "AT#SKIPESC=1\r">
+      12  ?<Constant "AT#USERID=\"">
+      12  ?<Constant "AT$QCMIP=0\r">
+      12  ?<Constant "AT+CGATT=1\r">
+      16  ?<Constant "AT+CGCLASS=\"B\"\r">
+      20  ?<Constant "AT+CGDCONT=1,\"IP\",\"">
+      12  ?<Constant "AT+CGMM\r">
+      12  ?<Constant "AT+CGMR\r">
+      12  ?<Constant "AT+CPIN?\r">
+      12  ?<Constant "AT+CPIN?\r\n">
+      12  ?<Constant "AT+CREG?\r">
+       8  ?<Constant "AT+CSQ\r">
+      12  ?<Constant "AT+FLO=0\r">
+      12  ?<Constant "AT+IFC=0,0\r">
+      16  ?<Constant "AT+WIPBR=1,6\r">
+      20  ?<Constant "AT+WIPBR=2,6,0,\"">
+      20  ?<Constant "AT+WIPBR=2,6,1,\"">
+      20  ?<Constant "AT+WIPBR=2,6,11,\"">
+      20  ?<Constant "AT+WIPBR=4,6,0\r\n">
+      16  ?<Constant "AT+WIPBR=4,6\r\n">
+      16  ?<Constant "AT+WIPCFG=1\r">
+      20  ?<Constant "AT+WIPCFG=2,12,3\r">
+      20  ?<Constant "AT+WIPCLOSE=1,1\r">
+      20  ?<Constant "AT+WIPCLOSE=2,1\r">
+      24  ?<Constant "AT+WIPCREATE=1,1,1024,\"">
+      20  ?<Constant "AT+WIPCREATE=2,1,\"">
+      20  ?<Constant "AT+WIPDATA=1,1,1\r">
+      20  ?<Constant "AT+WIPDATA=1,1,2\r">
+      20  ?<Constant "AT+WIPDATA=2,1,2\r">
+      16  ?<Constant "AT+WOPEN=1\r\n">
+       8  ?<Constant "ATS0=1\r">
+       4  ?<Constant "AT\r">
+       8  ?<Constant "CE910">
+       8  ?<Constant "DE910">
+       8  ?<Constant "GE910">
+       8  ?<Constant "GL865">
+       8  ?<Constant "GL868">
+       8  ?<Constant "HE910">
+       8  ?<Constant "LE910">
+       8  ?<Constant "NONE">
+       8  ?<Constant "Q2687">
+       8  ?<Constant "Q26EL">
+       8  ?<Constant "UE910">
+       8  ?<Constant "UL865">
+    1032  APIS
+       4  AT
+      16  AT_CDMA_PPP
+      12  AT_CFUN_0
+      12  AT_CFUN_1
+      16  AT_CFUN_10
+      12  AT_CHECK_PPP
+       1  AT_Cmd_Index
+       1  AT_Repeat_Cnt
+       1  AT_WIPCFG0_Repeat_Cnt
+      16  AT_WIPCFG_0
+       1  All_AT_Cmd
+       1  Auto_Update_Flag
+       8  BindID
+       8  CONNECT
+    1004  CORS
+      12  CY_200_OK
+      12  Common_ATCmd
+       1  Common_Connection_State
+      60  Cors_Error1
+      76  Cors_Error2
+      36  Cors_Error3
+       8  Cors_Infor1
+      12  Cors_Infor2
+      44  Cors_Infor3
+      16  Cors_Infor4
+      20  Cors_Infor5
+      24  Cors_Infor6
+       1  Current_State
+       1  Default_Parameter_Flag
+       1  Dial_Parameter_Change_Flag
+       1  Disconnect_Click_Flag
+      16  ENDSource
+       2  Err_Code
+       8  Firm
+       8  GPRS_Dynamic_IP_Address
+       1  Get_Sourcelist_Flag
+      12  Huace
+      20  Log_CORS_OK
+    2048  Module_Data_Buffer
+       2  Module_Data_RdSp
+       2  Module_Data_WrSp
+      48  Module_Infor
+       4  Module_Status
+       1  Module_Type
+       1  Msg_Data_Receive_End_Flag
+       1  Msg_Set_Receive_End_Flag
+      12  NO_CARRIER
+       4  OK
+      20  PassWord
+       1  Protocol_Parameter_Change_Flag
+      60  Q26EL_ATCmd
+       1  Q26Elite_Connection_State
+      80  Q26_ATCmd
+       1  Q26_Connection_State
+       8  READY
+       1  Reconnect_Flag
+       1  Reset_TRRadio_Flag
+     272  SYS
+      24  SYS_ID_PW_Code
+       1  Service_Relog_Flag
+       1  Set_Net_Address_Flag
+       1  Signal_Weak_Flag
+       1  Simcard_Check_Flag
+      20  Source
+      60  T_ATCmd
+       1  Telit_Connection_State
+      28  Timer_Flag
+      20  Unauthorized
+      36  UserName
+       1  VLCommand_Source
+       1  VMCommand_Source
+       1  VSCommand_Source
+      12  WIPREADY
+      16  WMBS_2
+       1  Work_Mode_Change_Flag
+       4  _3plus
+       8  _CREG
+       8  _CSQ
+       8  _ERROR
+       8  _GPGGA
+       8  _GPGSV
+      12  _PPP_ACTIVE
+      12  _PPP_DEACTIVE
+      12  _SHUTDOWN
+       8  _WIND7
+      12  _WIPBR_ACTIVE
+      12  _WIPBR_DEACTIVE
+      16  _WIPPEERCLOSE
+      68  codes
+       1  g_bModuleRestartFlag
+       1  g_bMoudule_Initialized_Flag
+       1  g_bPrintDataFlag
+       1  g_bResetCmdFlag
+      20  pWord
+
+ 
+ 4 506 bytes in section .bss
+ 1 044 bytes in section .data
+   684 bytes in section .rodata
+ 
+   684 bytes of CONST memory
+ 5 550 bytes of DATA  memory
+
+Errors: none
+Warnings: none

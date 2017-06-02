@@ -1,0 +1,199 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.6.4896/W32 for ARM      16/Mar/2017  14:12:07 #
+# Copyright 1999-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  D:\wangfan2\桌面\RTU_1.2\HuaceApp\Reg.c                  #
+#    Command line =  D:\wangfan2\桌面\RTU_1.2\HuaceApp\Reg.c -lCN             #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\Debug\List\ -o      #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\Debug\Obj\          #
+#                    --no_cse --no_unroll --no_inline --no_code_motion        #
+#                    --no_tbaa --no_clustering --no_scheduling --debug        #
+#                    --endian=little --cpu=Cortex-M3 -e --fpu=None            #
+#                    --dlib_config "C:\Program Files (x86)\IAR                #
+#                    Systems\Embedded Workbench 6.5_2\arm\INC\c\DLib_Config_F #
+#                    ull.h" -I D:\wangfan2\桌面\RTU_1.2\project\iar\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\ADC\ -I   #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\RTC\ -I   #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\TILT\ -I  #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\RDLevel\  #
+#                    -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\RS232\ #
+#                     -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\OS-v2 #
+#                    \ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\Vibr #
+#                    ationString\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\ #
+#                    ..\ucos2\uCOS-II\Ports\ARM-Cortex-M3\Generic\IAR\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\ucos2\uCOS-II #
+#                    \Source\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\u #
+#                    cos2\uC-LIB\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\ #
+#                    ..\ucos2\uC-CPU\ -I D:\wangfan2\桌面\RTU_1.2\project\iar #
+#                    \..\..\ucos2\uC-CPU\ARM-Cortex-M3\IAR\ -I                #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\cmsis\Drivers #
+#                    \source\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\c #
+#                    msis\Drivers\include\ -I D:\wangfan2\桌面\RTU_1.2\projec #
+#                    t\iar\..\..\app\ -I D:\wangfan2\桌面\RTU_1.2\project\iar #
+#                    \..\..\uC-Probe\Target\Plugins\uCOS-II\ -I               #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\uC-Probe\Targ #
+#                    et\Demos\Intro\Workspaces\ -I                            #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\uC-Probe\Targ #
+#                    et\Demos\Intro\Source\ -I D:\wangfan2\桌面\RTU_1.2\proje #
+#                    ct\iar\..\..\uC-Probe\Target\Communication\Generic\Sourc #
+#                    e\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\uC-Prob #
+#                    e\Target\Communication\Generic\RS-232\Source\ -I         #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\uC-Probe\Targ #
+#                    et\Communication\Generic\RS-232\Ports\NXP\LPC17xx\ -I    #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\uC-Probe\Targ #
+#                    et\Communication\Generic\RS-232\OS\uCOS-II\ -I           #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\cmsis\Core\CM #
+#                    3\CoreSupport\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\. #
+#                    .\..\cmsis\Core\CM3\DeviceSupport\NXP\LPC177x_8x\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\HuaceApp\ -I  #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\HuaceApp\DEVI #
+#                    CE_BT\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\Hua #
+#                    ceApp\DEVICE_COM\ -I D:\wangfan2\桌面\RTU_1.2\project\ia #
+#                    r\..\..\HuaceApp\DEVICE_GPRS\ -I                         #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\HuaceApp\DEVI #
+#                    CE_GPS\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\Hu #
+#                    aceApp\DEVICE_RADIO\ -I D:\wangfan2\桌面\RTU_1.2\project #
+#                    \iar\..\..\HuaceApp\iap\ -I                              #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\FatFs\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\USB\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\bsp\spi_flash #
+#                    \ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\HuaceApp #
+#                    \LED\ -On --use_c++_inline                               #
+#    List file    =  D:\wangfan2\桌面\RTU_1.2\project\iar\Debug\List\Reg.lst  #
+#    Object file  =  D:\wangfan2\桌面\RTU_1.2\project\iar\Debug\Obj\Reg.o     #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+D:\wangfan2\桌面\RTU_1.2\HuaceApp\Reg.c
+      1          /**************************Copyright (C) 2003-2014. All rights reserved*********************************
+      2          **                                  上海华测导航科技有限公司
+      3          **                                  http://www.huace.cn
+      4          **                                  Email:support@huace.cn
+      5          **
+      6          **--------------文件信息--------------------------------------------------------------------------------
+      7          **文   件   名: Reg.c
+      8          **创   建   人:
+      9          **最后修改日期: 2014年08月12日
+     10          **描        述: 注册码读取，判断
+     11          ********************************************************************************************************/
+     12          
+     13          #include "includes.h"
+     14          
+     15          static UINT32 do_random(UINT32 *ctx, UINT32 max);
+     16          static UINT16 wGetReceiverNumber(char * station);
+     17          static UINT16 wGetRegisterDay(UINT16 wID, UINT32 dwCode1, UINT32 dwCode2);
+     18          
+     19          void ReportExpiredDate(UINT8 bMode, UINT16 uMsgID, char* temp)
+     20          {
+     21              UINT16 date, year, month, day;
+     22          
+     23              if(bMode == 0)
+     24              {
+     25                  sprintf((char*)temp, "Expired status: %d", g_Para.bExpiredDayOverflow);//edit 2012.08.24
+     26              }
+     27              else if(bMode == 1)
+     28              {
+     29                  date = g_Para.wRegisterDay;
+     30                  if(date < 11160){ //7440
+     31                      year = date / 372;
+     32                      date -= year * 372;
+     33                      month = date / 31;
+     34                      day = date - month * 31;
+     35                      sprintf((char*)temp, "Expired date: %4u-%02u-%02u", year + 2008, month + 1, day + 1);//edit 2012.08.24
+     36                  }
+     37                  else
+     38                  {
+     39                      sprintf((char*)temp, "Expired date: NO");//edit 2012.08.24
+     40                  }
+     41              }
+     42          }
+     43          void GetRegisterDay()
+     44          {
+     45              UINT32 code1,code2;
+     46              UINT16 wID;
+     47              // 	注册码, 2008-1-1的星期数为(436+1024)=1460.
+     48              wID = wGetReceiverNumber(NULL);
+     49              code1 = (UINT32)(g_Byte128[32]<<24) + (UINT32)(g_Byte128[33]<<16) + (UINT32)(g_Byte128[34]<<8) + (UINT32)(g_Byte128[35]);
+     50              code2 = (UINT32)(g_Byte128[36]<<24) + (UINT32)(g_Byte128[37]<<16) + (UINT32)(g_Byte128[38]<<8) + (UINT32)(g_Byte128[39]);
+     51              g_Para.wRegisterDay = wGetRegisterDay(wID, code1, code2);
+     52          }
+     53          
+     54          static UINT32 do_random(UINT32 *ctx, UINT32 max)
+     55          {
+     56          	/*
+     57              * Compute x = (7^5 * x) mod (2^31 - 1)
+     58              * wihout overflowing 31 bits:
+     59              *      (2^31 - 1) = 127773 * (7^5) + 2836
+     60              * From "Random number generators: good ones are hard to find",
+     61              * Park and Miller, Communications of the ACM, vol. 31, no. 10,
+     62              * October 1988, p. 1195.
+     63              */
+     64          	UINT32 hi, lo, x;
+     65          
+     66          	hi = *ctx / 127773L;
+     67          	lo = *ctx % 127773L;
+     68          	x = 16807L * lo - 2836L * hi;
+     69          	
+     70          	return (*ctx = x) % max;
+     71          }
+     72          static UINT16 wGetReceiverNumber(char * station)
+     73          {
+     74          	UINT16 wID;
+     75          	UINT8 iN, jN, iStart, bLength;
+     76          	char ch;
+     77          
+     78             	// First number of the receiver ID should be larger than '0'.
+     79          	iStart = 0;
+     80          	for(iN = 0; iN < 6; iN++){
+     81          		ch = g_Para.sID[iN];
+     82          		if(ch >= '1' && ch <= '9'){
+     83          			iStart = iN;
+     84          			break;
+     85          		}
+     86          	}
+     87          	bLength = 0;
+     88          	for(iN = 0; iN < 6; iN++){
+     89          		ch = g_Para.sID[iN];
+     90          		if(ch >= '1' && ch <= '9') bLength++;
+     91          		else if(ch == '0' && bLength > 0) bLength++;
+     92          		else break;
+     93          	}
+     94          	if(bLength >= 6) iStart += bLength - 6;
+     95          	// 4 characters
+     96          	wID = 0;
+     97             	jN = 0;
+     98          	for(iN = iStart; iN < 6; iN++){
+     99          		ch = g_Para.sID[iN];
+    100          		//if(ch == 0 || ch == 0xFF || ch == ' ') break;
+    101          		if(ch < '0' || ch > '9') break;
+    102          		wID = wID * 10 + ch - '0';
+    103           		if(jN == 4) jN++;
+    104          		if(station != NULL) station[jN++] = ch;
+    105          	}
+    106          	return wID;
+    107          }
+    108          
+    109          static UINT16 wGetRegisterDay(UINT16 wID, UINT32 dwCode1, UINT32 dwCode2)
+    110          {
+    111          	UINT32 dwDay = 0;
+    112          	UINT32 seed;
+    113          	UINT32 code1, code2, code3;
+    114          
+    115          	seed = wID * 1103515245L + 12345L;
+    116          	code3 = dwCode2 + 12345L;
+    117          	code2 = do_random(&code3, 100000L);
+    118          	if(dwCode1 == code2){
+    119          		code1 = do_random(&seed, 0xFFFFFFFFL);
+    120          		dwDay = dwCode2 - code1;
+    121          		if(dwDay >= 10000L) dwDay = 0;
+    122          	}
+    123          	return (UINT16)dwDay;
+    124          }
+
+Errors: 6
+Warnings: none

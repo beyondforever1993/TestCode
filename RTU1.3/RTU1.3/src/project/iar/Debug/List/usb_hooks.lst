@@ -1,0 +1,437 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.6.4896/W32 for ARM      05/Apr/2017  15:06:12 #
+# Copyright 1999-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  D:\wangfan2\桌面\RTU_1.3\USB\usb_hooks.c                 #
+#    Command line =  D:\wangfan2\桌面\RTU_1.3\USB\usb_hooks.c -lCN            #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\Debug\List\ -o      #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\Debug\Obj\          #
+#                    --no_cse --no_unroll --no_inline --no_code_motion        #
+#                    --no_tbaa --no_clustering --no_scheduling --debug        #
+#                    --endian=little --cpu=Cortex-M3 -e --fpu=None            #
+#                    --dlib_config "C:\Program Files (x86)\IAR                #
+#                    Systems\Embedded Workbench 6.5_2\arm\INC\c\DLib_Config_F #
+#                    ull.h" -I D:\wangfan2\桌面\RTU_1.3\project\iar\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\ADC\ -I   #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\RTC\ -I   #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\TILT\ -I  #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\RDLevel\  #
+#                    -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\RS232\ #
+#                     -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\OS-v2 #
+#                    \ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\Vibr #
+#                    ationString\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\ #
+#                    ..\ucos2\uCOS-II\Ports\ARM-Cortex-M3\Generic\IAR\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\ucos2\uCOS-II #
+#                    \Source\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\u #
+#                    cos2\uC-LIB\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\ #
+#                    ..\ucos2\uC-CPU\ -I D:\wangfan2\桌面\RTU_1.3\project\iar #
+#                    \..\..\ucos2\uC-CPU\ARM-Cortex-M3\IAR\ -I                #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\cmsis\Drivers #
+#                    \source\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\c #
+#                    msis\Drivers\include\ -I D:\wangfan2\桌面\RTU_1.3\projec #
+#                    t\iar\..\..\app\ -I D:\wangfan2\桌面\RTU_1.3\project\iar #
+#                    \..\..\uC-Probe\Target\Plugins\uCOS-II\ -I               #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\uC-Probe\Targ #
+#                    et\Demos\Intro\Workspaces\ -I                            #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\uC-Probe\Targ #
+#                    et\Demos\Intro\Source\ -I D:\wangfan2\桌面\RTU_1.3\proje #
+#                    ct\iar\..\..\uC-Probe\Target\Communication\Generic\Sourc #
+#                    e\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\uC-Prob #
+#                    e\Target\Communication\Generic\RS-232\Source\ -I         #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\uC-Probe\Targ #
+#                    et\Communication\Generic\RS-232\Ports\NXP\LPC17xx\ -I    #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\uC-Probe\Targ #
+#                    et\Communication\Generic\RS-232\OS\uCOS-II\ -I           #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\cmsis\Core\CM #
+#                    3\CoreSupport\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\. #
+#                    .\..\cmsis\Core\CM3\DeviceSupport\NXP\LPC177x_8x\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\HuaceApp\ -I  #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\HuaceApp\DEVI #
+#                    CE_BT\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\Hua #
+#                    ceApp\DEVICE_COM\ -I D:\wangfan2\桌面\RTU_1.3\project\ia #
+#                    r\..\..\HuaceApp\DEVICE_GPRS\ -I                         #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\HuaceApp\DEVI #
+#                    CE_GPS\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\Hu #
+#                    aceApp\DEVICE_RADIO\ -I D:\wangfan2\桌面\RTU_1.3\project #
+#                    \iar\..\..\HuaceApp\iap\ -I                              #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\FatFs\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\USB\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\bsp\spi_flash #
+#                    \ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\HuaceApp #
+#                    \LED\ -On --use_c++_inline                               #
+#    List file    =  D:\wangfan2\桌面\RTU_1.3\project\iar\Debug\List\usb_hook #
+#                    s.lst                                                    #
+#    Object file  =  D:\wangfan2\桌面\RTU_1.3\project\iar\Debug\Obj\usb_hooks #
+#                    .o                                                       #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+D:\wangfan2\桌面\RTU_1.3\USB\usb_hooks.c
+      1          /*************************************************************************
+      2           *
+      3           *    Used with ICCARM and AARM.
+      4           *
+      5           *    File name   : usb_hooks.c
+      6           *    Description : USB hook functions
+      7           *
+      8           *    History :
+      9           *    1. Date        : June 1, 2007
+     10           *       Author      : Stanimir Bonev
+     11           *       Description : Create
+     12           *
+     13           *    $Revision: 28532 $
+     14           **************************************************************************/
+     15          
+     16          #define USB_HOOKS_GLOBAL
+     17          #include "usb_hooks.h"
+     18          
+     19          /*************************************************************************
+     20           * Function Name: USB_INTR_ENTRY_HOOK
+     21           * Parameters: none
+     22           *
+     23           * Return: none
+     24           *
+     25           * Description: USB interrupt entry hook function
+     26           *
+     27           *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     28          void USB_INTR_ENTRY_HOOK (void)
+     29          {
+     30            // Add code here ...
+     31          }
+   \                     USB_INTR_ENTRY_HOOK:
+   \   00000000   0x4770             BX       LR               ;; return
+     32          
+     33          /*************************************************************************
+     34           * Function Name: USB_INTR_EXIT_HOOK
+     35           * Parameters: none
+     36           *
+     37           * Return: none
+     38           *
+     39           * Description: USB interrupt exit hook function
+     40           *
+     41           *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     42          void USB_INTR_EXIT_HOOK (void)
+     43          {
+     44            // Add code here ...
+     45          }
+   \                     USB_INTR_EXIT_HOOK:
+   \   00000000   0x4770             BX       LR               ;; return
+     46          
+     47          /*************************************************************************
+     48           * Function Name: USB_HIGH_INTR_ENTRY_HOOK
+     49           * Parameters: none
+     50           *
+     51           * Return: none
+     52           *
+     53           * Description: USB high priority interrupt entry hook function
+     54           *
+     55           *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     56          void USB_HIGH_INTR_ENTRY_HOOK (void)
+     57          {
+     58            // Add code here ...
+     59          }
+   \                     USB_HIGH_INTR_ENTRY_HOOK:
+   \   00000000   0x4770             BX       LR               ;; return
+     60          
+     61          /*************************************************************************
+     62           * Function Name: USB_INTR_EXIT_HOOK
+     63           * Parameters: none
+     64           *
+     65           * Return: none
+     66           *
+     67           * Description: USB high priority interrupt exit hook function
+     68           *
+     69           *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     70          void USB_HIGH_INTR_EXIT_HOOK (void)
+     71          {
+     72            // Add code here ...
+     73          }
+   \                     USB_HIGH_INTR_EXIT_HOOK:
+   \   00000000   0x4770             BX       LR               ;; return
+     74          
+     75          /*************************************************************************
+     76           * Function Name: USB_ERR_HOOK
+     77           * Parameters: none
+     78           *
+     79           * Return: none
+     80           *
+     81           * Description: Called at USB error
+     82           *
+     83           *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     84          void USB_ERR_HOOK (Int32U Error)
+     85          {
+     86            // Add code here ...
+     87          }
+   \                     USB_ERR_HOOK:
+   \   00000000   0x4770             BX       LR               ;; return
+     88          
+     89          /*************************************************************************
+     90           * Function Name: USB_FRAME_HOOK
+     91           * Parameters: Int32U Number
+     92           *
+     93           * Return: none
+     94           *
+     95           * Description: Called at USB SOF
+     96           *
+     97           *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     98          void USB_FRAME_HOOK (Int32U Number)
+     99          {
+    100            // Add code here ...
+    101          }
+   \                     USB_FRAME_HOOK:
+   \   00000000   0x4770             BX       LR               ;; return
+    102          
+    103          /*************************************************************************
+    104           * Function Name: USB_CONNECT_HOOK
+    105           * Parameters: Boolean Connect
+    106           *
+    107           * Return: none
+    108           *
+    109           * Description: Called at USB connect status change
+    110           *
+    111           *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    112          void USB_CONNECT_HOOK (Boolean Connect)
+    113          {
+    114            // Add code here ...
+    115          }
+   \                     USB_CONNECT_HOOK:
+   \   00000000   0x4770             BX       LR               ;; return
+    116          
+    117          /*************************************************************************
+    118           * Function Name: USB_SUSPEND_HOOK
+    119           * Parameters: Boolean Suspend
+    120           *
+    121           * Return: none
+    122           *
+    123           * Description: Called at USB suspend status change
+    124           *
+    125           *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    126          void USB_SUSPEND_HOOK (Boolean Suspend)
+    127          {
+    128            // Add code here ...
+    129          }
+   \                     USB_SUSPEND_HOOK:
+   \   00000000   0x4770             BX       LR               ;; return
+    130          
+    131          /*************************************************************************
+    132           * Function Name: USB_RESET_HOOK
+    133           * Parameters: none
+    134           *
+    135           * Return: none
+    136           *
+    137           * Description: Called at USB reset
+    138           *
+    139           *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    140          void USB_RESET_HOOK (void)
+    141          {
+    142            // Add code here ...
+    143          }
+   \                     USB_RESET_HOOK:
+   \   00000000   0x4770             BX       LR               ;; return
+    144          
+    145          /*************************************************************************
+    146           * Function Name: USB_CONFIGURE_HOOK
+    147           * Parameters: pUsbDevCtrl_t pDev
+    148           *
+    149           * Return: none
+    150           *
+    151           * Description: Called when configuration change
+    152           *
+    153           *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    154          void USB_CONFIGURE_HOOK (pUsbDevCtrl_t pDev)
+    155          {
+   \                     USB_CONFIGURE_HOOK:
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    156            // Add code here ...
+    157            UsbClassBotConfigure(pDev);
+   \   00000004   0x0020             MOVS     R0,R4
+   \   00000006   0x.... 0x....      BL       UsbClassBotConfigure
+    158          }
+   \   0000000A   0xBD10             POP      {R4,PC}          ;; return
+    159          
+    160          /*************************************************************************
+    161           * Function Name: USB_EP_STALL_HOOK
+    162           * Parameters: USB_Endpoint_t EP
+    163           *
+    164           * Return: none
+    165           *
+    166           * Description: Called when EP stalled
+    167           *
+    168           *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    169          void USB_EP_STALL_HOOK (USB_Endpoint_t EP)
+    170          {
+    171            // Add code here ...
+    172          }
+   \                     USB_EP_STALL_HOOK:
+   \   00000000   0x4770             BX       LR               ;; return
+    173          
+    174          /*************************************************************************
+    175           * Function Name: USB_EP_UNSTALL_HOOK
+    176           * Parameters: USB_Endpoint_t EP
+    177           *
+    178           * Return: none
+    179           *
+    180           * Description: Called when EP unstalled
+    181           *
+    182           *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    183          void USB_EP_UNSTALL_HOOK (USB_Endpoint_t EP)
+    184          {
+   \                     USB_EP_UNSTALL_HOOK:
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    185          extern void BotUnstallCallBack (USB_Endpoint_t EP);
+    186            // Add code here ...
+    187            BotUnstallCallBack(EP);
+   \   00000004   0x0020             MOVS     R0,R4
+   \   00000006   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000008   0x.... 0x....      BL       BotUnstallCallBack
+    188          }
+   \   0000000C   0xBD10             POP      {R4,PC}          ;; return
+    189          
+    190          /*************************************************************************
+    191           * Function Name: USB_GET_DESCRIPTOR_HOOK
+    192           * Parameters: pUsbSetupPacket_t pSetup
+    193           *
+    194           * Return: UsbCommStatus_t
+    195           *
+    196           * Description: Called when get descriptor receiving
+    197           *
+    198           *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    199          UsbCommStatus_t USB_GET_DESCRIPTOR_HOOK (pUsbSetupPacket_t pSetup)
+    200          {
+   \                     USB_GET_DESCRIPTOR_HOOK:
+   \   00000000   0x0001             MOVS     R1,R0
+    201            // Add code here ...
+    202            return(UsbFault);
+   \   00000002   0x2001             MOVS     R0,#+1
+   \   00000004   0x4770             BX       LR               ;; return
+    203          }
+    204          
+    205          /*************************************************************************
+    206           * Function Name: USB_CLASS_REQUEST_HOOK
+    207           * Parameters: USB_Endpoint_t EP
+    208           *
+    209           * Return: UsbCommStatus_t
+    210           *
+    211           * Description: Called when class request receiving
+    212           *
+    213           *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    214          UsbCommStatus_t USB_CLASS_REQUEST_HOOK (pUsbSetupPacket_t pSetup)
+    215          {
+   \                     USB_CLASS_REQUEST_HOOK:
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    216            // Add code here ...
+    217            return(UsbClassBotRequest(pSetup));
+   \   00000004   0x0020             MOVS     R0,R4
+   \   00000006   0x.... 0x....      BL       UsbClassBotRequest
+   \   0000000A   0xBD10             POP      {R4,PC}          ;; return
+    218            //return(UsbFault);
+    219          }
+    220          
+    221          /*************************************************************************
+    222           * Function Name: USB_VENDOR_REQUEST_HOOK
+    223           * Parameters: USB_Endpoint_t EP
+    224           *
+    225           * Return: UsbCommStatus_t
+    226           *
+    227           * Description: Called when vendor request receiving
+    228           *
+    229           *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    230          UsbCommStatus_t USB_VENDOR_REQUEST_HOOK (pUsbSetupPacket_t pSetup)
+    231          {
+   \                     USB_VENDOR_REQUEST_HOOK:
+   \   00000000   0x0001             MOVS     R1,R0
+    232            // Add code here ...
+    233            return(UsbFault);
+   \   00000002   0x2001             MOVS     R0,#+1
+   \   00000004   0x4770             BX       LR               ;; return
+    234          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   USB_CLASS_REQUEST_HOOK
+         8   -> UsbClassBotRequest
+       8   USB_CONFIGURE_HOOK
+         8   -> UsbClassBotConfigure
+       0   USB_CONNECT_HOOK
+       0   USB_EP_STALL_HOOK
+       8   USB_EP_UNSTALL_HOOK
+         8   -> BotUnstallCallBack
+       0   USB_ERR_HOOK
+       0   USB_FRAME_HOOK
+       0   USB_GET_DESCRIPTOR_HOOK
+       0   USB_HIGH_INTR_ENTRY_HOOK
+       0   USB_HIGH_INTR_EXIT_HOOK
+       0   USB_INTR_ENTRY_HOOK
+       0   USB_INTR_EXIT_HOOK
+       0   USB_RESET_HOOK
+       0   USB_SUSPEND_HOOK
+       0   USB_VENDOR_REQUEST_HOOK
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      12  USB_CLASS_REQUEST_HOOK
+      12  USB_CONFIGURE_HOOK
+       2  USB_CONNECT_HOOK
+       2  USB_EP_STALL_HOOK
+      14  USB_EP_UNSTALL_HOOK
+       2  USB_ERR_HOOK
+       2  USB_FRAME_HOOK
+       6  USB_GET_DESCRIPTOR_HOOK
+       2  USB_HIGH_INTR_ENTRY_HOOK
+       2  USB_HIGH_INTR_EXIT_HOOK
+       2  USB_INTR_ENTRY_HOOK
+       2  USB_INTR_EXIT_HOOK
+       2  USB_RESET_HOOK
+       2  USB_SUSPEND_HOOK
+       6  USB_VENDOR_REQUEST_HOOK
+
+ 
+ 70 bytes in section .text
+ 
+ 70 bytes of CODE memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,281 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.6.4896/W32 for ARM      05/Apr/2017  15:06:11 #
+# Copyright 1999-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  D:\wangfan2\桌面\RTU_1.3\USB\usb_buffer.c                #
+#    Command line =  D:\wangfan2\桌面\RTU_1.3\USB\usb_buffer.c -lCN           #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\Debug\List\ -o      #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\Debug\Obj\          #
+#                    --no_cse --no_unroll --no_inline --no_code_motion        #
+#                    --no_tbaa --no_clustering --no_scheduling --debug        #
+#                    --endian=little --cpu=Cortex-M3 -e --fpu=None            #
+#                    --dlib_config "C:\Program Files (x86)\IAR                #
+#                    Systems\Embedded Workbench 6.5_2\arm\INC\c\DLib_Config_F #
+#                    ull.h" -I D:\wangfan2\桌面\RTU_1.3\project\iar\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\ADC\ -I   #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\RTC\ -I   #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\TILT\ -I  #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\RDLevel\  #
+#                    -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\RS232\ #
+#                     -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\OS-v2 #
+#                    \ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\Vibr #
+#                    ationString\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\ #
+#                    ..\ucos2\uCOS-II\Ports\ARM-Cortex-M3\Generic\IAR\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\ucos2\uCOS-II #
+#                    \Source\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\u #
+#                    cos2\uC-LIB\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\ #
+#                    ..\ucos2\uC-CPU\ -I D:\wangfan2\桌面\RTU_1.3\project\iar #
+#                    \..\..\ucos2\uC-CPU\ARM-Cortex-M3\IAR\ -I                #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\cmsis\Drivers #
+#                    \source\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\c #
+#                    msis\Drivers\include\ -I D:\wangfan2\桌面\RTU_1.3\projec #
+#                    t\iar\..\..\app\ -I D:\wangfan2\桌面\RTU_1.3\project\iar #
+#                    \..\..\uC-Probe\Target\Plugins\uCOS-II\ -I               #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\uC-Probe\Targ #
+#                    et\Demos\Intro\Workspaces\ -I                            #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\uC-Probe\Targ #
+#                    et\Demos\Intro\Source\ -I D:\wangfan2\桌面\RTU_1.3\proje #
+#                    ct\iar\..\..\uC-Probe\Target\Communication\Generic\Sourc #
+#                    e\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\uC-Prob #
+#                    e\Target\Communication\Generic\RS-232\Source\ -I         #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\uC-Probe\Targ #
+#                    et\Communication\Generic\RS-232\Ports\NXP\LPC17xx\ -I    #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\uC-Probe\Targ #
+#                    et\Communication\Generic\RS-232\OS\uCOS-II\ -I           #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\cmsis\Core\CM #
+#                    3\CoreSupport\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\. #
+#                    .\..\cmsis\Core\CM3\DeviceSupport\NXP\LPC177x_8x\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\HuaceApp\ -I  #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\HuaceApp\DEVI #
+#                    CE_BT\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\Hua #
+#                    ceApp\DEVICE_COM\ -I D:\wangfan2\桌面\RTU_1.3\project\ia #
+#                    r\..\..\HuaceApp\DEVICE_GPRS\ -I                         #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\HuaceApp\DEVI #
+#                    CE_GPS\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\Hu #
+#                    aceApp\DEVICE_RADIO\ -I D:\wangfan2\桌面\RTU_1.3\project #
+#                    \iar\..\..\HuaceApp\iap\ -I                              #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\FatFs\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\USB\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\bsp\spi_flash #
+#                    \ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\HuaceApp #
+#                    \LED\ -On --use_c++_inline                               #
+#    List file    =  D:\wangfan2\桌面\RTU_1.3\project\iar\Debug\List\usb_buff #
+#                    er.lst                                                   #
+#    Object file  =  D:\wangfan2\桌面\RTU_1.3\project\iar\Debug\Obj\usb_buffe #
+#                    r.o                                                      #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+D:\wangfan2\桌面\RTU_1.3\USB\usb_buffer.c
+      1          /*************************************************************************
+      2           *
+      3           *    Used with ARM IAR C/C++ Compiler.
+      4           *
+      5           *    (c) Copyright IAR Systems 2007
+      6           *
+      7           *    File name      : usb_buffer.c
+      8           *    Description    : USB buffer manager module
+      9           *
+     10           *    History :
+     11           *    1. Date        : June 23, 2007
+     12           *       Author      : Stanimir Bonev
+     13           *       Description : Create
+     14           *
+     15           *    $Revision: 28532 $
+     16           **************************************************************************/
+     17          #define USB_BUFFER_GLOBAL
+     18          #include "usb_buffer.h"
+
+   \                                 In section .text, align 4
+   \   __interwork __softfp void EntrCritSection(void)
+   \                     EntrCritSection:
+   \   00000000   0x4805             LDR.N    R0,??EntrCritSection_0
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x2800             CMP      R0,#+0
+   \   00000006   0xD100             BNE.N    ??EntrCritSection_1
+   \   00000008   0xB672             CPSID i
+   \                     ??EntrCritSection_1:
+   \   0000000A   0x4803             LDR.N    R0,??EntrCritSection_0
+   \   0000000C   0x6800             LDR      R0,[R0, #+0]
+   \   0000000E   0x1C40             ADDS     R0,R0,#+1
+   \   00000010   0x4901             LDR.N    R1,??EntrCritSection_0
+   \   00000012   0x6008             STR      R0,[R1, #+0]
+   \   00000014   0x4770             BX       LR               ;; return
+   \   00000016   0xBF00             Nop      
+   \                     ??EntrCritSection_0:
+   \   00000018   0x........         DC32     CriticalSecCntr
+
+   \                                 In section .text, align 4
+   \   __interwork __softfp void ExtCritSection(void)
+   \                     ExtCritSection:
+   \   00000000   0x4804             LDR.N    R0,??ExtCritSection_0
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x1E40             SUBS     R0,R0,#+1
+   \   00000006   0x4903             LDR.N    R1,??ExtCritSection_0
+   \   00000008   0x6008             STR      R0,[R1, #+0]
+   \   0000000A   0x2800             CMP      R0,#+0
+   \   0000000C   0xD100             BNE.N    ??ExtCritSection_1
+   \   0000000E   0xB662             CPSIE i
+   \                     ??ExtCritSection_1:
+   \   00000010   0x4770             BX       LR               ;; return
+   \   00000012   0xBF00             Nop      
+   \                     ??ExtCritSection_0:
+   \   00000014   0x........         DC32     CriticalSecCntr
+     19          
+     20          /*************************************************************************
+     21           * Function Name: USB_IO_Data
+     22           * Parameters: USB_Endpoint_t EP, pInt8U pBuffer, Int32U Size, void * pFn
+     23           *
+     24           * Return: USB_IO_Status_t
+     25           *
+     26           * Description: Prepare and send
+     27           *
+     28           *************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+     29          USB_IO_Status_t USB_IO_Data (USB_Endpoint_t EP, pInt8U pBuffer, Int32U Size, void * pFn)
+     30          {
+   \                     USB_IO_Data:
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+   \   00000008   0x0016             MOVS     R6,R2
+   \   0000000A   0x001F             MOVS     R7,R3
+     31          #if __CORE__ < 7
+     32          Int32U Save;
+     33          #endif // __CORE__ < 7
+     34          
+     35          pEpCnfg_t pEP = &EpCnfg[EP];
+   \   0000000C   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000000E   0x2024             MOVS     R0,#+36
+   \   00000010   0x491E             LDR.N    R1,??USB_IO_Data_0
+   \   00000012   0xFB00 0x1804      MLA      R8,R0,R4,R1
+     36          
+     37            if (Size == (Int32U)-1)
+   \   00000016   0xF116 0x0F01      CMN      R6,#+1
+   \   0000001A   0xD106             BNE.N    ??USB_IO_Data_1
+     38            {
+     39              pEP->Status  = NOT_READY;
+   \   0000001C   0x2000             MOVS     R0,#+0
+   \   0000001E   0xF888 0x0014      STRB     R0,[R8, #+20]
+     40              pEP->pFn     = NULL;
+   \   00000022   0x2000             MOVS     R0,#+0
+   \   00000024   0xF8C8 0x0008      STR      R0,[R8, #+8]
+   \   00000028   0xE02B             B.N      ??USB_IO_Data_2
+     41            }
+     42            else
+     43            {
+     44            #if __CORE__ < 7
+     45              ENTR_CRT_SECTION(Save);
+     46            #else
+     47              ENTR_CRT_SECTION();
+   \                     ??USB_IO_Data_1:
+   \   0000002A   0x.... 0x....      BL       EntrCritSection
+     48            #endif // __CORE__ < 7
+     49              if (!USB_EP_VALID(pEP))
+   \   0000002E   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \   00000032   0x2800             CMP      R0,#+0
+   \   00000034   0xD103             BNE.N    ??USB_IO_Data_3
+     50              {
+     51              #if __CORE__ < 7
+     52                EXT_CRT_SECTION(Save);
+     53              #else
+     54                EXT_CRT_SECTION();
+   \   00000036   0x.... 0x....      BL       ExtCritSection
+     55              #endif // __CORE__ < 7
+     56                return(NOT_VALID);
+   \   0000003A   0x2008             MOVS     R0,#+8
+   \   0000003C   0xE023             B.N      ??USB_IO_Data_4
+     57              }
+     58              // lock buffer
+     59              if(pEP->Status == BEGIN_SERVICED)
+   \                     ??USB_IO_Data_3:
+   \   0000003E   0xF898 0x0014      LDRB     R0,[R8, #+20]
+   \   00000042   0x2802             CMP      R0,#+2
+   \   00000044   0xD103             BNE.N    ??USB_IO_Data_5
+     60              {
+     61              #if __CORE__ < 7
+     62                EXT_CRT_SECTION(Save);
+     63              #else
+     64                EXT_CRT_SECTION();
+   \   00000046   0x.... 0x....      BL       ExtCritSection
+     65              #endif // __CORE__ < 7
+     66                return(NOT_READY);
+   \   0000004A   0x2000             MOVS     R0,#+0
+   \   0000004C   0xE01B             B.N      ??USB_IO_Data_4
+     67              }
+     68              pEP->Offset  = 0;
+   \                     ??USB_IO_Data_5:
+   \   0000004E   0x2000             MOVS     R0,#+0
+   \   00000050   0xF8C8 0x000C      STR      R0,[R8, #+12]
+     69              pEP->pBuffer = pBuffer;
+   \   00000054   0xF8C8 0x5018      STR      R5,[R8, #+24]
+     70              pEP->pFn     = pFn;
+   \   00000058   0xF8C8 0x7008      STR      R7,[R8, #+8]
+     71              if(!(pEP->Size = Size))
+   \   0000005C   0xF8C8 0x6010      STR      R6,[R8, #+16]
+   \   00000060   0x2E00             CMP      R6,#+0
+   \   00000062   0xD105             BNE.N    ??USB_IO_Data_6
+     72              {
+     73                pEP->bZeroPacket = 1;
+   \   00000064   0xF898 0x001D      LDRB     R0,[R8, #+29]
+   \   00000068   0xF050 0x0004      ORRS     R0,R0,#0x4
+   \   0000006C   0xF888 0x001D      STRB     R0,[R8, #+29]
+     74              }
+     75              pEP->Status  = NO_SERVICED;
+   \                     ??USB_IO_Data_6:
+   \   00000070   0x2001             MOVS     R0,#+1
+   \   00000072   0xF888 0x0014      STRB     R0,[R8, #+20]
+     76              USB_EP_IO(EP);
+   \   00000076   0x0020             MOVS     R0,R4
+   \   00000078   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000007A   0x.... 0x....      BL       USB_EP_IO
+     77            #if __CORE__ < 7
+     78              EXT_CRT_SECTION(Save);
+     79            #else
+     80              EXT_CRT_SECTION();
+   \   0000007E   0x.... 0x....      BL       ExtCritSection
+     81            #endif // __CORE__ < 7
+     82            }
+     83            return(pEP->Status);
+   \                     ??USB_IO_Data_2:
+   \   00000082   0xF898 0x0014      LDRB     R0,[R8, #+20]
+   \                     ??USB_IO_Data_4:
+   \   00000086   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+   \   0000008A   0xBF00             Nop      
+   \                     ??USB_IO_Data_0:
+   \   0000008C   0x........         DC32     EpCnfg
+     84          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   EntrCritSection
+       0   ExtCritSection
+      24   USB_IO_Data
+        24   -> EntrCritSection
+        24   -> ExtCritSection
+        24   -> USB_EP_IO
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      28  EntrCritSection
+      24  ExtCritSection
+     144  USB_IO_Data
+
+ 
+ 196 bytes in section .text
+ 
+ 144 bytes of CODE memory (+ 52 bytes shared)
+
+Errors: none
+Warnings: none

@@ -1,0 +1,480 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.6.4896/W32 for ARM      11/Mar/2017  15:34:39 #
+# Copyright 1999-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\ucos2\uC- #
+#                    LIB\lib_math.c                                           #
+#    Command line =  D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\ucos2\uC- #
+#                    LIB\lib_math.c -lCN D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´ú #
+#                    Âë\RTU_1.2\project\iar\Debug\List\ -o                    #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\Debug\Obj\ --no_cse --no_unroll --no_inline           #
+#                    --no_code_motion --no_tbaa --no_clustering               #
+#                    --no_scheduling --debug --endian=little --cpu=Cortex-M3  #
+#                    -e --fpu=None --dlib_config "C:\Program Files (x86)\IAR  #
+#                    Systems\Embedded Workbench 6.5_2\arm\INC\c\DLib_Config_F #
+#                    ull.h" -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2 #
+#                    \project\iar\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\ #
+#                    RTU_1.2\project\iar\..\..\BSP\ -I                        #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\BSP\ADC\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´ #
+#                    úÂë\RTU_1.2\project\iar\..\..\BSP\RTC\ -I                #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\BSP\TILT\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\ #
+#                    ´úÂë\RTU_1.2\project\iar\..\..\BSP\RDLevel\ -I           #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\BSP\RS232\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU #
+#                    \´úÂë\RTU_1.2\project\iar\..\..\BSP\OS-v2\ -I            #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\BSP\VibrationString\ -I                         #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\ucos2\uCOS-II\Ports\ARM-Cortex-M3\Generic\IAR\  #
+#                    -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\projec #
+#                    t\iar\..\..\ucos2\uCOS-II\Source\ -I                     #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\ucos2\uC-LIB\ -I D:\wangfan2\×ÀÃæ\receiverfirm\ #
+#                    RTU\´úÂë\RTU_1.2\project\iar\..\..\ucos2\uC-CPU\ -I      #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\ucos2\uC-CPU\ARM-Cortex-M3\IAR\ -I              #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\cmsis\Drivers\source\ -I                        #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\cmsis\Drivers\include\ -I                       #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\app\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\ #
+#                    RTU_1.2\project\iar\..\..\uC-Probe\Target\Plugins\uCOS-I #
+#                    I\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\pro #
+#                    ject\iar\..\..\uC-Probe\Target\Demos\Intro\Workspaces\   #
+#                    -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\projec #
+#                    t\iar\..\..\uC-Probe\Target\Demos\Intro\Source\ -I       #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\uC-Probe\Target\Communication\Generic\Source\   #
+#                    -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\projec #
+#                    t\iar\..\..\uC-Probe\Target\Communication\Generic\RS-232 #
+#                    \Source\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1 #
+#                    .2\project\iar\..\..\uC-Probe\Target\Communication\Gener #
+#                    ic\RS-232\Ports\NXP\LPC17xx\ -I                          #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\uC-Probe\Target\Communication\Generic\RS-232\OS #
+#                    \uCOS-II\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_ #
+#                    1.2\project\iar\..\..\cmsis\Core\CM3\CoreSupport\ -I     #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\cmsis\Core\CM3\DeviceSupport\NXP\LPC177x_8x\    #
+#                    -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\projec #
+#                    t\iar\..\..\HuaceApp\ -I D:\wangfan2\×ÀÃæ\receiverfirm\R #
+#                    TU\´úÂë\RTU_1.2\project\iar\..\..\HuaceApp\DEVICE_BT\    #
+#                    -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\projec #
+#                    t\iar\..\..\HuaceApp\DEVICE_COM\ -I                      #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\HuaceApp\DEVICE_GPRS\ -I                        #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\HuaceApp\DEVICE_GPS\ -I                         #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\HuaceApp\DEVICE_RADIO\ -I                       #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\HuaceApp\iap\ -I D:\wangfan2\×ÀÃæ\receiverfirm\ #
+#                    RTU\´úÂë\RTU_1.2\project\iar\..\..\FatFs\ -I             #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\USB\ -I D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\ #
+#                    RTU_1.2\project\iar\..\..\bsp\spi_flash\ -I              #
+#                    D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\..\..\HuaceApp\LED\ -On --use_c++_inline              #
+#    List file    =  D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\Debug\List\lib_math.lst                               #
+#    Object file  =  D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\project\i #
+#                    ar\Debug\Obj\lib_math.o                                  #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+D:\wangfan2\×ÀÃæ\receiverfirm\RTU\´úÂë\RTU_1.2\ucos2\uC-LIB\lib_math.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                               uC/LIB
+      4          *                                       CUSTOM LIBRARY MODULES
+      5          *
+      6          *                          (c) Copyright 2004-2009; Micrium, Inc.; Weston, FL
+      7          *
+      8          *               All rights reserved.  Protected by international copyright laws.
+      9          *
+     10          *               uC/LIB is provided in source form for FREE evaluation, for educational
+     11          *               use or peaceful research.  If you plan on using uC/LIB in a commercial
+     12          *               product you need to contact Micrium to properly license its use in your
+     13          *               product.  We provide ALL the source code for your convenience and to
+     14          *               help you experience uC/LIB.  The fact that the source code is provided
+     15          *               does NOT mean that you can use it without paying a licensing fee.
+     16          *
+     17          *               Knowledge of the source code may NOT be used to develop a similar product.
+     18          *
+     19          *               Please help us continue to provide the Embedded community with the finest
+     20          *               software available.  Your honesty is greatly appreciated.
+     21          *********************************************************************************************************
+     22          */
+     23          
+     24          /*
+     25          *********************************************************************************************************
+     26          *
+     27          *                                        MATHEMATIC OPERATIONS
+     28          *
+     29          * Filename      : lib_math.c
+     30          * Version       : V1.30
+     31          * Programmer(s) : SR
+     32          *                 ITJ
+     33          *********************************************************************************************************
+     34          * Note(s)       : (1) NO compiler-supplied standard library functions are used in library or product software.
+     35          *
+     36          *                     (a) ALL standard library functions are implemented in the custom library modules :
+     37          *
+     38          *                         (1) \<Custom Library Directory>\lib*.*
+     39          *
+     40          *                         (2) \<Custom Library Directory>\Ports\<cpu>\<compiler>\lib*_a.*
+     41          *
+     42          *                               where
+     43          *                                       <Custom Library Directory>      directory path for custom library software
+     44          *                                       <cpu>                           directory name for specific processor (CPU)
+     45          *                                       <compiler>                      directory name for specific compiler
+     46          *
+     47          *                     (b) Product-specific library functions are implemented in individual products.
+     48          *
+     49          *********************************************************************************************************
+     50          * Notice(s)     : (1) The Institute of Electrical and Electronics Engineers and The Open Group, have given
+     51          *                     us permission to reprint portions of their documentation.  Portions of this text are
+     52          *                     reprinted and reproduced in electronic form from the IEEE Std 1003.1, 2004 Edition,
+     53          *                     Standard for Information Technology -- Portable Operating System Interface (POSIX),
+     54          *                     The Open Group Base Specifications Issue 6, Copyright (C) 2001-2004 by the Institute
+     55          *                     of Electrical and Electronics Engineers, Inc and The Open Group.  In the event of any
+     56          *                     discrepancy between these versions and the original IEEE and The Open Group Standard,
+     57          *                     the original IEEE and The Open Group Standard is the referee document.  The original
+     58          *                     Standard can be obtained online at http://www.opengroup.org/unix/online.html.
+     59          *********************************************************************************************************
+     60          */
+     61          
+     62          
+     63          /*
+     64          *********************************************************************************************************
+     65          *                                            INCLUDE FILES
+     66          *********************************************************************************************************
+     67          */
+     68          
+     69          #define    LIB_MATH_MODULE
+     70          #include  <lib_math.h>
+     71          
+     72          
+     73          /*$PAGE*/
+     74          /*
+     75          *********************************************************************************************************
+     76          *                                            LOCAL DEFINES
+     77          *********************************************************************************************************
+     78          */
+     79          
+     80          
+     81          /*
+     82          *********************************************************************************************************
+     83          *                                           LOCAL CONSTANTS
+     84          *********************************************************************************************************
+     85          */
+     86          
+     87          
+     88          /*
+     89          *********************************************************************************************************
+     90          *                                          LOCAL DATA TYPES
+     91          *********************************************************************************************************
+     92          */
+     93          
+     94          
+     95          /*
+     96          *********************************************************************************************************
+     97          *                                            LOCAL TABLES
+     98          *********************************************************************************************************
+     99          */
+    100          
+    101          
+    102          /*
+    103          *********************************************************************************************************
+    104          *                                       LOCAL GLOBAL VARIABLES
+    105          *********************************************************************************************************
+    106          */
+    107          
+
+   \                                 In section .bss, align 4
+    108          RAND_NBR  Math_RandSeedCur;                                     /* Cur rand nbr seed.                                   */
+   \                     Math_RandSeedCur:
+   \   00000000                      DS8 4
+    109          
+    110          
+    111          /*
+    112          *********************************************************************************************************
+    113          *                                      LOCAL FUNCTION PROTOTYPES
+    114          *********************************************************************************************************
+    115          */
+    116          
+    117          
+    118          /*
+    119          *********************************************************************************************************
+    120          *                                     LOCAL CONFIGURATION ERRORS
+    121          *********************************************************************************************************
+    122          */
+    123          
+    124          
+    125          /*$PAGE*/
+    126          /*
+    127          *********************************************************************************************************
+    128          *                                             Math_Init()
+    129          *
+    130          * Description : (1) Initialize Mathematic Module :
+    131          *
+    132          *                   (a) Initialize random number seed value
+    133          *
+    134          *
+    135          * Argument(s) : none.
+    136          *
+    137          * Return(s)   : none.
+    138          *
+    139          * Caller(s)   : Application.
+    140          *
+    141          * Note(s)     : (2) IEEE Std 1003.1, 2004 Edition, Section 'rand() : DESCRIPTION' states that "if rand()
+    142          *                   is called before any calls to srand() are made, the same sequence shall be generated
+    143          *                   as when srand() is first called with a seed value of 1".
+    144          *********************************************************************************************************
+    145          */
+    146          
+
+   \                                 In section .text, align 2, keep-with-next
+    147          void  Math_Init (void)
+    148          {
+   \                     Math_Init:
+   \   00000000   0xB580             PUSH     {R7,LR}
+    149              Math_RandSetSeed((RAND_NBR)RAND_SEED_INIT_VAL);             /* See Note #2.                                         */
+   \   00000002   0x2001             MOVS     R0,#+1
+   \   00000004   0x.... 0x....      BL       Math_RandSetSeed
+    150          }
+   \   00000008   0xBD01             POP      {R0,PC}          ;; return
+    151          
+    152          
+    153          /*$PAGE*/
+    154          /*
+    155          *********************************************************************************************************
+    156          *                                         Math_RandSetSeed()
+    157          *
+    158          * Description : Set the current pseudo-random number generator seed.
+    159          *
+    160          * Argument(s) : seed        Initial (or current) value to set for the pseudo-random number sequence.
+    161          *
+    162          * Return(s)   : none.
+    163          *
+    164          * Caller(s)   : Application.
+    165          *
+    166          * Note(s)     : (1) IEEE Std 1003.1, 2004 Edition, Section 'rand() : DESCRIPTION' states that "srand() 
+    167          *                   ... uses the argument as a seed for a new sequence of pseudo-random numbers to be 
+    168          *                   returned by subsequent calls to rand()".
+    169          *
+    170          *               (2) 'Math_RandSeedCur' MUST always be accessed exclusively in critical sections.
+    171          *
+    172          *                   See also 'Math_Rand()  Note #1b'.
+    173          *********************************************************************************************************
+    174          */
+    175          
+
+   \                                 In section .text, align 2, keep-with-next
+    176          void  Math_RandSetSeed (RAND_NBR  seed)
+    177          {
+   \                     Math_RandSetSeed:
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    178              CPU_SR_ALLOC();
+   \   00000004   0x2500             MOVS     R5,#+0
+    179          
+    180          
+    181              CPU_CRITICAL_ENTER();
+   \   00000006   0x.... 0x....      BL       CPU_SR_Save
+   \   0000000A   0x0005             MOVS     R5,R0
+    182              Math_RandSeedCur = seed;
+   \   0000000C   0x....             LDR.N    R0,??DataTable2
+   \   0000000E   0x6004             STR      R4,[R0, #+0]
+    183              CPU_CRITICAL_EXIT();
+   \   00000010   0x0028             MOVS     R0,R5
+   \   00000012   0x.... 0x....      BL       CPU_SR_Restore
+    184          }
+   \   00000016   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    185          
+    186          
+    187          /*$PAGE*/
+    188          /*
+    189          *********************************************************************************************************
+    190          *                                             Math_Rand()
+    191          *
+    192          * Description : Calculate the next pseudo-random number.
+    193          *
+    194          * Argument(s) : none.
+    195          *
+    196          * Return(s)   : Next pseudo-random number in the sequence after 'Math_RandSeedCur'.
+    197          *
+    198          * Caller(s)   : Application.
+    199          *
+    200          * Note(s)     : (1) (a) The pseudo-random number generator is implemented as a Linear Congruential 
+    201          *                       Generator (LCG).
+    202          *
+    203          *                   (b) The pseudo-random number generated is in the range [0, RAND_LCG_PARAM_M].
+    204          *
+    205          *                   See also 'Math_RandSeed()  Note #1'.
+    206          *
+    207          *               (2) (a) IEEE Std 1003.1, 2004 Edition, Section 'rand() : DESCRIPTION' states that "rand() 
+    208          *                       ... need not be reentrant ... [and] is not required to be thread-safe".
+    209          *
+    210          *                   (b) However, in order to implement Math_Rand() as re-entrant; 'Math_RandSeedCur' MUST 
+    211          *                       always be accessed & updated exclusively in critical sections.
+    212          *
+    213          *                   See also 'Math_RandSeed()  Note #2'.
+    214          *********************************************************************************************************
+    215          */
+    216          
+
+   \                                 In section .text, align 2, keep-with-next
+    217          RAND_NBR  Math_Rand (void)
+    218          {
+   \                     Math_Rand:
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+    219              RAND_NBR  seed;
+    220              RAND_NBR  rand_nbr;
+    221              CPU_SR_ALLOC();
+   \   00000002   0x2600             MOVS     R6,#+0
+    222          
+    223          
+    224              CPU_CRITICAL_ENTER();
+   \   00000004   0x.... 0x....      BL       CPU_SR_Save
+   \   00000008   0x0006             MOVS     R6,R0
+    225              seed             = Math_RandSeedCur;
+   \   0000000A   0x....             LDR.N    R0,??DataTable2
+   \   0000000C   0x6800             LDR      R0,[R0, #+0]
+   \   0000000E   0x0004             MOVS     R4,R0
+    226              rand_nbr         = Math_RandSeed(seed);
+   \   00000010   0x0020             MOVS     R0,R4
+   \   00000012   0x.... 0x....      BL       Math_RandSeed
+   \   00000016   0x0005             MOVS     R5,R0
+    227              Math_RandSeedCur = rand_nbr;
+   \   00000018   0x....             LDR.N    R0,??DataTable2
+   \   0000001A   0x6005             STR      R5,[R0, #+0]
+    228              CPU_CRITICAL_EXIT();
+   \   0000001C   0x0030             MOVS     R0,R6
+   \   0000001E   0x.... 0x....      BL       CPU_SR_Restore
+    229          
+    230              return (rand_nbr);
+   \   00000022   0x0028             MOVS     R0,R5
+   \   00000024   0xBD70             POP      {R4-R6,PC}       ;; return
+    231          }
+    232          
+    233          
+    234          /*$PAGE*/
+    235          /*
+    236          *********************************************************************************************************
+    237          *                                           Math_RandSeed()
+    238          *
+    239          * Description : Calculate the next pseudo-random number.
+    240          *
+    241          * Argument(s) : seed        Initial (or current) value for the pseudo-random number sequence.
+    242          *
+    243          * Return(s)   : Next pseudo-random number in the sequence after 'seed'.
+    244          *
+    245          * Caller(s)   : Math_Rand(),
+    246          *               Application.
+    247          *
+    248          * Note(s)     : (1) (a) BSD/ANSI-C implements rand() as a Linear Congruential Generator (LCG) :
+    249          *
+    250          *                       (A) random_number       =  [(a * random_number ) + b]  modulo m
+    251          *                                        n + 1                        n
+    252          *
+    253          *                               where
+    254          *                                       (1) (a) random_number           Next     random number to generate
+    255          *                                                            n+1
+    256          *                                           (b) random_number           Previous random number    generated
+    257          *                                                            n
+    258          *
+    259          *                                       (2) a = RAND_LCG_PARAM_A        LCG multiplier
+    260          *                                       (3) b = RAND_LCG_PARAM_B        LCG incrementor
+    261          *                                       (4) m = RAND_LCG_PARAM_M + 1    LCG modulus
+    262          *
+    263          *                   (b) The pseudo-random number generated is in the range [0, RAND_LCG_PARAM_M].
+    264          *
+    265                              See also 'lib_math.h  RANDOM NUMBER DEFINES  Note #1b'.
+    266          *
+    267          *               (2) (a) IEEE Std 1003.1, 2004 Edition, Section 'rand() : DESCRIPTION' states that "rand() 
+    268          *                       ... need not be reentrant ... [and] is not required to be thread-safe".
+    269          *
+    270          *                   (b) However, Math_RandSeed() is re-entrant since it calculates the next random number 
+    271          *                       using ONLY local variables.
+    272          *********************************************************************************************************
+    273          */
+    274          
+
+   \                                 In section .text, align 2, keep-with-next
+    275          RAND_NBR  Math_RandSeed (RAND_NBR  seed)
+    276          {
+   \                     Math_RandSeed:
+   \   00000000   0xB410             PUSH     {R4}
+   \   00000002   0x0001             MOVS     R1,R0
+    277              RAND_NBR  rand_nbr;
+    278          
+    279          
+    280              rand_nbr = (((RAND_NBR)RAND_LCG_PARAM_A * seed) + (RAND_NBR)RAND_LCG_PARAM_B)  %  ((RAND_NBR)RAND_LCG_PARAM_M + 1);
+   \   00000004   0x....             LDR.N    R2,??DataTable2_1  ;; 0x41c64e6d
+   \   00000006   0xF243 0x0339      MOVW     R3,#+12345
+   \   0000000A   0xFB02 0x3201      MLA      R2,R2,R1,R3
+   \   0000000E   0xF05F 0x4300      MOVS     R3,#-2147483648
+   \   00000012   0xFBB2 0xF4F3      UDIV     R4,R2,R3
+   \   00000016   0xFB04 0x2413      MLS      R4,R4,R3,R2
+   \   0000001A   0x0020             MOVS     R0,R4
+    281          
+    282              return (rand_nbr);
+   \   0000001C   0xBC10             POP      {R4}
+   \   0000001E   0x4770             BX       LR               ;; return
+    283          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x........         DC32     Math_RandSeedCur
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0x41C64E6D         DC32     0x41c64e6d
+    284          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   Math_Init
+         8   -> Math_RandSetSeed
+      16   Math_Rand
+        16   -> CPU_SR_Restore
+        16   -> CPU_SR_Save
+        16   -> Math_RandSeed
+       4   Math_RandSeed
+      16   Math_RandSetSeed
+        16   -> CPU_SR_Restore
+        16   -> CPU_SR_Save
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+      10  Math_Init
+      38  Math_Rand
+      32  Math_RandSeed
+       4  Math_RandSeedCur
+      24  Math_RandSetSeed
+
+ 
+   4 bytes in section .bss
+ 112 bytes in section .text
+ 
+ 112 bytes of CODE memory
+   4 bytes of DATA memory
+
+Errors: none
+Warnings: none

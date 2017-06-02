@@ -1,0 +1,183 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.6.4896/W32 for ARM      20/Mar/2017  17:18:21 #
+# Copyright 1999-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  D:\wangfan2\桌面\RTU_1.2\HuaceApp\iap\timer.c            #
+#    Command line =  D:\wangfan2\桌面\RTU_1.2\HuaceApp\iap\timer.c -lCN       #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\Debug\List\ -o      #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\Debug\Obj\          #
+#                    --no_cse --no_unroll --no_inline --no_code_motion        #
+#                    --no_tbaa --no_clustering --no_scheduling --debug        #
+#                    --endian=little --cpu=Cortex-M3 -e --fpu=None            #
+#                    --dlib_config "C:\Program Files (x86)\IAR                #
+#                    Systems\Embedded Workbench 6.5_2\arm\INC\c\DLib_Config_F #
+#                    ull.h" -I D:\wangfan2\桌面\RTU_1.2\project\iar\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\ADC\ -I   #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\RTC\ -I   #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\TILT\ -I  #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\RDLevel\  #
+#                    -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\RS232\ #
+#                     -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\OS-v2 #
+#                    \ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\BSP\Vibr #
+#                    ationString\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\ #
+#                    ..\ucos2\uCOS-II\Ports\ARM-Cortex-M3\Generic\IAR\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\ucos2\uCOS-II #
+#                    \Source\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\u #
+#                    cos2\uC-LIB\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\ #
+#                    ..\ucos2\uC-CPU\ -I D:\wangfan2\桌面\RTU_1.2\project\iar #
+#                    \..\..\ucos2\uC-CPU\ARM-Cortex-M3\IAR\ -I                #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\cmsis\Drivers #
+#                    \source\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\c #
+#                    msis\Drivers\include\ -I D:\wangfan2\桌面\RTU_1.2\projec #
+#                    t\iar\..\..\app\ -I D:\wangfan2\桌面\RTU_1.2\project\iar #
+#                    \..\..\uC-Probe\Target\Plugins\uCOS-II\ -I               #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\uC-Probe\Targ #
+#                    et\Demos\Intro\Workspaces\ -I                            #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\uC-Probe\Targ #
+#                    et\Demos\Intro\Source\ -I D:\wangfan2\桌面\RTU_1.2\proje #
+#                    ct\iar\..\..\uC-Probe\Target\Communication\Generic\Sourc #
+#                    e\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\uC-Prob #
+#                    e\Target\Communication\Generic\RS-232\Source\ -I         #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\uC-Probe\Targ #
+#                    et\Communication\Generic\RS-232\Ports\NXP\LPC17xx\ -I    #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\uC-Probe\Targ #
+#                    et\Communication\Generic\RS-232\OS\uCOS-II\ -I           #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\cmsis\Core\CM #
+#                    3\CoreSupport\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\. #
+#                    .\..\cmsis\Core\CM3\DeviceSupport\NXP\LPC177x_8x\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\HuaceApp\ -I  #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\HuaceApp\DEVI #
+#                    CE_BT\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\Hua #
+#                    ceApp\DEVICE_COM\ -I D:\wangfan2\桌面\RTU_1.2\project\ia #
+#                    r\..\..\HuaceApp\DEVICE_GPRS\ -I                         #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\HuaceApp\DEVI #
+#                    CE_GPS\ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\Hu #
+#                    aceApp\DEVICE_RADIO\ -I D:\wangfan2\桌面\RTU_1.2\project #
+#                    \iar\..\..\HuaceApp\iap\ -I                              #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\FatFs\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\USB\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\bsp\spi_flash #
+#                    \ -I D:\wangfan2\桌面\RTU_1.2\project\iar\..\..\HuaceApp #
+#                    \LED\ -On --use_c++_inline                               #
+#    List file    =  D:\wangfan2\桌面\RTU_1.2\project\iar\Debug\List\timer.ls #
+#                    t                                                        #
+#    Object file  =  D:\wangfan2\桌面\RTU_1.2\project\iar\Debug\Obj\timer.o   #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+D:\wangfan2\桌面\RTU_1.2\HuaceApp\iap\timer.c
+      1          #include "lpc177x_8x_timer.h"
+      2          #include "bsp.h"
+      3          #include"timer.h"
+      4          
+      5          /*----------------------------------------------------------------------------
+      6            Clock Variable definitions
+      7           *----------------------------------------------------------------------------*/
+      8          //timer init
+
+   \                                 In section .bss, align 4
+      9          TIM_TIMERCFG_Type TIM_ConfigStruct;
+   \                     TIM_ConfigStruct:
+   \   00000000                      DS8 8
+
+   \                                 In section .bss, align 4
+     10          TIM_MATCHCFG_Type TIM_MatchConfigStruct ;
+   \                     TIM_MatchConfigStruct:
+   \   00000000                      DS8 12
+     11          
+     12          
+     13          /**************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+     14          void Timer2_Init (void)
+     15          {
+   \                     Timer2_Init:
+   \   00000000   0xB580             PUSH     {R7,LR}
+     16          	// Initialize timer 0, prescale count time of 100uS
+     17          	TIM_ConfigStruct.PrescaleOption = TIM_PRESCALE_USVAL;
+   \   00000002   0x4812             LDR.N    R0,??Timer2_Init_0
+   \   00000004   0x2101             MOVS     R1,#+1
+   \   00000006   0x7001             STRB     R1,[R0, #+0]
+     18          	TIM_ConfigStruct.PrescaleValue	= 100;
+   \   00000008   0x4810             LDR.N    R0,??Timer2_Init_0
+   \   0000000A   0x2164             MOVS     R1,#+100
+   \   0000000C   0x6041             STR      R1,[R0, #+4]
+     19          
+     20          	// use channel 0, MR0
+     21          	TIM_MatchConfigStruct.MatchChannel = 0;
+   \   0000000E   0x4810             LDR.N    R0,??Timer2_Init_0+0x4
+   \   00000010   0x2100             MOVS     R1,#+0
+   \   00000012   0x7001             STRB     R1,[R0, #+0]
+     22          	// Enable interrupt when MR0 matches the value in TC register
+     23          	TIM_MatchConfigStruct.IntOnMatch   = TRUE;
+   \   00000014   0x480E             LDR.N    R0,??Timer2_Init_0+0x4
+   \   00000016   0x2101             MOVS     R1,#+1
+   \   00000018   0x7041             STRB     R1,[R0, #+1]
+     24          	//Enable reset on MR0: TIMER will reset if MR0 matches it
+     25          	TIM_MatchConfigStruct.ResetOnMatch = TRUE;
+   \   0000001A   0x480D             LDR.N    R0,??Timer2_Init_0+0x4
+   \   0000001C   0x2101             MOVS     R1,#+1
+   \   0000001E   0x70C1             STRB     R1,[R0, #+3]
+     26          	//Stop on MR0 if MR0 matches it
+     27          	TIM_MatchConfigStruct.StopOnMatch  = FALSE;
+   \   00000020   0x480B             LDR.N    R0,??Timer2_Init_0+0x4
+   \   00000022   0x2100             MOVS     R1,#+0
+   \   00000024   0x7081             STRB     R1,[R0, #+2]
+     28          	//Toggle MR0.0 pin if MR0 matches it
+     29          	TIM_MatchConfigStruct.ExtMatchOutputType =TIM_EXTMATCH_TOGGLE;
+   \   00000026   0x480A             LDR.N    R0,??Timer2_Init_0+0x4
+   \   00000028   0x2103             MOVS     R1,#+3
+   \   0000002A   0x7101             STRB     R1,[R0, #+4]
+     30          	// Set Match value, count value of 10000 (10000 * 100uS = 1000000us = 1s --> 1 Hz)
+     31          	TIM_MatchConfigStruct.MatchValue   = 5000;///10000;
+   \   0000002C   0x4808             LDR.N    R0,??Timer2_Init_0+0x4
+   \   0000002E   0xF241 0x3188      MOVW     R1,#+5000
+   \   00000032   0x6081             STR      R1,[R0, #+8]
+     32          
+     33          	// Set configuration for Tim_config and Tim_MatchConfig
+     34          	TIM_Init(BRD_TIMER_USED, TIM_TIMER_MODE, &TIM_ConfigStruct);
+   \   00000034   0x4A05             LDR.N    R2,??Timer2_Init_0
+   \   00000036   0x2100             MOVS     R1,#+0
+   \   00000038   0xF05F 0x2040      MOVS     R0,#+1073758208
+   \   0000003C   0x.... 0x....      BL       TIM_Init
+     35          	TIM_ConfigMatch(BRD_TIMER_USED, &TIM_MatchConfigStruct);
+   \   00000040   0x4903             LDR.N    R1,??Timer2_Init_0+0x4
+   \   00000042   0xF05F 0x2040      MOVS     R0,#+1073758208
+   \   00000046   0x.... 0x....      BL       TIM_ConfigMatch
+     36          }
+   \   0000004A   0xBD01             POP      {R0,PC}          ;; return
+   \                     ??Timer2_Init_0:
+   \   0000004C   0x........         DC32     TIM_ConfigStruct
+   \   00000050   0x........         DC32     TIM_MatchConfigStruct
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   Timer2_Init
+         8   -> TIM_ConfigMatch
+         8   -> TIM_Init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       8  TIM_ConfigStruct
+      12  TIM_MatchConfigStruct
+      84  Timer2_Init
+
+ 
+ 20 bytes in section .bss
+ 84 bytes in section .text
+ 
+ 84 bytes of CODE memory
+ 20 bytes of DATA memory
+
+Errors: none
+Warnings: none

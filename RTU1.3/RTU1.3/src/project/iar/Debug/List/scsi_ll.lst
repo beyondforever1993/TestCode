@@ -1,0 +1,125 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.6.4896/W32 for ARM      05/Apr/2017  15:06:10 #
+# Copyright 1999-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  D:\wangfan2\桌面\RTU_1.3\USB\scsi_ll.c                   #
+#    Command line =  D:\wangfan2\桌面\RTU_1.3\USB\scsi_ll.c -lCN              #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\Debug\List\ -o      #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\Debug\Obj\          #
+#                    --no_cse --no_unroll --no_inline --no_code_motion        #
+#                    --no_tbaa --no_clustering --no_scheduling --debug        #
+#                    --endian=little --cpu=Cortex-M3 -e --fpu=None            #
+#                    --dlib_config "C:\Program Files (x86)\IAR                #
+#                    Systems\Embedded Workbench 6.5_2\arm\INC\c\DLib_Config_F #
+#                    ull.h" -I D:\wangfan2\桌面\RTU_1.3\project\iar\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\ADC\ -I   #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\RTC\ -I   #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\TILT\ -I  #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\RDLevel\  #
+#                    -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\RS232\ #
+#                     -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\OS-v2 #
+#                    \ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\BSP\Vibr #
+#                    ationString\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\ #
+#                    ..\ucos2\uCOS-II\Ports\ARM-Cortex-M3\Generic\IAR\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\ucos2\uCOS-II #
+#                    \Source\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\u #
+#                    cos2\uC-LIB\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\ #
+#                    ..\ucos2\uC-CPU\ -I D:\wangfan2\桌面\RTU_1.3\project\iar #
+#                    \..\..\ucos2\uC-CPU\ARM-Cortex-M3\IAR\ -I                #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\cmsis\Drivers #
+#                    \source\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\c #
+#                    msis\Drivers\include\ -I D:\wangfan2\桌面\RTU_1.3\projec #
+#                    t\iar\..\..\app\ -I D:\wangfan2\桌面\RTU_1.3\project\iar #
+#                    \..\..\uC-Probe\Target\Plugins\uCOS-II\ -I               #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\uC-Probe\Targ #
+#                    et\Demos\Intro\Workspaces\ -I                            #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\uC-Probe\Targ #
+#                    et\Demos\Intro\Source\ -I D:\wangfan2\桌面\RTU_1.3\proje #
+#                    ct\iar\..\..\uC-Probe\Target\Communication\Generic\Sourc #
+#                    e\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\uC-Prob #
+#                    e\Target\Communication\Generic\RS-232\Source\ -I         #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\uC-Probe\Targ #
+#                    et\Communication\Generic\RS-232\Ports\NXP\LPC17xx\ -I    #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\uC-Probe\Targ #
+#                    et\Communication\Generic\RS-232\OS\uCOS-II\ -I           #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\cmsis\Core\CM #
+#                    3\CoreSupport\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\. #
+#                    .\..\cmsis\Core\CM3\DeviceSupport\NXP\LPC177x_8x\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\HuaceApp\ -I  #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\HuaceApp\DEVI #
+#                    CE_BT\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\Hua #
+#                    ceApp\DEVICE_COM\ -I D:\wangfan2\桌面\RTU_1.3\project\ia #
+#                    r\..\..\HuaceApp\DEVICE_GPRS\ -I                         #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\HuaceApp\DEVI #
+#                    CE_GPS\ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\Hu #
+#                    aceApp\DEVICE_RADIO\ -I D:\wangfan2\桌面\RTU_1.3\project #
+#                    \iar\..\..\HuaceApp\iap\ -I                              #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\FatFs\ -I     #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\USB\ -I       #
+#                    D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\bsp\spi_flash #
+#                    \ -I D:\wangfan2\桌面\RTU_1.3\project\iar\..\..\HuaceApp #
+#                    \LED\ -On --use_c++_inline                               #
+#    List file    =  D:\wangfan2\桌面\RTU_1.3\project\iar\Debug\List\scsi_ll. #
+#                    lst                                                      #
+#    Object file  =  D:\wangfan2\桌面\RTU_1.3\project\iar\Debug\Obj\scsi_ll.o #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+D:\wangfan2\桌面\RTU_1.3\USB\scsi_ll.c
+      1          /*************************************************************************
+      2           *
+      3           *    Used with ICCARM and AARM.
+      4           *
+      5           *    (c) Copyright IAR Systems 2008
+      6           *
+      7           *    File name   : scsi_ll.c
+      8           *    Description : USB Mass SCSI low level
+      9           *
+     10           *    History :
+     11           *    1. Date        : April 25, 2008
+     12           *       Author      : Stanimir Bonev
+     13           *       Description : Create
+     14           *
+     15           *    $Revision: 28532 $
+     16           **************************************************************************/
+     17          #define SCSI_LL_GLOBAL
+     18          
+     19          #include "scsi_ll.h"
+     20          
+     21          #pragma location="USB_DMA_RAM"
+     22          #pragma data_alignment=4
+
+   \                                 In section USB_DMA_RAM, align 4
+     23          __no_init Cbw_t Cbw;
+   \                     Cbw:
+   \   00000000                      DS8 32
+     24          
+     25          #pragma location="USB_DMA_RAM"
+     26          #pragma data_alignment=4
+
+   \                                 In section USB_DMA_RAM, align 4
+     27          __no_init Csw_t Csw;
+   \                     Csw:
+   \   00000000                      DS8 16
+     28          
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      32  Cbw
+      16  Csw
+
+ 
+ 48 bytes in section USB_DMA_RAM
+ 
+ 48 bytes of DATA memory
+
+Errors: none
+Warnings: none

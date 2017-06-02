@@ -1,5 +1,0 @@
----- _485Recv Matches (4 in 3 files) ----
-485.c (bsp\sensor\485):    ucRes = _485Recv(&aucTmp[0], sizeof(aucTmp));//获取接收自传感器的数据
-485.c (drivers\485):名称: _485Recv()
-485.c (drivers\485):uint8_t _485Recv(uint8_t *pucData, uint8_t ucDataLen)
-485.h (drivers\485):extern uint8_t _485Recv(uint8_t *pucData, uint8_t ucDataLen);

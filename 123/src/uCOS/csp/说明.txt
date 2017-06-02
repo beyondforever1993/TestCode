@@ -1,1 +1,0 @@
-1. csp_int.c中的功能均已在driver/interrupt/interrupt.c中实现，工程中无需添加该文件
